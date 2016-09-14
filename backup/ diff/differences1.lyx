@@ -85,11 +85,12 @@ dcs
 \papersides 2
 \paperpagestyle default
 \listings_params "basicstyle={\ttfamily},commentstyle={\color{green}\ttfamily},keywordstyle={\color{blue}\ttfamily},language={java},morecomment={[l][\color{magenta}]{\#}},numbers=left,numberstyle={\tiny},stringstyle={\color{red}\ttfamily}"
-\tracking_changes false
-\output_changes false
+\tracking_changes true
+\output_changes true
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 177682 "m" 
 \end_header
 
 \begin_body
@@ -187,8 +188,25 @@ Survey questions
 
 \begin_layout Standard
 As it been told before, these questions were designed to illustrate the
- behavior (need,habit) of users in order to help the definition of development
- backlogs.
+ behavior (need
+\change_inserted 177682 1473843054
+s
+\change_unchanged
+,
+\change_inserted 177682 1473843054
+ 
+\change_unchanged
+habit
+\change_inserted 177682 1473843054
+s
+\change_unchanged
+) of users in order to help the definition of development 
+\change_deleted 177682 1473843054
+backlog
+\change_inserted 177682 1473843054
+requirement
+\change_unchanged
+s.
  The questions and related results are as up coming paragraphs.
 \end_layout
 
@@ -219,11 +237,23 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\change_deleted 177682 1473843054
 \begin_inset Graphics
 	filename /Volumes/SHIVA/lyx/master-thesis_hancquart-12_9/Q1.png
 
 \end_inset
 
+
+\change_inserted 177682 1473843054
+
+\begin_inset Graphics
+	filename ../../images/Survey_graphs/Q1.png
+
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -249,16 +279,25 @@ When are you usually watching videos?
 \end_layout
 
 \begin_layout Standard
-According to the results, a big part of the videos will be watched around
- during the same time.
+
+\change_deleted 177682 1473843149
+According
+\change_inserted 177682 1473843149
+According
+\change_unchanged
+ to the results, a big part of the videos will be watched around during
+ the same time.
  More than 85% are watching videos on the same period of the day (Evening,
  Night).
  Considering this, it is worth to focus on a technology able to take advantage
  of a it to decrease the data transfer.
  Thinking of a decentralized application, the memory of each user could
- be used to perform request of other users on the hard-drive ( unicast )
- or to focus on the currently most watched videos ( broadcast / multicast
- ).
+ be used to perform request of other users on the hard
+\change_deleted 177682 1473843054
+-
+\change_unchanged
+drive ( unicast ) or to focus on the currently most watched videos ( broadcast
+ / multicast ).
  Broadcast, multicast and unicast connections options should be explored
  and compared.
 \end_layout
@@ -272,7 +311,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/Survey_graphs/Q2.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/Survey_graphs/Q2.png
 
 \end_inset
 
@@ -316,7 +355,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/Survey_graphs/Q3.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/Survey_graphs/Q3.png
 
 \end_inset
 
@@ -885,7 +924,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/Survey_graphs/Q4.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/Survey_graphs/Q4.png
 
 \end_inset
 
@@ -920,8 +959,12 @@ In general, people are able to bear a short delay if they use torrent (
 \end_layout
 
 \begin_layout Standard
-It would be a good idea to favor the quality videos and expected ones, with
- a “like” system or with some ranking for a for example.
+It would be a good idea to favo
+\change_inserted 177682 1473843054
+u
+\change_unchanged
+r the quality videos and expected ones, with a “like” system or with some
+ ranking for a for example.
  
 \end_layout
 
@@ -934,7 +977,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/Survey_graphs/Q5.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/Survey_graphs/Q5.png
 
 \end_inset
 
@@ -980,7 +1023,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/Survey_graphs/Q6.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/Survey_graphs/Q6.png
 
 \end_inset
 
@@ -1024,7 +1067,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/Survey_graphs/Q7.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/Survey_graphs/Q7.png
 
 \end_inset
 
@@ -1067,7 +1110,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/Survey_graphs/Q8.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/Survey_graphs/Q8.png
 
 \end_inset
 
@@ -1145,23 +1188,14 @@ At the marketing level, the users mostly accept a delay for an expectedly
  It is important to keep it in mind as on the beginning, the hosting costs
  might impede to have a big storage capacity.
  However, it is possible to compensate this by specializing the video offer
- on one of the 3 most preferred kind of videos : 
-\end_layout
-
-\begin_layout Itemize
-Music, 
-\end_layout
-
-\begin_layout Itemize
-Comedy 
-\end_layout
-
-\begin_layout Itemize
-Documentary 
-\end_layout
-
-\begin_layout Standard
-It could be interesting to as well to implement a ranking system in the
+ on one of the 3 most 
+\change_deleted 177682 1473843577
+prefered
+\change_inserted 177682 1473843577
+preferred
+\change_unchanged
+ kind of videos : Music, Comedy and Documentary.
+ It could be interesting to as well to implement a ranking system in the
  application to provide interesting videos for the user.
  
 \end_layout
@@ -1844,9 +1878,13 @@ The efficiency of advertising is improved through advertising research.
  above), mainly Psychiatry, Anthropology, Neurology and behavioral sciences,
  are constantly in search for ever more refined, sophisticated, subtle and
  crafty methods to make advertising more effective.
- "NeuroMarketing is a controversial new field of marketing which uses medical
- technologies such as functional Magnetic Resonance Imaging (fMRI)—not to
- heal, but to sell products.
+ "Neuro
+\change_inserted 177682 1473843054
+m
+\change_unchanged
+arketing is a controversial new field of marketing which uses medical technologi
+es such as functional Magnetic Resonance Imaging (fMRI)—not to heal, but
+ to sell products.
  Advertising and marketing firms have long used the insights and research
  methods of psychology in order to sell products, of course.
  But today these practices are reaching epidemic levels, and with a complicity
@@ -1869,15 +1907,10 @@ key "key-14"
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
-The following are examples to show the effects of advertisements on children
- and teenagers and how these lead them to problems .
-\end_layout
-
-\begin_layout Paragraph
 obesity
 \end_layout
 
@@ -1903,12 +1936,26 @@ key "key-15"
  Exposure to television advertising on high energy density foods (including
  sweet and fat) is associated with a higher prevalence of obesity.
  ".
+\change_deleted 177682 1473843054
+
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted 177682 1473843054
+ 
+\change_unchanged
 In 2010 the World Health Organization drove the point home: "television
  advertising influences the food preferences of children and their purchase
- requests and consumption patterns" [62].
+ requests and consumption patterns" 
+\change_deleted 177682 1473843054
+[
+\change_unchanged
+62
+\change_deleted 177682 1473843054
+]
+\change_unchanged
+.
  At the same time, in France, What to choose noted that 80% of advertising
  to children was for food, and that 80% of them were too fat or too sucrés63.
  This study was critical to the food industry's commitments in 2008 under
@@ -1923,9 +1970,25 @@ tobacco
 Smoking in films affects teenagers: a teenager sees movies with smoking,
  the more likely to smoke.
  The reverse is also true, namely that few teenagers smoking among those
- who are not subject to tabagiques [65 ]films.
+ who are not subject to tabagiques
+\change_deleted 177682 1473843054
+ [
+\change_unchanged
+65 
+\change_deleted 177682 1473843054
+]
+\change_unchanged
+films.
  The World Health Organization recalls Article 13 of the Framework Convention
- on Tobacco and calls for measures to limit the presence of tobacco in films[66].
+ on Tobacco and calls for measures to limit the presence of tobacco in films
+\change_deleted 177682 1473843054
+[
+\change_unchanged
+66
+\change_deleted 177682 1473843054
+]
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Standard
@@ -1936,7 +1999,17 @@ Americans Chomsky and Herman, in their criticism of the functioning of the
  concerned with good selling potential audience to advertisers that the
  "subsidizing"; gold they are, according to these authors, "more usually
  worn to avoid overly complicated programs or affecting disturbing controversies
- that might reduce the" brain time available "public" 67.
+ that might reduce the" brain time available "public" 
+\change_inserted 177682 1473843054
+[
+\change_unchanged
+67
+\change_inserted 177682 1473843054
+]
+\change_unchanged
+.
+\change_deleted 177682 1473843054
+
 \begin_inset Note Note
 status collapsed
 
@@ -1947,9 +2020,13 @@ i dont get anything from this part
 \end_inset
 
 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 177682 1473843054
 \begin_inset Note Note
 status collapsed
 
@@ -2010,6 +2087,78 @@ Les Américains Chomsky et Herman, dans leur critique du fonctionnement des
 \end_inset
 
 
+\change_inserted 177682 1473843054
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted 177682 1473843054
+---
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 177682 1473843054
+La publicité télévisée est accusée de contribuer à l'augmentation de l'épidémie
+ d'obésité qui touche les pays développés.
+ Un rapport remis en 2003 à l'agence des normes alimentaires au Royaume-Uni
+ selon lequel la publicité pour la nourriture a un effet sur les enfants
+ en influant sur la préférence de nourriture et sur les demandes d'achats
+ pour des produits malsains60.
+ Un groupe de scientifiques français responsables de questions de nutrition
+ affirmait en 2008, dans une tribune intitulée « Engraisser les enfants
+ pour sauver la télévision »61, et en se référant à des « rapports récents
+ » : « Il existe même un lien entre une forte exposition aux publicités
+ télévisées et l'obésité des enfants âgés de 2 à 11 ans ainsi que des adolescent
+s de 12 à 18 ans.
+ L'exposition à la publicité télévisée portant sur des aliments de haute
+ densité énergétique (notamment sucrés et gras) est associée à une prévalence
+ plus élevée de l'obésité.
+ ».
+ En 2010 l'organisation mondiale de la santé enfonçait le clou : « la publicité
+ télévisée influe sur les préférences alimentaires des enfants et sur leurs
+ demandes d’achat et leurs modes de consommation »62.
+ À la même époque, en France, Que choisir remarquait que 80% des publicités
+ destinées aux enfants l'était pour des aliments, et que 80% d'entre eux
+ étaient trop gras ou trop sucrés63.
+ Cette étude était une critique aux engagements de l'industrie agro-alimentaire
+ en 2008, sous l'égide de l'ANIA, pour la réduction de la publicité destinée
+ aux enfants64.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 177682 1473843054
+Le tabagisme dans les films a un effet sur les adolescents : plus un adolescent
+ voit de films avec du tabagisme, plus il risque de fumer.
+ L'inverse est également vrai, à savoir que rares sont les adolescents fumeurs
+ parmi ceux qui ne sont pas soumis à des films tabagiques65.
+ L'Organisation mondiale de la santé rappelle l'article 13 de la convention
+ cadre anti-tabac et appelle à des mesures pour limiter la présence de tabac
+ dans les films66.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 177682 1473843054
+Les Américains Chomsky et Herman, dans leur critique du fonctionnement des
+ médias en démocratie, ont théorisé un modèle de propagande dont la « régulation
+ par la publicité » constitue l'un des cinq filtres.
+ Pour des raisons de financement et de survie économique, les médias privés
+ sont avant tout soucieux de bien vendre leur public potentiel aux annonceurs
+ qui les « subventionnent » ; or ceux-ci sont, selon ces auteurs, « plus
+ généralement portés à éviter les programmes trop compliqués ou touchant
+ à des controverses dérangeantes, susceptibles de réduire le « temps de
+ cerveau disponible » du public »67.
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Paragraph
@@ -2017,45 +2166,324 @@ neuromarketing
 \end_layout
 
 \begin_layout Standard
-The filed of marketing research which studies consumers behaviors and their
- response to marketing stimuli, is called Neuromarketing.
+
+\change_deleted 177682 1473843054
+Th
+\change_inserted 177682 1473843054
+Neuromark
+\change_unchanged
+e
+\change_inserted 177682 1473843054
+ting is a
+\change_unchanged
+ fi
+\change_inserted 177682 1473843054
+e
+\change_unchanged
+l
+\change_deleted 177682 1473843054
+e
+\change_unchanged
+d of marketing research 
+\change_deleted 177682 1473843054
+w
+\change_inserted 177682 1473843054
+t
+\change_unchanged
+h
+\change_deleted 177682 1473843054
+ich
+\change_inserted 177682 1473843054
+at
+\change_unchanged
+ studies consumers
+\change_inserted 177682 1473843054
+'
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+b
+\change_inserted 177682 1473843054
+s
+\change_unchanged
+e
+\change_deleted 177682 1473843054
+hav
+\change_inserted 177682 1473843054
+nsor
+\change_unchanged
+i
+\change_inserted 177682 1473843054
+mot
+\change_unchanged
+or
+\change_deleted 177682 1473843054
+s
+\change_inserted 177682 1473843054
+, cognitive,
+\change_unchanged
+ and 
+\change_deleted 177682 1473843054
+th
+\change_inserted 177682 1473843054
+aff
+\change_unchanged
+e
+\change_inserted 177682 1473843054
+ct
+\change_unchanged
+i
+\change_deleted 177682 1473843054
+r
+\change_inserted 177682 1473843054
+ve
+\change_unchanged
+ response to marketing stimu
+\change_deleted 177682 1473843054
+li, is cal
+\change_unchanged
+l
+\change_deleted 177682 1473843054
+ed Neuromarket
+\change_unchanged
+i
+\change_deleted 177682 1473843054
+ng
+\change_unchanged
+.
+\change_deleted 177682 1473843054
+
 \end_layout
 
 \begin_layout Standard
-There are three difference types of technologies that are used by researches
- about brains activities, which part of brain are involved and how human
- make decisions.The following are showing specifics technologies and their
- prepuces regarding that.
+
+\change_deleted 177682 1473843054
+There are three difference types of technologies that are used by
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+r
+\change_inserted 177682 1473843054
+R
+\change_unchanged
+esearche
+\change_deleted 177682 1473843054
+s about b
+\change_unchanged
+r
+\change_deleted 177682 1473843054
+ain
+\change_unchanged
+s 
+\change_deleted 177682 1473843054
+activities, which part of brain are involved and how h
+\change_unchanged
+u
+\change_deleted 177682 1473843054
+man make decision
+\change_unchanged
+s
+\change_deleted 177682 1473843054
+.Th
+\change_unchanged
+e 
+\change_deleted 177682 1473843054
+following are showing specifics 
+\change_unchanged
+technologies 
+\change_deleted 177682 1473843054
+and their prep
+\change_inserted 177682 1473843054
+s
+\change_unchanged
+uc
+\change_deleted 177682 1473843054
+es
+\change_inserted 177682 1473843054
+h
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+reg
+\change_unchanged
+a
+\change_deleted 177682 1473843054
+rding that.
 \end_layout
 
 \begin_layout Itemize
-(MRI) Functional magnetic resonance imaging 
+
+\change_deleted 177682 1473843054
+(MRI)
+\change_inserted 177682 1473843054
+s
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+F
+\change_inserted 177682 1473843054
+f
+\change_unchanged
+unctional magnetic resonance imaging 
+\change_deleted 177682 1473843054
+
 \end_layout
 
 \begin_layout Standard
-MRI is used to measure changes in activity in parts of the brain.
+
+\change_inserted 177682 1473843054
+(
+\change_unchanged
+MRI
+\change_inserted 177682 1473843054
+)
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+is used 
+\change_unchanged
+to measure changes in activity in parts of the brain
+\change_deleted 177682 1473843054
+.
 \end_layout
 
 \begin_layout Itemize
-(EEG) Electroencephalography.
+
+\change_deleted 177682 1473843054
+(EEG)
+\change_inserted 177682 1473843054
+,
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+E
+\change_inserted 177682 1473843054
+e
+\change_unchanged
+lectroencephalography
+\change_deleted 177682 1473843054
+.
 \end_layout
 
 \begin_layout Itemize
-(SST) Steady state topography 
+
+\change_inserted 177682 1473843054
+ 
+\change_unchanged
+(
+\change_deleted 177682 1473843054
+SST
+\change_inserted 177682 1473843054
+EEG
+\change_unchanged
+) 
+\change_inserted 177682 1473843054
+and 
+\change_unchanged
+Steady state topography
+\change_deleted 177682 1473843054
+ 
 \end_layout
 
 \begin_layout Standard
-EEG and SST are used to measure activity in specific regional spectra of
- the brain response, or sensors to measure changes in one's physiological
- state, also known as biometrics, including heart rate and respiratory rate,
- galvanic skin response to learn why consumers make the decisions they do,
- and which brain areas are responsible.
+
+\change_deleted 177682 1473843054
+EEG and
+\change_unchanged
+ 
+\change_inserted 177682 1473843054
+(
+\change_unchanged
+SST
+\change_deleted 177682 1473843054
+ are used
+\change_inserted 177682 1473843054
+)
+\change_unchanged
+ to measure activity in specific regional spectra of the brain response,
+ or sensors to measure changes in one's physiological state, also known
+ as biometrics, including heart rate and respiratory rate, galvanic skin
+ response to learn why consumers make the decisions they do, and which brain
+ areas are responsible.
+\change_deleted 177682 1473843054
+
 \end_layout
 
 \begin_layout Standard
-The large scale companies ambitions to predict consumer behaviors and their
- response with having investment in their own laboratories ,science personnel
- or partnerships with academia.
+
+\change_deleted 177682 1473843054
+T
+\change_inserted 177682 1473843054
+ Certain companies, particularly t
+\change_unchanged
+h
+\change_inserted 177682 1473843054
+os
+\change_unchanged
+e
+\change_inserted 177682 1473843054
+ with
+\change_unchanged
+ large
+\change_deleted 177682 1473843054
+ 
+\change_inserted 177682 1473843054
+-
+\change_unchanged
+scale 
+\change_deleted 177682 1473843054
+comp
+\change_unchanged
+a
+\change_deleted 177682 1473843054
+nies a
+\change_unchanged
+mbitions to predict consumer behavio
+\change_inserted 177682 1473843054
+u
+\change_unchanged
+r
+\change_deleted 177682 1473843054
+s
+\change_inserted 177682 1473843054
+,
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+and t
+\change_unchanged
+h
+\change_deleted 177682 1473843054
+eir response with h
+\change_unchanged
+av
+\change_deleted 177682 1473843054
+ing
+\change_inserted 177682 1473843054
+e
+\change_unchanged
+ invest
+\change_deleted 177682 1473843054
+m
+\change_unchanged
+e
+\change_deleted 177682 1473843054
+nt
+\change_inserted 177682 1473843054
+d
+\change_unchanged
+ in their own laboratories
+\change_deleted 177682 1473843054
+ 
+\change_unchanged
+,
+\change_inserted 177682 1473843054
+ 
+\change_unchanged
+science personnel or partnerships with academia.
+\change_inserted 177682 1473843054
+[1]
+\change_unchanged
  Present in over ten countries, the Neuromarketing Business Association[2]
  today centralizes academic publications and certifications and serves as
  a networking platform for professionals in the field.
@@ -2107,6 +2535,8 @@ The collection of user information by publishers and advertisers has raised
  if given an opportunity.[94][95] Over half of all Google and Facebook users
  are concerned about their privacy when using Google and Facebook, according
  to Gallup.[96]
+\change_deleted 177682 1473843054
+
 \begin_inset Note Note
 status open
 
@@ -2118,15 +2548,79 @@ these are data and should mention by source so i did not change any thing
 \end_inset
 
 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
-Tracking user online activities make advertisers able to understand consumers
- quite well.
- They often use technologies namely :web bugs and respawning cookies, to
- maximizing their abilities to track consumers.
- Due to this, many consumers got cautious about online behavior tracking.
- According to a 2011 survey conducted by Harris Interactive, over half of
+
+\change_deleted 177682 1473843054
+T
+\change_inserted 177682 1473843054
+Many consumers have reservations about online behavioral targeting.
+ By t
+\change_unchanged
+racking user
+\change_inserted 177682 1473843054
+s'
+\change_unchanged
+ online activities
+\change_deleted 177682 1473843054
+ make
+\change_inserted 177682 1473843054
+,
+\change_unchanged
+ advertisers
+\change_inserted 177682 1473843054
+ are
+\change_unchanged
+ able to understand consumers quite well.
+ 
+\change_deleted 177682 1473843054
+Th
+\change_inserted 177682 1473843054
+Advertis
+\change_unchanged
+e
+\change_deleted 177682 1473843054
+y
+\change_inserted 177682 1473843054
+rs
+\change_unchanged
+ often use technolog
+\change_deleted 177682 1473843054
+ie
+\change_inserted 177682 1473843054
+y, 
+\change_unchanged
+s
+\change_inserted 177682 1473843054
+uch
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+n
+\change_unchanged
+a
+\change_deleted 177682 1473843054
+mely
+\change_inserted 177682 1473843054
+s
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+:
+\change_unchanged
+web bugs and respawning cookies, to maximizing their abilities to track
+ consumers.
+\change_inserted 177682 1473843054
+[61]:60[97][98]
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+This is caused, many consumers have precaution about online behavior targeting.
+\change_unchanged
+According to a 2011 survey conducted by Harris Interactive, over half of
  Internet users had a negative impression of online behavioral advertising,
  and forty percent feared that their personally-identifiable information
  had been shared with advertisers without their consent.[99][100] Consumers
@@ -2152,17 +2646,275 @@ https://en.wikipedia.org/wiki/Advertising#Rise_in_new_media
 \end_layout
 
 \begin_layout Standard
-Online advertisement take advance of internet and World Wide Web in order
- to delivering marketing messages to attract customers.
- Online ads are delivered by and ad servers.
- Contextual ads that appear on search engine results pages,banner ads, in
- pay per click text ads, rich media ads, Social network advertising, online
- classified advertising, advertising networks and e-mail marketing, including
- e-mail spam or newer form of it is Native Ads( they go in a website's news
- feed and are supposed to improve user experience by being less intrusive)
- are all examples of online advertisements Ads which customers are faced
- in daily matters.
+Online advertis
+\change_deleted 177682 1473843054
+e
+\change_inserted 177682 1473843054
+ing is a for
+\change_unchanged
+m
+\change_deleted 177682 1473843054
+en
+\change_inserted 177682 1473843054
+ of promo
+\change_unchanged
+t
+\change_inserted 177682 1473843054
+ion
+\change_unchanged
+ t
+\change_inserted 177682 1473843054
+h
+\change_unchanged
+a
+\change_deleted 177682 1473843054
+ke
+\change_inserted 177682 1473843054
+t
+\change_unchanged
  
+\change_deleted 177682 1473843054
+advanc
+\change_inserted 177682 1473843054
+us
+\change_unchanged
+e
+\change_inserted 177682 1473843054
+s
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+of
+\change_inserted 177682 1473843054
+the
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+i
+\change_inserted 177682 1473843054
+I
+\change_unchanged
+nternet and World Wide Web 
+\change_deleted 177682 1473843054
+in
+\change_inserted 177682 1473843054
+for
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+o
+\change_inserted 177682 1473843054
+the exp
+\change_unchanged
+r
+\change_deleted 177682 1473843054
+d
+\change_inserted 177682 1473843054
+ess
+\change_unchanged
+e
+\change_inserted 177682 1473843054
+d pu
+\change_unchanged
+r
+\change_inserted 177682 1473843054
+pose
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+t
+\change_unchanged
+o
+\change_inserted 177682 1473843054
+f
+\change_unchanged
+ delivering marketing messages to attract customers.
+
+\change_inserted 177682 1473843054
+ 
+\change_unchanged
+Online ads are de
+\change_inserted 177682 1473843054
+l
+\change_unchanged
+i
+\change_deleted 177682 1473843054
+l
+\change_unchanged
+vered by an
+\change_deleted 177682 1473843054
+d
+\change_unchanged
+ ad server
+\change_deleted 177682 1473843054
+s
+\change_unchanged
+.
+ 
+\change_deleted 177682 1473843054
+C
+\change_inserted 177682 1473843054
+Examples of online advertising include c
+\change_unchanged
+ontextual ads that appear on search engine results pages,
+\change_inserted 177682 1473843054
+ 
+\change_unchanged
+banner ads, in pay per click text ads, rich media ads, Social network advertisin
+g, online classified advertising, advertising networks and e-mail marketing,
+ including e-mail spam
+\change_inserted 177682 1473843054
+.
+
+\change_unchanged
+ 
+\change_deleted 177682 1473843054
+or
+\change_inserted 177682 1473843054
+A
+\change_unchanged
+ newer form of 
+\change_inserted 177682 1473843054
+onl
+\change_unchanged
+i
+\change_inserted 177682 1473843054
+ne adver
+\change_unchanged
+t
+\change_inserted 177682 1473843054
+ising
+\change_unchanged
+ is Native Ads
+\change_deleted 177682 1473843054
+(
+\change_inserted 177682 1473843054
+;
+\change_unchanged
+ they go in a website's news feed and are supposed to improve user experience
+ by being less intrusive
+\change_deleted 177682 1473843054
+)
+\change_inserted 177682 1473843054
+.
+
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+a
+\change_inserted 177682 1473843055
+Howeve
+\change_unchanged
+r
+\change_deleted 177682 1473843055
+e all
+\change_inserted 177682 1473843055
+,
+\change_unchanged
+ 
+\change_inserted 177682 1473843055
+som
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+xam
+\change_inserted 177682 1473843055
+ 
+\change_unchanged
+p
+\change_deleted 177682 1473843055
+l
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+s 
+\change_unchanged
+o
+\change_deleted 177682 1473843055
+f on
+\change_inserted 177682 1473843055
+p
+\change_unchanged
+l
+\change_deleted 177682 1473843055
+in
+\change_unchanged
+e a
+\change_deleted 177682 1473843055
+dve
+\change_unchanged
+r
+\change_deleted 177682 1473843055
+tisem
+\change_inserted 177682 1473843055
+gu
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+nts
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+Ads w
+\change_inserted 177682 1473843055
+t
+\change_unchanged
+hi
+\change_deleted 177682 1473843055
+ch cu
+\change_unchanged
+s
+\change_deleted 177682 1473843055
+tomers
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+a
+\change_inserted 177682 1473843055
+p
+\change_unchanged
+r
+\change_deleted 177682 1473843055
+e f
+\change_unchanged
+ac
+\change_inserted 177682 1473843055
+tic
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+d
+\change_unchanged
+ i
+\change_deleted 177682 1473843055
+n
+\change_inserted 177682 1473843055
+s
+\change_unchanged
+ d
+\change_deleted 177682 1473843055
+a
+\change_inserted 177682 1473843055
+ecept
+\change_unchanged
+i
+\change_deleted 177682 1473843055
+ly matt
+\change_inserted 177682 1473843055
+v
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+rs
+\change_unchanged
+.
+
+\change_deleted 177682 1473843055
+ 
+\change_inserted 177682 1473843055
+[45]
+\change_unchanged
+
 \end_layout
 
 \begin_layout Paragraph
@@ -2178,7 +2930,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/graphs/Naa_newspaper_ad_revenue.svg
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/graphs/Naa_newspaper_ad_revenue.svg
 
 \end_inset
 
@@ -2230,6 +2982,8 @@ With the Internet came many new advertising opportunities.
  by 18% and 9% respectively.
  Older media advertising saw declines: -10.1% (TV), -11.7% (radio), -14.8%
  (magazines) and -18.7% (newspapers).
+\change_deleted 177682 1473843055
+
 \begin_inset Note Note
 status open
 
@@ -2241,6 +2995,8 @@ this part you should refer it to pervious part that you used it for frist
 \end_inset
 
 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Paragraph
@@ -2248,13 +3004,253 @@ Niche marketing
 \end_layout
 
 \begin_layout Standard
-Among others, Comcast Spotlight is one such advertiser employing this method
- in their video on demand menus.
- These advertisements are targeted to a specific group and can be viewed
- by anyone wishing to find out more about a particular business or practice,
- from their home.
- This causes the viewer to become proactive and actually choose what advertiseme
-nts they want to view.[58]
+A
+\change_deleted 177682 1473843055
+mo
+\change_unchanged
+n
+\change_deleted 177682 1473843055
+g 
+\change_unchanged
+other
+\change_deleted 177682 1473843055
+s,
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+Comca
+\change_unchanged
+s
+\change_deleted 177682 1473843055
+t Spotl
+\change_unchanged
+ig
+\change_deleted 177682 1473843055
+ht is o
+\change_unchanged
+n
+\change_deleted 177682 1473843055
+e su
+\change_inserted 177682 1473843055
+ifi
+\change_unchanged
+c
+\change_deleted 177682 1473843055
+h 
+\change_unchanged
+a
+\change_deleted 177682 1473843055
+dver
+\change_inserted 177682 1473843055
+n
+\change_unchanged
+t
+\change_deleted 177682 1473843055
+ise
+\change_inserted 177682 1473843055
+ t
+\change_unchanged
+r
+\change_deleted 177682 1473843055
+ 
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+mployi
+\change_unchanged
+n
+\change_deleted 177682 1473843055
+g
+\change_inserted 177682 1473843055
+d
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+this m
+\change_inserted 177682 1473843055
+r
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+tho
+\change_inserted 177682 1473843055
+gar
+\change_unchanged
+d
+\change_deleted 177682 1473843055
+ 
+\change_unchanged
+in
+\change_inserted 177682 1473843055
+g
+\change_unchanged
+ 
+\change_inserted 177682 1473843055
+fu
+\change_unchanged
+t
+\change_deleted 177682 1473843055
+hei
+\change_inserted 177682 1473843055
+u
+\change_unchanged
+r
+\change_deleted 177682 1473843055
+ vid
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+o
+\change_unchanged
+ o
+\change_deleted 177682 1473843055
+n
+\change_inserted 177682 1473843055
+f
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+dem
+\change_unchanged
+a
+\change_deleted 177682 1473843055
+n
+\change_unchanged
+d
+\change_deleted 177682 1473843055
+ menus.
+ These ad
+\change_unchanged
+vertis
+\change_deleted 177682 1473843055
+eme
+\change_inserted 177682 1473843055
+i
+\change_unchanged
+n
+\change_deleted 177682 1473843055
+ts
+\change_inserted 177682 1473843055
+g
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+are targeted
+\change_inserted 177682 1473843055
+is
+\change_unchanged
+ t
+\change_deleted 177682 1473843055
+o a sp
+\change_inserted 177682 1473843055
+h
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+cific
+\change_unchanged
+ gro
+\change_deleted 177682 1473843055
+up and can be vie
+\change_unchanged
+w
+\change_deleted 177682 1473843055
+ed by anyone wish
+\change_unchanged
+ing 
+\change_deleted 177682 1473843055
+to f
+\change_unchanged
+i
+\change_deleted 177682 1473843055
+nd out 
+\change_unchanged
+m
+\change_inserted 177682 1473843055
+p
+\change_unchanged
+or
+\change_deleted 177682 1473843055
+e abou
+\change_unchanged
+t
+\change_deleted 177682 1473843055
+ 
+\change_unchanged
+a
+\change_deleted 177682 1473843055
+ parti
+\change_inserted 177682 1473843055
+n
+\change_unchanged
+c
+\change_deleted 177682 1473843055
+ular busin
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+ss
+\change_unchanged
+ o
+\change_deleted 177682 1473843055
+r practice, 
+\change_unchanged
+f
+\change_deleted 177682 1473843055
+rom
+\change_unchanged
+ the
+\change_deleted 177682 1473843055
+ir
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+home.
+ Th
+\change_inserted 177682 1473843055
+n
+\change_unchanged
+i
+\change_deleted 177682 1473843055
+s 
+\change_unchanged
+c
+\change_deleted 177682 1473843055
+auses t
+\change_unchanged
+h
+\change_deleted 177682 1473843055
+e view
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+r
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+to beco
+\change_unchanged
+m
+\change_deleted 177682 1473843055
+e pro
+\change_unchanged
+a
+\change_deleted 177682 1473843055
+ctive and actually choose what adve
+\change_unchanged
+r
+\change_deleted 177682 1473843055
+tisements th
+\change_inserted 177682 1473843055
+k
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+y wan
+\change_unchanged
+t
+\change_deleted 177682 1473843055
+ to view.[58]
 \begin_inset Note Note
 status open
 
@@ -2268,22 +3264,282 @@ i think this part is irrelevant to niche marketing
 \end_layout
 
 \begin_layout Standard
-In creasing of importance the Niche market(target ads), has high trend regarding
- future of advertisement.Also with theory of Long Tail, advertisers will
- have an increasing ability to get specific consumers.In the past, the most
- efficient way to deliver a message was to blanket the largest mass market
- audience possible.
- But thanks to usage of tracking, customer profiling and the growing popularity
- of niche content ( given by wide variety of statistic collectors from blogs
- to social networking websites) make advertisers access to smaller audiences
- but much more well defined.
- This leads to ads more related to viewers and more effective for marketing
- companies.
+
+\change_deleted 177682 1473843055
+In
+\change_unchanged
  
+\change_deleted 177682 1473843055
+crea
+\change_inserted 177682 1473843055
+u
+\change_unchanged
+sing
+\change_deleted 177682 1473843055
+ of
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+importa
+\change_unchanged
+n
+\change_deleted 177682 1473843055
+ce the N
+\change_unchanged
+iche 
+\change_deleted 177682 1473843055
+ma
+\change_inserted 177682 1473843055
+o
+\change_unchanged
+r
+\change_deleted 177682 1473843055
+ket(
+\change_inserted 177682 1473843055
+ 
+\change_unchanged
+target
+\change_inserted 177682 1473843055
+ed
+\change_unchanged
+ ads
+\change_deleted 177682 1473843055
+),
+\change_inserted 177682 1473843055
+.
+
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+ha
+\change_inserted 177682 1473843055
+Al
+\change_unchanged
+s
+\change_inserted 177682 1473843055
+o
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+hi
+\change_inserted 177682 1473843055
+brou
+\change_unchanged
+gh
+\change_deleted 177682 1473843055
+ 
+\change_unchanged
+t
+\change_deleted 177682 1473843055
+rend
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+reg
+\change_unchanged
+a
+\change_deleted 177682 1473843055
+rding f
+\change_inserted 177682 1473843055
+bo
+\change_unchanged
+ut
+\change_deleted 177682 1473843055
+ure
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+of
+\change_inserted 177682 1473843055
+by
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+adv
+\change_inserted 177682 1473843055
+th
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+r
+\change_inserted 177682 1473843055
+ In
+\change_unchanged
+t
+\change_deleted 177682 1473843055
+is
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+m
+\change_inserted 177682 1473843055
+rn
+\change_unchanged
+e
+\change_inserted 177682 1473843055
+t a
+\change_unchanged
+n
+\change_deleted 177682 1473843055
+t.Also
+\change_inserted 177682 1473843055
+d
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+wi
+\change_unchanged
+th
+\change_inserted 177682 1473843055
+e
+\change_unchanged
+ theory of 
+\change_inserted 177682 1473843055
+The 
+\change_unchanged
+Long Tail, advertisers will have an increasing ability to 
+\change_deleted 177682 1473843055
+g
+\change_inserted 177682 1473843055
+r
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+t
+\change_inserted 177682 1473843055
+ach
+\change_unchanged
+ specific 
+\change_deleted 177682 1473843055
+cons
+\change_inserted 177682 1473843055
+a
+\change_unchanged
+u
+\change_deleted 177682 1473843055
+m
+\change_inserted 177682 1473843055
+dienc
+\change_unchanged
+e
+\change_deleted 177682 1473843055
+r
+\change_unchanged
+s.
+
+\change_inserted 177682 1473843055
+ 
+\change_unchanged
+In the past, the most efficient way to deliver a message was to blanket
+ the largest mass market audience possible.
+ 
+\change_deleted 177682 1473843055
+But thanks t
+\change_inserted 177682 1473843055
+H
+\change_unchanged
+o
+\change_inserted 177682 1473843055
+wever,
+\change_unchanged
+ usage tracking
+\change_deleted 177682 1473843055
+ 
+\change_unchanged
+,
+\change_inserted 177682 1473843055
+ 
+\change_unchanged
+customer profiles and the growing popularity of niche content 
+\change_deleted 177682 1473843055
+(
+\change_inserted 177682 1473843055
+brought
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+Is
+\change_inserted 177682 1473843055
+about
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+given 
+\change_unchanged
+by everything from blogs to social networking sites
+\change_deleted 177682 1473843055
+)
+\change_inserted 177682 1473843055
+,
+\change_unchanged
+ 
+\change_deleted 177682 1473843055
+mak
+\change_inserted 177682 1473843055
+provid
+\change_unchanged
+e advertiser
+\change_deleted 177682 1473843055
+s have acces
+\change_unchanged
+s 
+\change_inserted 177682 1473843055
+wi
+\change_unchanged
+t
+\change_deleted 177682 1473843055
+o
+\change_inserted 177682 1473843055
+h
+\change_unchanged
+ audiences that are smaller but much 
+\change_deleted 177682 1473843055
+more 
+\change_unchanged
+better defined
+\change_deleted 177682 1473843055
+ 
+\change_unchanged
+, leading to ads that are more rel
+\change_inserted 177682 1473843055
+ev
+\change_unchanged
+a
+\change_inserted 177682 1473843055
+n
+\change_unchanged
+t
+\change_deleted 177682 1473843055
+ed
+\change_unchanged
+ to viewers and more effective for companies mark
+\change_inserted 177682 1473843055
+eting products.
+ Among others, Comcast Spotlight is one such advertiser employing this method
+ in their video on demand menus.
+ These advertisements are target
+\change_unchanged
+e
+\change_inserted 177682 1473843055
+d 
+\change_unchanged
+t
+\change_inserted 177682 1473843055
+o a specific group and can be viewed by anyone wish
+\change_unchanged
+ing
+\change_inserted 177682 1473843055
+ to find out more about a particular business or practice, from their home.
+ This causes the viewer to become proactive and actually choose what advertiseme
+nts they want to view
+\change_unchanged
+.
+\change_inserted 177682 1473843056
+[58]
 \end_layout
 
 \begin_layout Standard
-Although, Google AdSense is an example of niche marketing.
+Google AdSense is an example of niche marketing.
  Google calculates the primary purpose of a website and adjusts ads accordingly;
  it uses key words on the page (or even in emails) to find the general ideas
  of topics disused and places ads that will most likely be clicked on by
@@ -2308,6 +3564,8 @@ https://en.wikipedia.org/wiki/Video_commerce
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 177682 1473843056
 \begin_inset Note Note
 status open
 
@@ -2317,11 +3575,24 @@ i didi not get this part until SEO
 
 \end_inset
 
+
+\change_inserted 177682 1473843056
+Video Commerce, Video e-Commerce or eCommerce Video is the practice of using
+ video content to promote, sell and support commercial products or services
+ on the Internet.
+ The video can be downloaded and played or streamed to the viewer.
+ Either way, the video often contains clickable links which can open up
+ a web page or a transaction process.
+\end_layout
+
+\begin_layout Standard
 The end goal is to convert a shopper into a customer1, but conversion is
  not the only metric as View Through Rate (VTR) is a common measurement2.
  Some merchants realize additional benefit such as Search Engine Optimization
  (SEO)3.
  
+\change_deleted 177682 1473843056
+
 \begin_inset Note Note
 status open
 
@@ -2331,15 +3602,25 @@ this part is unnecessary you already expalin it
 
 \end_inset
 
+
+\change_unchanged
 A typical video commerce application would involve a video which contains
  a number of clickable objects so that the viewer can click on any of those
- objects for further information or to purchase them.
+ objects for further information or to purchase them
+\change_inserted 177682 1473843056
+.
+ However, the clickable object may not always be within the video itself,
+ but part of the Flash or HTML5 player used to play back the video
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Standard
 The term vCommerce (video commerce) was first used by ShopNBC (a.k.a.
  ValueVision - VVTV) in the summer of 2007 as part of the launch of ShopNBC.TV.
  
+\change_deleted 177682 1473843057
+
 \begin_inset Note Note
 status open
 
@@ -2349,13 +3630,17 @@ i think this part is no needed is too much deitails
 
 \end_inset
 
+
+\change_unchanged
 The strategy combined the use of leveraging web video content for higher
  conversion on eCommerce websites.
  The term was quickly adopted in the industry including the start of the
  Video Commerce Consortium (http://video-commerce.org).
  ShopNBC was also the first home shopping network to utilize live (and archived)
  webcasts (web-only live video streams which sold products just like TV
- shopping).
+ shopping)
+\change_deleted 177682 1473843057
+.
 \end_layout
 
 \begin_layout Standard
@@ -2363,14 +3648,86 @@ The strategy combined the use of leveraging web video content for higher
 \end_layout
 
 \begin_layout Standard
-Video commerce is using the video content to benefit,sell and support commercial
- goods or services on internet.
+Video commerc
+\change_deleted 177682 1473843057
+e is using the vid
+\change_unchanged
+e
+\change_deleted 177682 1473843057
+o
+\change_unchanged
+ c
+\change_deleted 177682 1473843057
+ontent to benefit,sell 
+\change_unchanged
+an
+\change_deleted 177682 1473843057
+d
+\change_unchanged
+ 
+\change_deleted 177682 1473843057
+suppor
+\change_unchanged
+t
+\change_deleted 177682 1473843057
+ commerci
+\change_unchanged
+a
+\change_deleted 177682 1473843057
+l goods or services on internet.
  No matter what, the video downloaded or streamed, it often contains clickable
  link which can open up a web or transaction procedure.
- Moreover, the clickable objects may not always be within the video itself,
- but part of the Flash or HTML5 player used to play back the video.
- The term vCommerce was first time used by ShopNBC (a.k.a.
- ValueVision - VVTV) in the summer of 2007 as part of the launch of ShopNBC.TV.
+ Moreover, the clic
+\change_unchanged
+k
+\change_deleted 177682 1473843057
+able objects may not always be within the video its
+\change_unchanged
+e
+\change_deleted 177682 1473843057
+lf, but
+\change_unchanged
+ p
+\change_deleted 177682 1473843057
+art of the F
+\change_unchanged
+la
+\change_deleted 177682 1473843057
+sh or HTML5 player used to play ba
+\change_unchanged
+c
+\change_deleted 177682 1473843057
+k th
+\change_unchanged
+e 
+\change_deleted 177682 1473843057
+vide
+\change_unchanged
+o
+\change_deleted 177682 1473843057
+.
+ The term 
+\change_unchanged
+v
+\change_deleted 177682 1473843057
+Comm
+\change_unchanged
+er
+\change_deleted 177682 1473843057
+ce was first time used by ShopNBC (a.k.a.
+
+\change_unchanged
+ 
+\change_deleted 177682 1473843057
+V
+\change_unchanged
+a
+\change_deleted 177682 1473843057
+lueVisio
+\change_unchanged
+n
+\change_deleted 177682 1473843057
+ - VVTV) in the summer of 2007 as part of the launch of ShopNBC.TV.
 \begin_inset Note Note
 status open
 
@@ -2380,9 +3737,19 @@ you need reference for this info
 
 \end_inset
 
- As its shown, video commerce has great potential to take place over any
- Internet-enabled communications device (a Personal Computer, a laptop,
- a PDA, a mobile phone, or a smart phone).
+ As its shown, video commerce has great potential to take place over an
+\change_unchanged
+y Internet-enabled communications device 
+\change_deleted 177682 1473843057
+(
+\change_inserted 177682 1473843057
+– 
+\change_unchanged
+a Personal Computer, a laptop, a PDA, a mobile phone, or a smart phone
+\change_deleted 177682 1473843057
+)
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2475,34 +3842,116 @@ Ad-blockers
 \end_layout
 
 \begin_layout Standard
-It became hard to browse the internet without being bombed with advertising
- pop ups, frames , etc.
- In order to prevent ourself from these annoyance , a set of add-ons and
- plugins emerged on each browsers to stop them : the ad-blockers ( or content
- filtering ).
+It became 
+\change_deleted 177682 1473843057
+har
+\change_unchanged
+d
+\change_inserted 177682 1473843057
+ifficult
+\change_unchanged
+ to browse the internet without being bombed with advertising pop ups, frames
+ , etc.
+ In order to prevent ourself from these 
+\change_deleted 177682 1473843057
+an
+\change_inserted 177682 1473843057
+e
+\change_unchanged
+noy
+\change_deleted 177682 1473843057
+a
+\change_inserted 177682 1473843057
+eme
+\change_unchanged
+n
+\change_deleted 177682 1473843057
+ce 
+\change_inserted 177682 1473843057
+ts
+\change_unchanged
+, a set of add
+\change_deleted 177682 1473843057
+-
+\change_unchanged
+ons and plugins emerged on each browsers to stop them : the ad
+\change_deleted 177682 1473843057
+-
+\change_unchanged
+blockers ( or content filtering ).
 \end_layout
 
 \begin_layout Standard
 wiki: To users, the benefits of ad blocking include quicker loading and
  cleaner looking web pages free from advertisements, lower resource waste
  (bandwidth, CPU, memory, etc.), and privacy benefits gained through the
- deprivation of the tracking and profiling systems of ad delivery platforms.
- Blocking ads can also save significant amounts of energy.[1][2]
+ 
+\change_deleted 177682 1473843057
+d
+\change_unchanged
+e
+\change_deleted 177682 1473843057
+pr
+\change_inserted 177682 1473843057
+xclus
+\change_unchanged
+i
+\change_deleted 177682 1473843057
+vati
+\change_unchanged
+on of the tracking and profiling systems of ad delivery platforms.
+ Blocking ads can also save s
+\change_deleted 177682 1473843057
+ig
+\change_inserted 177682 1473843057
+ubsta
+\change_unchanged
+n
+\change_inserted 177682 1473843057
+t
+\change_unchanged
+i
+\change_deleted 177682 1473843057
+fic
+\change_unchanged
+a
+\change_deleted 177682 1473843057
+nt
+\change_inserted 177682 1473843057
+l
+\change_unchanged
+ amounts of energy.[1][2]
 \end_layout
 
 \begin_layout Standard
 It is possible for ad-blocking to benefit the natural environment via an
  indirect route.
  This arises because the advertising-and-marketing industry places a strong
- attention on building emotional connections with inanimate objects for
- sale,[3] [4] and on creating the urge to buy immediately.[5] [6] With the
- average person seeing more than 5000 advertisements every day, and with
- many of these being from online sources,[7] and with each ad promising
- viewers that their lives will be improved if they buy what is being promoted,
- [8] [9] [10] it is reasonable to expect that some people will end up buying
- items which they may not actually need.[11] If these items then end up being
- disposed of without actually being used, then the environmental impacts
- of waste disposal will inevitably arise.
+ 
+\change_inserted 177682 1473843057
+emph
+\change_unchanged
+a
+\change_deleted 177682 1473843057
+ttent
+\change_inserted 177682 1473843057
+s
+\change_unchanged
+i
+\change_deleted 177682 1473843057
+on
+\change_inserted 177682 1473843057
+s
+\change_unchanged
+ on building emotional connections with inanimate objects for sale,[3] [4]
+ and on creating the urge to buy immediately.[5] [6] With the average person
+ seeing more than 5000 advertisements every day, and with many of these
+ being from online sources,[7] and with each ad promising viewers that their
+ lives will be improved if they buy what is being promoted, [8] [9] [10]
+ it is reasonable to expect that some people will end up buying items which
+ they may not actually need.[11] If these items then end up being disposed
+ of without actually being used, then the environmental impacts of waste
+ disposal will inevitably arise.
  Because advertisements are very carefully crafted to target weaknesses
  in human psychology,[12] [3] it therefore follows that a reduction in advertise
 ments viewed would result in less waste to dispose of.
@@ -2511,19 +3960,101 @@ ments viewed would result in less waste to dispose of.
 \begin_layout Standard
 Unwanted advertising can also harm the advertisers themselves if the users
  become irritated by the ads.
- In this case users might make a conscious effort to avoid services of firms
- with annoying ads.[13]
+ I
+\change_deleted 177682 1473843057
+n th
+\change_inserted 177682 1473843057
+rr
+\change_unchanged
+i
+\change_deleted 177682 1473843057
+s c
+\change_inserted 177682 1473843057
+t
+\change_unchanged
+a
+\change_deleted 177682 1473843057
+s
+\change_inserted 177682 1473843057
+t
+\change_unchanged
+e
+\change_inserted 177682 1473843057
+d
+\change_unchanged
+ users might make a conscious effort to avoid 
+\change_inserted 177682 1473843057
+the goods and 
+\change_unchanged
+services of firms with annoying ads.[13]
 \end_layout
 
 \begin_layout Standard
 For users not interested in making purchases, the blocking of ads can also
  save time.
- A user who is strongly focused on reading solely the content that he/she
- is seeking likely has no desire to be diverted by advertisements that seek
- to sell unneeded or unwanted goods and services.[14] 
+ A
+\change_inserted 177682 1473843057
+ny
+\change_unchanged
+ 
+\change_inserted 177682 1473843057
+ad that appears on a website exerts a toll on the 
+\change_unchanged
+user
+\change_inserted 177682 1473843057
+'s
+\change_unchanged
+ 
+\change_inserted 177682 1473843057
+attention budget, since each ad enters the user's field of vie
+\change_unchanged
+w
+\change_inserted 177682 1473843057
+ and must eit
+\change_unchanged
+h
+\change_inserted 177682 1473843057
+er be consci
+\change_unchanged
+o
+\change_inserted 177682 1473843057
+usly
+\change_unchanged
+ i
+\change_inserted 177682 1473843057
+gnored or clo
+\change_unchanged
+s
+\change_inserted 177682 1473843057
+ed, or dealt with in
+\change_unchanged
+ s
+\change_inserted 177682 1473843057
+ome o
+\change_unchanged
+t
+\change_inserted 177682 1473843057
+he
+\change_unchanged
+r
+\change_inserted 177682 1473843057
+ way.
+ A user wh
+\change_unchanged
+o
+\change_inserted 177682 1473843057
+ is stro
+\change_unchanged
+ngly focused on reading solely the content that he/she is seeking likely
+ has no desire to be diverted by advertisements that seek to sell unneeded
+ or unwanted goods and services.[14] 
+\change_deleted 177682 1473843057
+
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 177682 1473843057
 \begin_inset Note Note
 status open
 
@@ -2533,7 +4064,101 @@ from here delete
 
 \end_inset
 
-Ad-blocking can also have some benefit like save money for the user.
+Ad-blocki
+\change_inserted 177682 1473843057
+I
+\change_unchanged
+n
+\change_deleted 177682 1473843057
+g
+\change_unchanged
+ c
+\change_inserted 177682 1473843057
+ontr
+\change_unchanged
+a
+\change_deleted 177682 1473843057
+n
+\change_inserted 177682 1473843057
+st, users who are
+\change_unchanged
+ a
+\change_inserted 177682 1473843057
+ctive
+\change_unchanged
+l
+\change_inserted 177682 1473843057
+y 
+\change_unchanged
+s
+\change_inserted 177682 1473843057
+eeking items t
+\change_unchanged
+o 
+\change_inserted 177682 1473843057
+purc
+\change_unchanged
+ha
+\change_deleted 177682 1473843057
+v
+\change_inserted 177682 1473843057
+s
+\change_unchanged
+e 
+\change_deleted 177682 1473843057
+so
+\change_unchanged
+m
+\change_inserted 177682 1473843057
+ight appr
+\change_unchanged
+e
+\change_inserted 177682 1473843057
+ciate
+\change_unchanged
+ 
+\change_deleted 177682 1473843057
+b
+\change_inserted 177682 1473843057
+adv
+\change_unchanged
+e
+\change_inserted 177682 1473843057
+rtisi
+\change_unchanged
+n
+\change_inserted 177682 1473843057
+g, in particular targ
+\change_unchanged
+e
+\change_deleted 177682 1473843057
+fi
+\change_unchanged
+t
+\change_inserted 177682 1473843057
+ed
+\change_unchanged
+ 
+\change_inserted 177682 1473843057
+ads.[15]
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 177682 1473843057
+Ad-b
+\change_unchanged
+l
+\change_inserted 177682 1473843057
+ock
+\change_unchanged
+i
+\change_deleted 177682 1473843057
+ke
+\change_inserted 177682 1473843057
+ng can also
+\change_unchanged
+ save money for the user.
  If a user's personal time is worth one dollar per minute, and if unsolicited
  advertising adds an extra minute to the time that the user requires for
  reading the webpage (i.e.
@@ -2544,6 +4169,8 @@ Ad-blocking can also have some benefit like save money for the user.
  few fractional pennies of display-ad revenue for the website owner.
  The problem of lost time can rapidly spiral out of control if malware accompani
 es the ads.[17][18] This is discussed in more detail below.
+\change_deleted 177682 1473843057
+
 \begin_inset Note Note
 status open
 
@@ -2554,9 +4181,13 @@ delet this part it dosent help your philosophy
 \end_inset
 
 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 177682 1473843057
 \begin_inset Note Note
 status open
 
@@ -2566,6 +4197,8 @@ from here
 
 \end_inset
 
+
+\change_unchanged
 Another important aspect is improving security; online advertising subjects
  users to a higher risk of infecting their devices than surfing pornography
  sites.[19] In a high-profile case, malware was distributed through advertisement
@@ -2574,6 +4207,8 @@ s provided to YouTube by a malicious customer of Google's Doubleclick.[20][21]
  an advertisement on a website.[22] When Forbes required users to disable
  ad blocking before viewing their website, those users were immediately
  served with pop-under malware.[23]
+\change_deleted 177682 1473843057
+
 \begin_inset Note Note
 status open
 
@@ -2584,12 +4219,17 @@ should not change
 \end_inset
 
 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
-Users who pay for total transferred bandwidth including most mobile users
- worldwide, have a direct financial benefit from filtering an ad before
- it is loaded.
+Users who pay for total transferred bandwidth
+\change_inserted 177682 1473843057
+ ("capped" or pay-for-usage connections)
+\change_unchanged
+ including most mobile users worldwide, have a direct financial benefit
+ from filtering an ad before it is loaded.
  Streaming audio and video, even if they are not presented to the user interface
 , can rapidly consume gigabytes of transfer especially on a faster 4G connection.
  Users without a data plan often pay by the megabyte, the cost of tolerating
@@ -2607,6 +4247,8 @@ It is a known problem with most web browsers, including Firefox, that restoring
 
 \begin_layout Subparagraph
 Popularity 
+\change_deleted 177682 1473843057
+
 \begin_inset Note Note
 status open
 
@@ -2618,10 +4260,16 @@ data.
 \end_inset
 
 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
-The number of monthly active ad-blocking users, as estimated by PageFair.
+The number of monthly active ad
+\change_deleted 177682 1473843057
+-
+\change_unchanged
+blocking users, as estimated by PageFair.
 \end_layout
 
 \begin_layout Standard
@@ -2638,8 +4286,11 @@ As of Q2 2015, 45 million Americans were using ad blockers.[25] In a survey
 \end_layout
 
 \begin_layout Standard
-In March 2016, the Internet Advertising Bureau reported that UK ad-blocking
- was already at 22% among over-18s.[26][27]
+In March 2016, the Internet Advertising Bureau reported that UK ad
+\change_deleted 177682 1473843057
+-
+\change_unchanged
+blocking was already at 22% among over-18s.[26][27]
 \end_layout
 
 \begin_layout Standard
@@ -2651,10 +4302,26 @@ profiling
 \end_layout
 
 \begin_layout Standard
-The profiling on internet became very popular to do advertisement .
+The profiling on internet became very popular to do adver
+\change_inserted 177682 1473843057
+s
+\change_unchanged
+tisement .
  The tracking of activity on internet has began quite profitable for the
  announcers.
- As a result, some public organization and groups are criticizing this.
+ As a result, some public organi
+\change_deleted 177682 1473843057
+z
+\change_inserted 177682 1473843057
+s
+\change_unchanged
+ation and groups are criticizing th
+\change_deleted 177682 1473843057
+is
+\change_inserted 177682 1473843057
+e phenomenon
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Subparagraph
@@ -2662,8 +4329,29 @@ Duckduckgo
 \end_layout
 
 \begin_layout Standard
-To answer the growing need of privacy on Internet, some tools are getting
- become more popular.
+To 
+\change_deleted 177682 1473843057
+answer
+\change_inserted 177682 1473843057
+fulfill
+\change_unchanged
+ the growing need of privacy on Internet, some tools are getting 
+\change_deleted 177682 1473843057
+bec
+\change_inserted 177682 1473843057
+m
+\change_unchanged
+o
+\change_deleted 177682 1473843057
+m
+\change_inserted 177682 1473843057
+r
+\change_unchanged
+e 
+\change_inserted 177682 1473843057
+and 
+\change_unchanged
+more popular.
  DuckDuckGo is an Internet search engine that emphasizes protecting searchers'
  privacy and avoiding the filter bubble of personalized search results.[1]
  DuckDuckGo distinguishes itself from other search engines by not profiling
@@ -2693,7 +4381,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/graphs/duckduckgo.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/graphs/duckduckgo.png
 	lyxscale 40
 	width 40text%
 
@@ -2735,7 +4423,15 @@ patronage
 \end_layout
 
 \begin_layout Standard
-Recently, the patronage which is an old trend came back.
+Recently,
+\change_deleted 177682 1473843057
+ the patronage which is
+\change_unchanged
+ an old trend came back
+\change_inserted 177682 1473843057
+ on the front of scene :the patronage
+\change_unchanged
+.
  Indeed, it is a way to pay people that produce content on the video hosting
  websites.
  
@@ -2743,9 +4439,17 @@ Recently, the patronage which is an old trend came back.
 
 \begin_layout Standard
 In 2013, a few websites emerged with the idea to retribute content makers
- like musicians or comic short movies with tips and live from that.
+ like musici
+\change_deleted 177682 1473843057
+a
+\change_inserted 177682 1473843057
+e
+\change_unchanged
+ns or comic short movies with tips and live from that.
  tipeee .com in France and Patreon in US.
  
+\change_deleted 177682 1473843057
+
 \begin_inset Note Note
 status open
 
@@ -2755,6 +4459,8 @@ put refrence
 
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 
@@ -2771,6 +4477,8 @@ Their growth is impressive, Tipeee already gathers more than 524 000 € of
 \begin_layout Standard
 Some content producers like Usul2000, even decided to totally disable advertisem
 ent on their channel and earn money only from direct donations.
+\change_deleted 177682 1473843057
+
 \begin_inset Note Note
 status open
 
@@ -2781,6 +4489,8 @@ same here
 \end_inset
 
 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subparagraph
@@ -2788,11 +4498,83 @@ Playlist launching
 \end_layout
 
 \begin_layout Standard
-In order to avoid the advertisement during watching video, some users use
- ad-blockers ( so that the creator doesn't receive advertisement subsidiary
- payment).
- However, they play a playlist ( with ads supporting YouTube and the creator)
- while not watching it.
+In order to 
+\change_deleted 177682 1473843057
+av
+\change_inserted 177682 1473843057
+c
+\change_unchanged
+o
+\change_deleted 177682 1473843057
+id 
+\change_inserted 177682 1473843057
+n
+\change_unchanged
+t
+\change_deleted 177682 1473843057
+h
+\change_unchanged
+e
+\change_inserted 177682 1473843057
+nt
+\change_unchanged
+ 
+\change_inserted 177682 1473843057
+m
+\change_unchanged
+a
+\change_deleted 177682 1473843057
+dv
+\change_inserted 177682 1473843057
+k
+\change_unchanged
+er
+\change_deleted 177682 1473843057
+ti
+\change_unchanged
+s
+\change_deleted 177682 1473843057
+ement
+\change_unchanged
+ 
+\change_deleted 177682 1473843057
+dur
+\change_inserted 177682 1473843057
+w
+\change_unchanged
+i
+\change_deleted 177682 1473843057
+ng
+\change_inserted 177682 1473843057
+thout
+\change_unchanged
+ watching 
+\change_inserted 177682 1473843057
+the ad
+\change_unchanged
+v
+\change_inserted 177682 1473843057
+ert
+\change_unchanged
+i
+\change_deleted 177682 1473843057
+d
+\change_inserted 177682 1473843057
+s
+\change_unchanged
+e
+\change_deleted 177682 1473843057
+o 
+\change_inserted 177682 1473843057
+ment
+\change_unchanged
+, some users use ad-blocker
+\change_inserted 177682 1473843057
+s while watching video
+\change_unchanged
+s ( so that the creator doesn't receive advertisement subsidiary payment).
+ However they play a playlist ( with ads supporting YouTube and the creator
+ ) while not watching it.
  
 \end_layout
 
@@ -2911,21 +4693,70 @@ https://en.wikipedia.org/wiki/Peer-to-peer
 
 \begin_layout Standard
 Tim Berners-Lee's vision for the World Wide Web was close to a P2P network
- which it was assumed each user of the web would be an active editor and
- contributor, creating and linking content to form an interlinked "web"
- of links.
- The early Internet was more open than nowdays, where two machines connected
- to the Internet could send packets to each other without firewalls and
- other security measures.[4] This contrasts to the broadcasting-like structure
- of the web as it has developed over the years.[6] As a precursor to the
- Internet, ARPANET was a successful client-server network where "every participa
-ting node could request and serve content." However, ARPANET was not self-organiz
-ed, and it disable to "provide any means for context or content-based routing
- beyond simple address-based routing."[7]
+ 
+\change_deleted 177682 1473843057
+wh
+\change_unchanged
+i
+\change_deleted 177682 1473843057
+c
+\change_inserted 177682 1473843057
+n t
+\change_unchanged
+h
+\change_inserted 177682 1473843057
+at
+\change_unchanged
+ it
+\change_deleted 177682 1473843057
+ was
+\change_unchanged
+ assumed each user of the web would be an active editor and contributor,
+ creating and linking content to form an interlinked "web" of links.
+ The early Internet was more open than 
+\change_inserted 177682 1473843057
+prese
+\change_unchanged
+n
+\change_deleted 177682 1473843057
+ow
+\change_inserted 177682 1473843057
+t 
+\change_unchanged
+day
+\change_deleted 177682 1473843057
+s
+\change_unchanged
+, where two machines connected to the Internet could send packets to each
+ other without firewalls and other security measures.[4] This contrasts to
+ the broadcasting-like structure of the web as it has developed over the
+ years.[6] As a precursor to the Internet, ARPANET was a successful client-server
+ network where "every participating node could request and serve content."
+ However, ARPANET was not self-organized, and it 
+\change_inserted 177682 1473843057
+lacke
+\change_unchanged
+d
+\change_deleted 177682 1473843057
+is
+\change_inserted 177682 1473843057
+ the 
+\change_unchanged
+ab
+\change_inserted 177682 1473843057
+i
+\change_unchanged
+l
+\change_deleted 177682 1473843057
+e
+\change_inserted 177682 1473843057
+ity
+\change_unchanged
+ to "provide any means for context or content-based routing beyond simple
+ address-based routing."[7]
 \end_layout
 
 \begin_layout Paragraph
-Y
 \begin_inset Note Note
 status open
 
@@ -3038,13 +4869,40 @@ All the most visited websites are based on client-server model.
  between the providers of a resource or service, called servers, and service
  requesters, called clients.[1] Often clients and servers communicate over
  a computer network on separate hardware, but both client and server may
- locate in the same system.
+ 
+\change_deleted 177682 1473843057
+locat
+\change_inserted 177682 1473843057
+resid
+\change_unchanged
+e in the same system.
  A server host runs one or more server programs which share their resources
  with clients.
  A client does not share any of its resources, but requests a server's content
  or service function.
- Clients therefore estabilish communication sessions with servers which
- expect incoming requests.
+ Clients therefore 
+\change_deleted 177682 1473843057
+es
+\change_inserted 177682 1473843057
+ini
+\change_unchanged
+t
+\change_deleted 177682 1473843057
+abil
+\change_unchanged
+i
+\change_deleted 177682 1473843057
+sh
+\change_inserted 177682 1473843057
+ate
+\change_unchanged
+ communication sessions with servers which 
+\change_deleted 177682 1473843057
+expec
+\change_inserted 177682 1473843057
+awai
+\change_unchanged
+t incoming requests.
  Examples of computer applications that use the client–server model are
  Email, network printing, and the World Wide Web.
 \end_layout
@@ -3072,9 +4930,172 @@ Economical Context
 \end_layout
 
 \begin_layout Standard
-In order to elucidate a decentralized video application, pay attention on
- 3 points is needed.
- The up coming subbranches are contained details regarding each point.
+In order to 
+\change_inserted 177682 1473843057
+s
+\change_unchanged
+e
+\change_deleted 177682 1473843057
+l
+\change_inserted 177682 1473843057
+t 
+\change_unchanged
+u
+\change_inserted 177682 1473843057
+p the 
+\change_unchanged
+c
+\change_deleted 177682 1473843057
+ida
+\change_inserted 177682 1473843057
+on
+\change_unchanged
+te
+\change_inserted 177682 1473843057
+xt of
+\change_unchanged
+ a decentralized video application, 
+\change_deleted 177682 1473843057
+pay
+\change_inserted 177682 1473843057
+I would
+\change_unchanged
+ 
+\change_deleted 177682 1473843057
+att
+\change_inserted 177682 1473843057
+lik
+\change_unchanged
+e
+\change_deleted 177682 1473843057
+n
+\change_inserted 177682 1473843057
+ 
+\change_unchanged
+t
+\change_deleted 177682 1473843057
+i
+\change_unchanged
+o
+\change_deleted 177682 1473843057
+n
+\change_inserted 177682 1473843057
+ focus
+\change_unchanged
+ on 3 points 
+\change_deleted 177682 1473843057
+is
+\change_inserted 177682 1473843057
+: the
+\change_unchanged
+ ne
+\change_deleted 177682 1473843057
+eded.
+\change_inserted 177682 1473843057
+twork ,
+\change_unchanged
+ 
+\change_deleted 177682 1473843057
+T
+\change_inserted 177682 1473843057
+t
+\change_unchanged
+he 
+\change_deleted 177682 1473843057
+up co
+\change_unchanged
+m
+\change_deleted 177682 1473843057
+ing subb
+\change_inserted 177682 1473843057
+a
+\change_unchanged
+r
+\change_inserted 177682 1473843057
+ket, 
+\change_unchanged
+an
+\change_deleted 177682 1473843057
+c
+\change_inserted 177682 1473843057
+d t
+\change_unchanged
+he
+\change_deleted 177682 1473843057
+s
+\change_unchanged
+ 
+\change_deleted 177682 1473843057
+a
+\change_inserted 177682 1473843057
+diffe
+\change_unchanged
+re
+\change_inserted 177682 1473843057
+nt
+\change_unchanged
+ 
+\change_inserted 177682 1473843057
+a
+\change_unchanged
+c
+\change_inserted 177682 1473843057
+t
+\change_unchanged
+o
+\change_deleted 177682 1473843057
+n
+\change_inserted 177682 1473843057
+rs 
+\change_unchanged
+t
+\change_deleted 177682 1473843057
+ained
+\change_inserted 177682 1473843057
+o
+\change_unchanged
+ 
+\change_deleted 177682 1473843057
+de
+\change_unchanged
+ta
+\change_deleted 177682 1473843057
+ils
+\change_inserted 177682 1473843057
+ke
+\change_unchanged
+ 
+\change_deleted 177682 1473843057
+regard
+\change_unchanged
+in
+\change_deleted 177682 1473843057
+g
+\change_inserted 177682 1473843057
+to
+\change_unchanged
+ 
+\change_deleted 177682 1473843057
+e
+\change_unchanged
+ac
+\change_deleted 177682 1473843057
+h p
+\change_inserted 177682 1473843057
+c
+\change_unchanged
+o
+\change_deleted 177682 1473843057
+i
+\change_inserted 177682 1473843057
+u
+\change_unchanged
+nt.
+
+\change_inserted 177682 1473843057
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subsection
@@ -3083,19 +5104,38 @@ Actors
 
 \begin_layout Standard
 On the web, there is different ways to get video content: 
+\change_deleted 177682 1473843057
+
 \end_layout
 
 \begin_layout Itemize
-video hosting websites.
+video hosting websites
+\change_deleted 177682 1473843057
+.
 \end_layout
 
 \begin_layout Itemize
-peer-to-peer, streaming websites.
+
+\change_inserted 177682 1473843057
+, 
+\change_unchanged
+peer-to-peer, streaming websites
+\change_deleted 177682 1473843057
+.
 \end_layout
 
 \begin_layout Itemize
+
+\change_inserted 177682 1473843057
+, 
+\change_unchanged
 direct download.
  
+\change_inserted 177682 1473843057
+I am going to describe them here.
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -3112,7 +5152,11 @@ key "key-9"
 \end_inset
 
 .
- We spend more and more time on Internet and video websites.
+ We spend more and more time on Inter
+\change_inserted 177682 1473843057
+t
+\change_unchanged
+net and video websites.
  Traffic on video hosting services are rising from a few years and it is
  slowly replacing the TV.
  
@@ -3129,7 +5173,11 @@ There is a few reasons that makes these websites so popular.
  The hosting websites definitely answer this demand, providing a user-friendly
  interface and a common place to upload and watch videos.
  Further more, the video hosting websites are suiting the user expression
- will are they are adapted to low quality video like phone video, etc.
+ will are they are adap
+\change_deleted 177682 1473843057
+t
+\change_unchanged
+ed to low quality video like phone video, etc.
  It might change with the growing professionalism and quality video format
  of creators.
  
@@ -3336,7 +5384,11 @@ While P2P systems had previously been used in many application domains,[3]
  this architecture became famous with the file sharing system : Napster.
  The music service, originally released in 1999.
  The original company ran into legal difficulties over copyright infringement,
- ceased operations and was finally bought by Roxio then Rhapsody.
+ ceased operations and was fi
+\change_inserted 177682 1473843057
+n
+\change_unchanged
+nally bought by Roxio then Rhapsody.
  The original service is now a music store, but the peer-to-peer concept
  gave birth to a lot of following companies and projects like : Gnutella,
  Freenet, Kazaa, Bearshare, LimeWire, Scour, Grokster, Madster, and eDonkey2000.
@@ -3358,8 +5410,19 @@ The concept of Napster has inspired new structures and philosophies in many
 
 \begin_layout Standard
 Emerging collaborative P2P systems gives more power and possibilities to
- the system a network peers involved in a service than the ability of a
- single service to achieve something individually.
+ the system a network peers involved in a service than the 
+\change_inserted 177682 1473843057
+h
+\change_unchanged
+ability of a single service to ach
+\change_inserted 177682 1473843057
+e
+\change_unchanged
+i
+\change_deleted 177682 1473843057
+e
+\change_unchanged
+ve something individually.
  [2]
 \end_layout
 
@@ -3392,6 +5455,8 @@ https://en.wikipedia.org/wiki/Streaming_media
 Streaming media is multimedia that is constantly received by and presented
  to an end-user while being delivered by a provider.
  
+\change_deleted 177682 1473843057
+
 \begin_inset Note Note
 status open
 
@@ -3401,9 +5466,13 @@ not needed
 
 \end_inset
 
+
+\change_unchanged
 The verb "to stream" refers to the process of delivering media in this manner;
  the term refers to the delivery method of the medium, rather than the medium
  itself, and is an alternative to file downloading.
+\change_deleted 177682 1473843057
+
 \begin_inset Note Note
 status open
 
@@ -3414,6 +5483,8 @@ until here
 \end_inset
 
 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3422,7 +5493,11 @@ A client media player can begin to play the data (such as a movie) before
  Distinguishing delivery method from the media distributed applies specifically
  to telecommunications networks, as most of the delivery systems are either
  inherently streaming (e.g.
- radio, television) or inherently non-streaming (e.g.
+ radio, television) or inherently non
+\change_deleted 177682 1473843057
+-
+\change_unchanged
+streaming (e.g.
  books, video cassettes, audio CDs).
  For example, in the 1930s, elevator music was among the earliest popularly
  available streaming media; nowadays Internet television is a common form
@@ -3496,6 +5571,8 @@ Direct Download Link
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 177682 1473843057
 \begin_inset Note Note
 status collapsed
 
@@ -3533,6 +5610,58 @@ L'expression « direct download » est popularisée à partir de la décennie
 
 \end_inset
 
+
+\change_inserted 177682 1473843057
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted 177682 1473843057
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 177682 1473843057
+https://en.wikipedia.org/wiki/Direct_download_link
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 177682 1473843057
+Le téléchargement direct (de l'anglais : direct download, abrégé en DDL),
+ est une pratique de mise à disposition de fichiers téléchargeables directement
+ sur l'infrastructure d'un site web, suivant le modèle client-serveur.
+ Le terme « téléchargement direct » est utilisé afin de le démarquer du
+ téléchargement en pair à pair, qui utilise les ressources de plusieurs
+ utilisateurs.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 177682 1473843057
+L'expression « direct download » est popularisée à partir de la décennie
+ 2000, du fait du développement de l'usage des sites d'hébergement de fichiers
+ en un clic.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 177682 1473843057
+--
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -4292,7 +6421,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/torrent/Torrentcomp_small1.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/torrent/Torrentcomp_small1.png
 	lyxscale 40
 	width 30text%
 
@@ -4332,7 +6461,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/torrent/Torrentcomp_small2.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/torrent/Torrentcomp_small2.png
 	lyxscale 40
 	width 30text%
 
@@ -4372,7 +6501,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/torrent/Torrentcomp_small3.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/torrent/Torrentcomp_small3.png
 	lyxscale 40
 	width 30text%
 
@@ -4414,7 +6543,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/torrent/Torrentcomp_small4.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/torrent/Torrentcomp_small4.png
 	lyxscale 40
 	width 30text%
 
@@ -4454,7 +6583,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/torrent/Torrentcomp_small5.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/torrent/Torrentcomp_small5.png
 	lyxscale 40
 	width 30text%
 
@@ -4494,7 +6623,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/torrent/Torrentcomp_small6.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/torrent/Torrentcomp_small6.png
 	lyxscale 40
 	width 30text%
 
@@ -4536,7 +6665,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/torrent/Torrentcomp_small7.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/torrent/Torrentcomp_small7.png
 	lyxscale 40
 	width 30text%
 
@@ -4576,7 +6705,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/torrent/Torrentcomp_small8.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/torrent/Torrentcomp_small8.png
 	lyxscale 40
 	width 30text%
 
@@ -4616,7 +6745,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/torrent/Torrentcomp_small9.png
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/torrent/Torrentcomp_small9.png
 	lyxscale 40
 	width 30text%
 
@@ -5072,7 +7201,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../images/graphs/Markovkate_01.svg
+	filename ../shiva/lyx/master-thesis_hancquart-12_9/images/graphs/Markovkate_01.svg
 	lyxscale 40
 	width 40text%
 

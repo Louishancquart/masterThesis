@@ -187,8 +187,8 @@ Survey questions
 
 \begin_layout Standard
 As it been told before, these questions were designed to illustrate the
- behavior (need,habit) of users in order to help the definition of development
- backlogs.
+ behavior (needs, habits) of users in order to help the definition of developmen
+t requirements.
  The questions and related results are as up coming paragraphs.
 \end_layout
 
@@ -215,12 +215,12 @@ The mobile is represented as well and its market is growing fast ( source
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /Volumes/SHIVA/lyx/master-thesis_hancquart-12_9/Q1.png
+	filename ../images/Survey_graphs/Q1.png
 
 \end_inset
 
@@ -256,7 +256,7 @@ According to the results, a big part of the videos will be watched around
  Considering this, it is worth to focus on a technology able to take advantage
  of a it to decrease the data transfer.
  Thinking of a decentralized application, the memory of each user could
- be used to perform request of other users on the hard-drive ( unicast )
+ be used to perform request of other users on the hard drive ( unicast )
  or to focus on the currently most watched videos ( broadcast / multicast
  ).
  Broadcast, multicast and unicast connections options should be explored
@@ -929,7 +929,7 @@ It would be a good idea to favor the quality videos and expected ones, with
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1861,8 +1861,9 @@ key "key-13"
 
 \end_inset
 
+.
  Robert McChesney calls it "the greatest concerted attempt at psychological
- manipulation in all of human history."
+ manipulation in all of human history"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-14"
@@ -1872,12 +1873,16 @@ key "key-14"
 .
 \end_layout
 
+\begin_layout Paragraph
+Effects on children and teenagers
+\end_layout
+
 \begin_layout Standard
 The following are examples to show the effects of advertisements on children
  and teenagers and how these lead them to problems .
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 obesity
 \end_layout
 
@@ -1903,19 +1908,29 @@ key "key-15"
  Exposure to television advertising on high energy density foods (including
  sweet and fat) is associated with a higher prevalence of obesity.
  ".
-\end_layout
-
-\begin_layout Standard
-In 2010 the World Health Organization drove the point home: "television
+ In 2010 the World Health Organization drove the point home: "television
  advertising influences the food preferences of children and their purchase
- requests and consumption patterns" [62].
+ requests and consumption patterns" 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+.
  At the same time, in France, What to choose noted that 80% of advertising
- to children was for food, and that 80% of them were too fat or too sucrés63.
- This study was critical to the food industry's commitments in 2008 under
- the aegis of the ANIA, to reduce advertising to enfants [64].
+ to children was for food, and that 80% of them were too fat or too sweet
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
+
+\end_inset
+
+.
+ 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 tobacco
 \end_layout
 
@@ -1923,30 +1938,35 @@ tobacco
 Smoking in films affects teenagers: a teenager sees movies with smoking,
  the more likely to smoke.
  The reverse is also true, namely that few teenagers smoking among those
- who are not subject to tabagiques [65 ]films.
+ who are not watching to tobacco films 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-4"
+
+\end_inset
+
+.
  The World Health Organization recalls Article 13 of the Framework Convention
- on Tobacco and calls for measures to limit the presence of tobacco in films[66].
+ on Tobacco and calls for measures to limit the presence of tobacco in films66.
 \end_layout
 
 \begin_layout Standard
 Americans Chomsky and Herman, in their criticism of the functioning of the
  media in democracy theorized a propaganda model "regulation by advertising"
  is one of five filters.
- For reasons of financial and economic survival, the private media are primarily
- concerned with good selling potential audience to advertisers that the
- "subsidizing"; gold they are, according to these authors, "more usually
- worn to avoid overly complicated programs or affecting disturbing controversies
- that might reduce the" brain time available "public" 67.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-i dont get anything from this part
-\end_layout
+ For financial reasons and economic survival, the private media are the
+ first concerned is more about selling the potential audience to announcers
+ that finance them than concerned about the public.
+ According to these authors, they are "more usually used to avoid overly
+ complicated programs or affecting disturbing controversies that might reduce
+ the" Available human brain time"
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-6"
 
 \end_inset
 
-
+ .
 \end_layout
 
 \begin_layout Standard
@@ -1954,7 +1974,7 @@ i dont get anything from this part
 status collapsed
 
 \begin_layout Plain Layout
-—
+---
 \end_layout
 
 \begin_layout Plain Layout
@@ -2012,8 +2032,35 @@ Les Américains Chomsky et Herman, dans leur critique du fonctionnement des
 
 \end_layout
 
+\begin_layout Standard
+famous verbal gaffe
+\end_layout
+
+\begin_layout Standard
+In 2004, Patrick Le Lay, French CEO of the TV channel TF1, made a famous
+ verbal gaffe on TV about his concept of what the television service is
+ actually doing : “There are many ways to speak about TV, but in a business
+ perspective, let’s be realistic: at the basis, TF1’s job is helping Coca-Cola,
+ for example, to sell its product.
+ What we sell to Coca-Cola is available human brain time.
+ Nothing is more difficult than obtaining this availability.
+ This is where permanent change is located.
+ We must always look out for popular programs, follow trends, surf on tendencies
+, in a context in which information is speeding up, getting manifold and
+ trivialized.”
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-7"
+
+\end_inset
+
+.
+ This sentence stated a questioning about the advertisement in the public
+ opinion.
+\end_layout
+
 \begin_layout Paragraph
-neuromarketing
+NeuroMarketing
 \end_layout
 
 \begin_layout Standard
@@ -2064,14 +2111,28 @@ The large scale companies ambitions to predict consumer behaviors and their
 \begin_layout Standard
 Companies such as Google, CBS, Frito-Lay, and A & E Television amongst others
  have used neuromarketing research services to measure consumer thoughts
- on their advertisements or products.[3]
+ on their advertisements or products
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-8"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 In the late 1990s, both Neurosense (UK) and Gerry Zaltmann (USA) had established
  neuromarketing companies.
  Unilever's Consumer Research Exploratory Fund (CREF) too had been publishing
- white papers on the potential applications of Neuromarketing.[4]
+ white papers on the potential applications of Neuromarketing
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-9"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2107,17 +2168,6 @@ The collection of user information by publishers and advertisers has raised
  if given an opportunity.[94][95] Over half of all Google and Facebook users
  are concerned about their privacy when using Google and Facebook, according
  to Gallup.[96]
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-these are data and should mention by source so i did not change any thing
- regarding this
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2140,7 +2190,7 @@ Nowadays, on Internet
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 https://en.wikipedia.org/wiki/Advertising#Rise_in_new_media
@@ -2230,17 +2280,6 @@ With the Internet came many new advertising opportunities.
  by 18% and 9% respectively.
  Older media advertising saw declines: -10.1% (TV), -11.7% (radio), -14.8%
  (magazines) and -18.7% (newspapers).
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-this part you should refer it to pervious part that you used it for frist
- time which is result in table 2
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Paragraph
@@ -2248,31 +2287,19 @@ Niche marketing
 \end_layout
 
 \begin_layout Standard
-Among others, Comcast Spotlight is one such advertiser employing this method
- in their video on demand menus.
- These advertisements are targeted to a specific group and can be viewed
- by anyone wishing to find out more about a particular business or practice,
- from their home.
- This causes the viewer to become proactive and actually choose what advertiseme
-nts they want to view.[58]
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-i think this part is irrelevant to niche marketing
-\end_layout
+Another significant trend regarding future of advertising is the growing
+ importance of the niche market using niche or targeted ads.
+ Also brought about by the Internet and the theory of The Long Tail, advertisers
+ will have an increasing ability to reach specific audiences 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-In creasing of importance the Niche market(target ads), has high trend regarding
- future of advertisement.Also with theory of Long Tail, advertisers will
- have an increasing ability to get specific consumers.In the past, the most
- efficient way to deliver a message was to blanket the largest mass market
- audience possible.
+.
+ In the past, the most efficient way to deliver a message was to blanket
+ the largest mass market audience possible.
  But thanks to usage of tracking, customer profiling and the growing popularity
  of niche content ( given by wide variety of statistic collectors from blogs
  to social networking websites) make advertisers access to smaller audiences
@@ -2308,81 +2335,11 @@ https://en.wikipedia.org/wiki/Video_commerce
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-i didi not get this part until SEO
-\end_layout
-
-\end_inset
-
-The end goal is to convert a shopper into a customer1, but conversion is
- not the only metric as View Through Rate (VTR) is a common measurement2.
- Some merchants realize additional benefit such as Search Engine Optimization
- (SEO)3.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-this part is unnecessary you already expalin it 
-\end_layout
-
-\end_inset
-
 A typical video commerce application would involve a video which contains
  a number of clickable objects so that the viewer can click on any of those
  objects for further information or to purchase them.
-\end_layout
-
-\begin_layout Standard
-The term vCommerce (video commerce) was first used by ShopNBC (a.k.a.
- ValueVision - VVTV) in the summer of 2007 as part of the launch of ShopNBC.TV.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-i think this part is no needed is too much deitails
-\end_layout
-
-\end_inset
-
-The strategy combined the use of leveraging web video content for higher
- conversion on eCommerce websites.
- The term was quickly adopted in the industry including the start of the
- Video Commerce Consortium (http://video-commerce.org).
- ShopNBC was also the first home shopping network to utilize live (and archived)
- webcasts (web-only live video streams which sold products just like TV
- shopping).
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-Video commerce is using the video content to benefit,sell and support commercial
- goods or services on internet.
- No matter what, the video downloaded or streamed, it often contains clickable
- link which can open up a web or transaction procedure.
- Moreover, the clickable objects may not always be within the video itself,
- but part of the Flash or HTML5 player used to play back the video.
- The term vCommerce was first time used by ShopNBC (a.k.a.
- ValueVision - VVTV) in the summer of 2007 as part of the launch of ShopNBC.TV.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-you need reference for this info 
-\end_layout
-
-\end_inset
-
- As its shown, video commerce has great potential to take place over any
- Internet-enabled communications device (a Personal Computer, a laptop,
- a PDA, a mobile phone, or a smart phone).
+ It is part of the increasing trend to advertise in videos in a direct or
+ indirect way.
 \end_layout
 
 \begin_layout Paragraph
@@ -2444,30 +2401,74 @@ key "key-8,key-9"
 \end_layout
 
 \begin_layout Paragraph
-Money spent
+The growth on Internet
 \end_layout
 
 \begin_layout Standard
-In 2015, the world spent an estimate of US$592.43 billion on advertising.[4]
- Internationally, the largest ("big four") advertising conglomerates are
- Interpublic, Omnicom, Publicis, and WPP.
+Internationally, the largest advertising conglomerates are Interpublic,
+ Omnicom, Publicis, and WPP, so called 
+\begin_inset Quotes eld
+\end_inset
+
+the big four
+\begin_inset Quotes erd
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-11"
 
 \end_inset
 
- ( https://en.wikipedia.org/wiki/Advertising):
+.
 \end_layout
 
 \begin_layout Standard
-money for 1 ad .
- for 1 video, etc...
+In 2015, the world spent an estimate of US$592.43 billion on advertising
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+
+\end_inset
+
+.
+ In 2014, worldwide digital advertising spending were about 25% of the total
+ media ad spending.
+ And as the number of users are still increasing, the trend is not about
+ to stop yet.
+ Next year, digital will account for 38% of global ad spending.
+ This proportion is the same as TV one.
+ TV held the biggest share of spending for more than a decade.
+\end_layout
+
+\begin_layout Standard
+Furthermore, In 2013, globally mobile internet user penetration was 73.4%.
+ It will be more than 90% in 2017.
  
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-4"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These impressive numbers show the importance , the power and the influence
+ that the advertisement has on the Internet contents.
 \end_layout
 
 \begin_layout Subsubsection
 Alternatives
+\end_layout
+
+\begin_layout Standard
+If the advertisement is well present on the Internet today, there is a lot
+ of possible alternatives to limit or avoid the annoyances of the advertisement.
+ Indeed, the spreading and the trivialization of the usage of these tools
+ is a sign of the growing trend against advertisement on the Internet.
 \end_layout
 
 \begin_layout Paragraph
@@ -2524,48 +2525,6 @@ For users not interested in making purchases, the blocking of ads can also
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-from here delete
-\end_layout
-
-\end_inset
-
-Ad-blocking can also have some benefit like save money for the user.
- If a user's personal time is worth one dollar per minute, and if unsolicited
- advertising adds an extra minute to the time that the user requires for
- reading the webpage (i.e.
- the user must manually identify the ads as ads, and then click to close
- them, or use other techniques to either deal with them, all of which tax
- the user's intellectual focus in some way),[16] then the user has effectively
- lost one dollar of time in order to deal with ads that might generate a
- few fractional pennies of display-ad revenue for the website owner.
- The problem of lost time can rapidly spiral out of control if malware accompani
-es the ads.[17][18] This is discussed in more detail below.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-delet this part it dosent help your philosophy 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-from here
-\end_layout
-
-\end_inset
-
 Another important aspect is improving security; online advertising subjects
  users to a higher risk of infecting their devices than surfing pornography
  sites.[19] In a high-profile case, malware was distributed through advertisement
@@ -2574,16 +2533,6 @@ s provided to YouTube by a malicious customer of Google's Doubleclick.[20][21]
  an advertisement on a website.[22] When Forbes required users to disable
  ad blocking before viewing their website, those users were immediately
  served with pop-under malware.[23]
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-should not change
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2607,21 +2556,10 @@ It is a known problem with most web browsers, including Firefox, that restoring
 
 \begin_layout Subparagraph
 Popularity 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-data.
- no need to changes
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-The number of monthly active ad-blocking users, as estimated by PageFair.
+The number of monthly active adblocking users, as estimated by PageFair.
 \end_layout
 
 \begin_layout Standard
@@ -2638,12 +2576,50 @@ As of Q2 2015, 45 million Americans were using ad blockers.[25] In a survey
 \end_layout
 
 \begin_layout Standard
-In March 2016, the Internet Advertising Bureau reported that UK ad-blocking
- was already at 22% among over-18s.[26][27]
+In March 2016, the Internet Advertising Bureau reported that UK adblocking
+ was already at 22% among over-18s.[26][27].
 \end_layout
 
 \begin_layout Standard
-[graphic ]
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/m/documents/put/s3/MTh/hancquart_louis-Master_thesis/images/graphs/adblock_usage.svg
+	lyxscale 40
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Number of monthly active adblocking users, as estimated by PageFair 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ex-fig1-4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -2651,10 +2627,10 @@ profiling
 \end_layout
 
 \begin_layout Standard
-The profiling on internet became very popular to do advertisement .
+The profiling on internet became very popular to do adverstisement .
  The tracking of activity on internet has began quite profitable for the
  announcers.
- As a result, some public organization and groups are criticizing this.
+ As a result, some public organization and groups are criticizing it.
 \end_layout
 
 \begin_layout Subparagraph
@@ -2662,8 +2638,8 @@ Duckduckgo
 \end_layout
 
 \begin_layout Standard
-To answer the growing need of privacy on Internet, some tools are getting
- become more popular.
+To fulfill the growing need of privacy on Internet, some tools are getting
+ more and more popular.
  DuckDuckGo is an Internet search engine that emphasizes protecting searchers'
  privacy and avoiding the filter bubble of personalized search results.[1]
  DuckDuckGo distinguishes itself from other search engines by not profiling
@@ -2735,7 +2711,7 @@ patronage
 \end_layout
 
 \begin_layout Standard
-Recently, the patronage which is an old trend came back.
+Recently, an old trend came back on the front of scene: the patronage.
  Indeed, it is a way to pay people that produce content on the video hosting
  websites.
  
@@ -2744,18 +2720,15 @@ Recently, the patronage which is an old trend came back.
 \begin_layout Standard
 In 2013, a few websites emerged with the idea to retribute content makers
  like musicians or comic short movies with tips and live from that.
- tipeee .com in France and Patreon in US.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-put refrence
-\end_layout
+ tipeee .com in France and Patreon in US 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-5"
 
 \end_inset
 
-
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2771,16 +2744,6 @@ Their growth is impressive, Tipeee already gathers more than 524 000 € of
 \begin_layout Standard
 Some content producers like Usul2000, even decided to totally disable advertisem
 ent on their channel and earn money only from direct donations.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-same here
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subparagraph
@@ -2788,11 +2751,11 @@ Playlist launching
 \end_layout
 
 \begin_layout Standard
-In order to avoid the advertisement during watching video, some users use
- ad-blockers ( so that the creator doesn't receive advertisement subsidiary
- payment).
- However, they play a playlist ( with ads supporting YouTube and the creator)
- while not watching it.
+In order to content makers without watching the advertisement, some users
+ use ad-blockers while watching videos ( so that the creator doesn't receive
+ advertisement subsidiary payment).
+ However they play a playlist ( with ads supporting YouTube and the creator
+ ) while not watching it.
  
 \end_layout
 
@@ -2911,21 +2874,19 @@ https://en.wikipedia.org/wiki/Peer-to-peer
 
 \begin_layout Standard
 Tim Berners-Lee's vision for the World Wide Web was close to a P2P network
- which it was assumed each user of the web would be an active editor and
- contributor, creating and linking content to form an interlinked "web"
- of links.
- The early Internet was more open than nowdays, where two machines connected
+ in that it assumed each user of the web would be an active editor and contribut
+or, creating and linking content to form an interlinked "web" of links.
+ The early Internet was more open than present day, where two machines connected
  to the Internet could send packets to each other without firewalls and
  other security measures.[4] This contrasts to the broadcasting-like structure
  of the web as it has developed over the years.[6] As a precursor to the
  Internet, ARPANET was a successful client-server network where "every participa
 ting node could request and serve content." However, ARPANET was not self-organiz
-ed, and it disable to "provide any means for context or content-based routing
- beyond simple address-based routing."[7]
+ed, and it lacked the ability to "provide any means for context or content-based
+ routing beyond simple address-based routing."[7]
 \end_layout
 
 \begin_layout Paragraph
-Y
 \begin_inset Note Note
 status open
 
@@ -3038,13 +2999,13 @@ All the most visited websites are based on client-server model.
  between the providers of a resource or service, called servers, and service
  requesters, called clients.[1] Often clients and servers communicate over
  a computer network on separate hardware, but both client and server may
- locate in the same system.
+ reside in the same system.
  A server host runs one or more server programs which share their resources
  with clients.
  A client does not share any of its resources, but requests a server's content
  or service function.
- Clients therefore estabilish communication sessions with servers which
- expect incoming requests.
+ Clients therefore initiate communication sessions with servers which await
+ incoming requests.
  Examples of computer applications that use the client–server model are
  Email, network printing, and the World Wide Web.
 \end_layout
@@ -3072,9 +3033,10 @@ Economical Context
 \end_layout
 
 \begin_layout Standard
-In order to elucidate a decentralized video application, pay attention on
- 3 points is needed.
- The up coming subbranches are contained details regarding each point.
+In order to set up the context of a decentralized video application, I would
+ like to focus on 3 points : the network , the market, and the different
+ actors to take into account.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -3082,19 +3044,9 @@ Actors
 \end_layout
 
 \begin_layout Standard
-On the web, there is different ways to get video content: 
-\end_layout
-
-\begin_layout Itemize
-video hosting websites.
-\end_layout
-
-\begin_layout Itemize
-peer-to-peer, streaming websites.
-\end_layout
-
-\begin_layout Itemize
-direct download.
+On the web, there is different ways to get video content: video hosting
+ websites, peer-to-peer, streaming websites, direct download.
+ I am going to describe them here.
  
 \end_layout
 
@@ -3112,7 +3064,7 @@ key "key-9"
 \end_inset
 
 .
- We spend more and more time on Internet and video websites.
+ We spend more and more time on Intertnet and video websites.
  Traffic on video hosting services are rising from a few years and it is
  slowly replacing the TV.
  
@@ -3129,7 +3081,7 @@ There is a few reasons that makes these websites so popular.
  The hosting websites definitely answer this demand, providing a user-friendly
  interface and a common place to upload and watch videos.
  Further more, the video hosting websites are suiting the user expression
- will are they are adapted to low quality video like phone video, etc.
+ will are they are adaped to low quality video like phone video, etc.
  It might change with the growing professionalism and quality video format
  of creators.
  
@@ -3336,7 +3288,7 @@ While P2P systems had previously been used in many application domains,[3]
  this architecture became famous with the file sharing system : Napster.
  The music service, originally released in 1999.
  The original company ran into legal difficulties over copyright infringement,
- ceased operations and was finally bought by Roxio then Rhapsody.
+ ceased operations and was finnally bought by Roxio then Rhapsody.
  The original service is now a music store, but the peer-to-peer concept
  gave birth to a lot of following companies and projects like : Gnutella,
  Freenet, Kazaa, Bearshare, LimeWire, Scour, Grokster, Madster, and eDonkey2000.
@@ -3358,8 +3310,8 @@ The concept of Napster has inspired new structures and philosophies in many
 
 \begin_layout Standard
 Emerging collaborative P2P systems gives more power and possibilities to
- the system a network peers involved in a service than the ability of a
- single service to achieve something individually.
+ the system a network peers involved in a service than the hability of a
+ single service to acheive something individually.
  [2]
 \end_layout
 
@@ -3391,29 +3343,9 @@ https://en.wikipedia.org/wiki/Streaming_media
 \begin_layout Standard
 Streaming media is multimedia that is constantly received by and presented
  to an end-user while being delivered by a provider.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-not needed
-\end_layout
-
-\end_inset
-
-The verb "to stream" refers to the process of delivering media in this manner;
- the term refers to the delivery method of the medium, rather than the medium
- itself, and is an alternative to file downloading.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-until here
-\end_layout
-
-\end_inset
-
-
+ The verb "to stream" refers to the process of delivering media in this
+ manner; the term refers to the delivery method of the medium, rather than
+ the medium itself, and is an alternative to file downloading.
 \end_layout
 
 \begin_layout Standard
@@ -3422,7 +3354,7 @@ A client media player can begin to play the data (such as a movie) before
  Distinguishing delivery method from the media distributed applies specifically
  to telecommunications networks, as most of the delivery systems are either
  inherently streaming (e.g.
- radio, television) or inherently non-streaming (e.g.
+ radio, television) or inherently nonstreaming (e.g.
  books, video cassettes, audio CDs).
  For example, in the 1930s, elevator music was among the earliest popularly
  available streaming media; nowadays Internet television is a common form
@@ -3528,7 +3460,7 @@ L'expression « direct download » est popularisée à partir de la décennie
 \end_layout
 
 \begin_layout Plain Layout
-–
+--
 \end_layout
 
 \end_inset
