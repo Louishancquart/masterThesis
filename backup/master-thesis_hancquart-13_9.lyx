@@ -1,0 +1,459 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass dcsbook
+\begin_preamble
+%
+%  $Id: thesis-template.lyx,v 1.7 2011/12/22 12:10:18 sobaniec Exp $
+%
+\end_preamble
+\options thesis
+\use_default_options false
+\begin_modules
+dcs
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "urlcolor=linkcolor,linkcolor=linkcolor,citecolor=linkcolor"
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Indeks
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2.5cm
+\rightmargin 2cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\listings_params "basicstyle={\ttfamily},commentstyle={\color{green}\ttfamily},keywordstyle={\color{blue}\ttfamily},language={Java},morecomment={[l][\color{magenta}]{\#}},numbers=left,numberstyle={\tiny},stringstyle={\color{red}\ttfamily},backgroundcolor={\color{verylightgrey}},breakautoindent=true,xleftmargin={10pt},breaklines=true,breakatwhitespace=true"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Author
+Louis Hancquart
+\end_layout
+
+\begin_layout Title
+Peer2Fast: Design and implementation of a decentralized application for
+ ad-free video hosting
+\end_layout
+
+\begin_layout Date
+Poznań, 2016
+\end_layout
+
+\begin_layout Supervisor
+Paweł T.
+ Wojciechowski
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Subtitle
+Master's Thesis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+bg :http://www.blyon.com/blyon-cdn/20150711.coords_10000x8000.png
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%%code background color
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{verylightgrey}{RGB}{217,217,217} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Abstract
+\end_layout
+
+\begin_layout Standard
+lmpedit tempore aut quo.
+ Error est illo dolorem sint qui quia.
+ Distinctio ut qui et.
+\end_layout
+
+\begin_layout Standard
+Praesentium in omnis dolorem voluptatum distinctio mollitia ut.
+ Asperiores qui culpa a aspernatur odit ut sit doloremque.
+ Similique consectetur maxime quia eius.
+ Voluptatum deserunt est nesciunt nulla.
+ Minima magni natus sapiente qui.
+\end_layout
+
+\begin_layout Standard
+Rerum quia est pariatur nam unde aut labore.
+ Atque sit fuga totam et voluptatum ipsa non et.
+ Minima quos atque totam.
+ Tenetur ipsam ut eveniet ut quis velit qui.
+ Adipisci doloribus inventore repellendus itaque quasi sit.
+ Aut voluptas ut et voluptas vitae quae laborum asperiores.
+\end_layout
+
+\begin_layout Standard
+Doloremque error quis tempore.
+ Tempora dolores libero consectetur assumenda unde minima consequatur.
+ Mollitia ipsa dolore laborum.
+ Cum optio delectus quo rem exercitationem ea et.
+ Et aut hic corrupti molestiae incidunt dolorum aut.
+ Enim laborum dignissimos eos magnam eaque repellat quaerat debitis.
+\end_layout
+
+\begin_layout Standard
+Placeat totam ex voluptas.
+ Ab sit dicta delectus et.
+ Ut aliquid quo delectus omnis voluptas iure.
+ Praesentium minus dolorem itaque.
+ Qui velit minima illum quia rem.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mainmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The goal and the scope of the thesis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As a continuum from the time where TV was set in the center of the living-room,
+ people are watching more and Films and videos.
+ It is set that the watching time per day didn't stop increasing from 30
+ years 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+
+\end_inset
+
+.
+ And it is not about to stop.
+ The next generation of video-eaters are even more hungry.
+ They grown up with a smartphone and a lot of video applications available
+ everywhere, all the time.
+ The success of applications like hangouts, Youtube, Facebook ,Vimeo demonstrate
+ an increasing usage and demand of videos.
+\end_layout
+
+\begin_layout Standard
+If the video consumption is constantly increasing for years, the medium
+ is changing.
+ Traditionally, the TV is a top-down media type.
+ There is an antenna that emits programs towards people watching.
+ It is a one-to-many structure.
+ On the Internet, the topology is totally different : born as ARPANET, a
+ university network to exchange research data, the Internet used to has
+ a flatten topology.
+ Most of the communications are a one-to-one connection ( or peer to peer
+ ).
+ This medium, firstly reserved to experts, has grown and got simpler to
+ use, then spread to the majority of people.
+ Nowadays almost everyone has an Internet connection.
+ As a result, more and more people are switching off their TVs to browse
+ through the Internet.
+ Some content provider like Youtube or Dailymotion conquered the internet
+ video market, reproducing the television-like one-to-many pattern over
+ the Internet.
+ But as it makes no difference to increase the audience of a TV channel
+ using an antenna, it necessitate bigger infrastructure investments on a
+ mesh network in order to scale the service to the demand.
+ 
+\end_layout
+
+\begin_layout Standard
+Historically, Internet is a flat mesh network where each node can emit the
+ content it likes.
+ Transposing old technologies like TV on the Internet suppose to concentrate
+ the majority of the data flux on a few nodes .
+ Of course, watching videos on centralized websites like Youtube is by far
+ a different experience than watching videos on TV.
+ Many people can provide their self-made content easily.
+ It answers to a demand of expressiveness in the Internet users.
+ Youtube and other video hosting websites ease the video hosting, saving
+ the user from technical difficulties of personal hosting website and freeing
+ the hosting cost for the uploader.
+ However, everything has a cost and to finance the hosting service, the
+ video services use advertisement revenues to support the service costs.
+\end_layout
+
+\begin_layout Standard
+It also gives rises to privacy and ownership concerns: in order to provide
+ more efficient advertisement services to the announcers, the hosting websites,
+ register personal statistics on each users.
+ Moreover, on the most popular video platforms, all the content produce
+ by the providers is the property of the hosting service.
+ Furthermore, it rises censorship-like questions as well as the announcers
+ drives the offer support.
+ Recently, a polemic happened about some channels deprived of revenues by
+ Youtube on shadowy reasons.
+ 
+\end_layout
+
+\begin_layout Standard
+In the future, the Internet video possibilities will look like its ancestor:
+ the TV, a central video supply , financed and directed by the advertisement.
+ Moreover, this TV-like communication would happend in environment historically
+ meant to have a flat topology and so not adapted to heavy and centralized
+ data flux.
+\end_layout
+
+\begin_layout Standard
+So, What can we do to avoid this? One solution is the peer to peer : Content
+ hosted through by everyone for everyone.
+ This technology is now available for more than a decade.
+ It is reliable and stable.
+ At first it was the only way to exchange videos on the Internet.
+ This network had too small data traffic capacities to allow video downloading
+ from one website as we are doing right now.
+ But recently this technology loose in popularity as it has begun too complex
+ to use for the lambda user switching from TV to the Internet.
+ 
+\end_layout
+
+\begin_layout Standard
+The aim of Thesis is to provide an efficient application to manage torrents
+ automatically and to free the end user from downloading , latency , etc..
+ 
+\end_layout
+
+\begin_layout Standard
+And I will go through theses points: Background , ......
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "childDocuments/Chapter_2-Background.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "childDocuments/Chapter_3-Concept And Design.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "childDocuments/Chapter_4-Implementation.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Results and future Works
+\end_layout
+
+\begin_layout Standard
+tests and optimization .
+\end_layout
+
+\begin_layout Standard
+example
+\end_layout
+
+\begin_layout Standard
+expectations
+\end_layout
+
+\begin_layout Standard
+algo simulations 
+\end_layout
+
+\begin_layout Chapter
+Conclusions
+\end_layout
+
+\begin_layout Standard
+General sum up : Context , problem , etc.
+\end_layout
+
+\begin_layout Standard
+The move of audience from TV to the Internet result in a concentration of
+ the most of the video content in a few nodes of the network.
+ As Internet is a mesh network, this centralization is detrimental and against
+ nature.
+\end_layout
+
+\begin_layout Standard
+My Thesis answer the PB:
+\end_layout
+
+\begin_layout Standard
+Thesis specific sum-up 
+\end_layout
+
+\begin_layout Standard
+thesis conclusion sentence
+\end_layout
+
+\begin_layout Standard
+Opening: future of the project , improvements..
+\begin_inset CommandInset include
+LatexCommand include
+filename "childDocuments/appendix.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

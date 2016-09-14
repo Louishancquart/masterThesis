@@ -1,0 +1,3306 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass dcsbook
+\begin_preamble
+%
+%  $Id: thesis-template.lyx,v 1.7 2011/12/22 12:10:18 sobaniec Exp $
+%
+\end_preamble
+\options thesis
+\use_default_options false
+\begin_modules
+dcs
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement tbph
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "urlcolor=linkcolor,linkcolor=linkcolor,citecolor=linkcolor"
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Indeks
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2.5cm
+\rightmargin 2cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\listings_params "basicstyle={\ttfamily},commentstyle={\color{green}\ttfamily},keywordstyle={\color{blue}\ttfamily},language={java},morecomment={[l][\color{magenta}]{\#}},numbers=left,numberstyle={\tiny},stringstyle={\color{red}\ttfamily}"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Implementation
+\end_layout
+
+\begin_layout Standard
+On the implementation part , the focus has been put on the usability of
+ the application.
+ The development has been done in Java, widely used language on which each
+ implementation problem has already been studied and solved ( source ).
+ Firstly, the client side implementation is discussed, then the server side,
+ to finish with the tests the architecture of the application I tried to
+ keep it as simple as possible.
+ Then I will detail the code implementation to show how the application
+ works.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Section
+Implementation steps
+\end_layout
+
+\begin_layout Subsection
+technologies aborted
+\end_layout
+
+\begin_layout Subsubsection
+skypelike
+\end_layout
+
+\begin_layout Subsection
+timing calculation
+\end_layout
+
+\begin_layout Subsubsection
+loading time 
+\end_layout
+
+\begin_layout Subsubsection
+tmps video/ people
+\end_layout
+
+\begin_layout Subsubsection
+nb people to make it working ( perfs?) 
+\end_layout
+
+\begin_layout Subsubsection
+Absorbtion de nouveaux medias from yt , etc...
+ interconnnection des reseaux
+\end_layout
+
+\begin_layout Section
+Architecture
+\end_layout
+
+\begin_layout Plain Layout
+schema
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/m/pictures/photos/Album_1/thesis/choosen/20160202_180119.jpg
+	lyxscale 20
+	width 70line%
+	rotateAngle -90
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+First plan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Implementation
+\end_layout
+
+\begin_layout Subsection
+a Modular Application
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Client
+\end_layout
+
+\begin_layout Subsection
+KaClient
+\end_layout
+
+\begin_layout Subsubsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+The client class is the main of the application.
+ Its function is to give periodical reports of the hosting content of the
+ Client to the JPaxos server.
+ It also has a composition with the bittorrent Client class that is in charge
+ of downloading and sharing torrents.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Process
+\end_layout
+
+\begin_layout Standard
+Here is a presentation of the actual Client class.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The client start by the traditional main static method
+\end_layout
+
+\begin_layout Enumerate
+then it launches a thread method 
+\begin_inset Quotes eld
+\end_inset
+
+run
+\begin_inset Quotes erd
+\end_inset
+
+ where the main client code is executed.
+\end_layout
+
+\begin_layout Enumerate
+an infinite loop doing a procedural process and finishing by a sleep() timer
+ in order to re-execute the loop periodically ( every 10 minutes );
+\end_layout
+
+\begin_layout Subsubsection
+UML Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/UML Diagrams/KaClient.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+KaClient UML Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Code details
+\end_layout
+
+\begin_layout Paragraph
+The main static method
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public static void main(String[] args) throws IOException, ReplicationException,
+ InterruptedException, ClassNotFoundException, NoSuchAlgorithmException
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+        instructions(); 
+\end_layout
+
+\begin_layout Plain Layout
+
+        KaClient client = new KaClient(); //class instantiation 
+\end_layout
+
+\begin_layout Plain Layout
+
+        client.run();    // launch the thread
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+The thread initialization
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+//initialize the torrent manager
+\end_layout
+
+\begin_layout Plain Layout
+
+KaTorrentManager tm = new KaTorrentManager(new File("torrents"), 
+\end_layout
+
+\begin_layout Plain Layout
+
+		new File("downloads"));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+//connect to the client         
+\end_layout
+
+\begin_layout Plain Layout
+
+Client paxosClient = new Client();
+\end_layout
+
+\begin_layout Plain Layout
+
+paxosClient.connect();
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+The infinite loop
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java,float,numbers=left,breaklines=true,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+while (true) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            //send data downloads             
+\end_layout
+
+\begin_layout Plain Layout
+
+			ArrayList<?> list = tm.downloadsStateToArray();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+			System.out.println(String.format("DATA SENT 
+\backslash
+n"+list.toString()));
+\end_layout
+
+\begin_layout Plain Layout
+
+			KaCommand command = new KaCommand("String", list);
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\end_layout
+
+\begin_layout Plain Layout
+
+			// send     : added /deleted             
+\end_layout
+
+\begin_layout Plain Layout
+
+			byte[] response = paxosClient.execute(command.toByteArray());
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+            // receive  : missing torrents
+\end_layout
+
+\begin_layout Plain Layout
+
+		    ByteArrayInputStream bais = new ByteArrayInputStream(response);
+\end_layout
+
+\begin_layout Plain Layout
+
+            ObjectInputStream ois = new ObjectInputStream(bais);
+\end_layout
+
+\begin_layout Plain Layout
+
+	        list = (ArrayList<?>) ois.readObject();
+\end_layout
+
+\begin_layout Plain Layout
+
+            System.out.println(String.format("Previous value :
+\backslash
+n %s", list.toString()));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            // send     : the missing torrents files
+\end_layout
+
+\begin_layout Plain Layout
+
+            list = tm.getMissingTorrentsFiles((ArrayList<String>) list);
+\end_layout
+
+\begin_layout Plain Layout
+
+            System.out.println(String.format("DATA SENT 
+\backslash
+n"+list.toString()));
+\end_layout
+
+\begin_layout Plain Layout
+
+            command = new KaCommand("File", list);
+\end_layout
+
+\begin_layout Plain Layout
+
+            response = paxosClient.execute(command.toByteArray());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            // receive  : new torrents + pieces to dl
+\end_layout
+
+\begin_layout Plain Layout
+
+            ois = new ObjectInputStream(new ByteArrayInputStream(response));
+\end_layout
+
+\begin_layout Plain Layout
+
+            list = (ArrayList<?>) ois.readObject();
+\end_layout
+
+\begin_layout Plain Layout
+
+            System.out.println(String.format("Previous value :
+\backslash
+n %s", list.toString()));
+\end_layout
+
+\begin_layout Plain Layout
+
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+            //download them
+\end_layout
+
+\begin_layout Plain Layout
+
+            BittorrentClient bc = new BittorrentClient((ArrayList<File>)
+ list, tm.getDownloadsDir(), 604800);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            //sleep             
+\end_layout
+
+\begin_layout Plain Layout
+
+			Thread.sleep(5000);//would be set to 10 minutes after tests 
+\end_layout
+
+\begin_layout Plain Layout
+
+       }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Code Details
+\end_layout
+
+\begin_layout Paragraph
+gather added and deleted downloaded files 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+			//send data downloads             
+\end_layout
+
+\begin_layout Plain Layout
+
+			ArrayList<?> list = tm.downloadsStateToArray();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+			System.out.println(String.format("DATA SENT 
+\backslash
+n"+list.toString()));
+\end_layout
+
+\begin_layout Plain Layout
+
+			KaCommand command = new KaCommand("String", list);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+send them to the server
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+			// send     : added /deleted             
+\end_layout
+
+\begin_layout Plain Layout
+
+			byte[] response = paxosClient.execute(command.toByteArray());
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+get the list of torrent missing torrent files 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+			// send     : added /deleted             
+\end_layout
+
+\begin_layout Plain Layout
+
+			byte[] response = paxosClient.execute(command.toByteArray());
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+            // receive  : missing torrents
+\end_layout
+
+\begin_layout Plain Layout
+
+		    ByteArrayInputStream bais = new ByteArrayInputStream(response);
+\end_layout
+
+\begin_layout Plain Layout
+
+            ObjectInputStream ois = new ObjectInputStream(bais);
+\end_layout
+
+\begin_layout Plain Layout
+
+	        list = (ArrayList<?>) ois.readObject();
+\end_layout
+
+\begin_layout Plain Layout
+
+            System.out.println(String.format("Previous value :
+\backslash
+n %s", list.toString()));
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+send the torrent files missing on the server
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+			// send     : the missing torrents files
+\end_layout
+
+\begin_layout Plain Layout
+
+            list = tm.getMissingTorrentsFiles((ArrayList<String>) list);
+\end_layout
+
+\begin_layout Plain Layout
+
+            System.out.println(String.format("DATA SENT 
+\backslash
+n"+list.toString()));
+\end_layout
+
+\begin_layout Plain Layout
+
+            command = new KaCommand("File", list);
+\end_layout
+
+\begin_layout Plain Layout
+
+            response = paxosClient.execute(command.toByteArray());
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+get the torrents to download
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+			// receive  : new torrents + pieces to dl
+\end_layout
+
+\begin_layout Plain Layout
+
+            ois = new ObjectInputStream(new ByteArrayInputStream(response));
+\end_layout
+
+\begin_layout Plain Layout
+
+            list = (ArrayList<?>) ois.readObject();
+\end_layout
+
+\begin_layout Plain Layout
+
+            System.out.println(String.format("Previous value :
+\backslash
+n %s", list.toString()));
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+launch the download
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "caption={The Hello World program in C},label={lst:hello},style=linesbg"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+			//download them
+\end_layout
+
+\begin_layout Plain Layout
+
+            BittorrentClient bc = new BittorrentClient((ArrayList<File>)
+ list, tm.getDownloadsDir(), 604800);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+sleep
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ //sleep             
+\end_layout
+
+\begin_layout Plain Layout
+
+			Thread.sleep(5000);//would be set to 10 minutes after tests 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+KaCommand
+\end_layout
+
+\begin_layout Subsubsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+This class execute the command to be serialized and sent to the server.
+ This class is used on the server and the client side.
+ On the client side, the main methods used are the constructor with plain
+ parameters and the method toByteArray that serialize the parameters.
+\end_layout
+
+\begin_layout Subsubsection
+Process
+\end_layout
+
+\begin_layout Standard
+The KaCommand class is initialized by the KaClient thread with two parameters.
+ The first is a String 
+\begin_inset Quotes eld
+\end_inset
+
+type
+\begin_inset Quotes erd
+\end_inset
+
+ giving the type of data the command to process.
+ the second is an ArrayList of the type 
+\begin_inset Quotes eld
+\end_inset
+
+type
+\begin_inset Quotes erd
+\end_inset
+
+ it is used to send first, a list of strings containing the list of the
+ torrent titles, then the list of Torrent files to send to server or to
+ download.
+\end_layout
+
+\begin_layout Standard
+Then, the method 
+\begin_inset Quotes eld
+\end_inset
+
+toByteArray
+\begin_inset Quotes erd
+\end_inset
+
+ serialize the two parameters.
+\end_layout
+
+\begin_layout Subsubsection
+UML Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/UML Diagrams/KaCommand.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+KaCommand UML Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Code Details
+\end_layout
+
+\begin_layout Paragraph
+constructor
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public KaCommand(String type, ArrayList<?> list) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        this.type = type;
+\end_layout
+
+\begin_layout Plain Layout
+
+        this.list = list;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+serialization
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public byte[] toByteArray() throws IOException {
+\end_layout
+
+\begin_layout Plain Layout
+
+        System.out.println("serialization");      
+\end_layout
+
+\begin_layout Plain Layout
+
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+\end_layout
+
+\begin_layout Plain Layout
+
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+\end_layout
+
+\begin_layout Plain Layout
+
+        oos.writeUTF(getType());
+\end_layout
+
+\begin_layout Plain Layout
+
+        oos.writeObject(getList());
+\end_layout
+
+\begin_layout Plain Layout
+
+        return baos.toByteArray();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+KaTorrentManager
+\end_layout
+
+\begin_layout Subsubsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+This class Manage and gather information about on hosted,recently added
+ or deleted torrents.
+\end_layout
+
+\begin_layout Subsubsection
+Process
+\end_layout
+
+\begin_layout Standard
+This torrent manager is instantiate by KaClient thread with two parameters
+ : the folder containing the torrent files used by the original BitTorrentClient
+ and the folder containing the downloaded files.
+\end_layout
+
+\begin_layout Standard
+This class is used first to get the hosted , recently added or deleted files
+ related with the the torrent files in the the torrent file foder.
+\end_layout
+
+\begin_layout Standard
+Then, it is used to list the torrent files miising on the server.
+ 
+\end_layout
+
+\begin_layout Standard
+In the end, the torrent manager just gives the Download for BitTorrentClient.
+\end_layout
+
+\begin_layout Subsubsection
+UML
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/UML Diagrams/KaTorrentManager.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+KaTorrentManager UML Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+get the downloads State
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+	/**
+\end_layout
+
+\begin_layout Plain Layout
+
+     * @return added / deleted / hosted list in a single Array
+\end_layout
+
+\begin_layout Plain Layout
+
+     */
+\end_layout
+
+\begin_layout Plain Layout
+
+    public ArrayList<String> downloadsStateToArray() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        updateChanges();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        ArrayList<String> returnedList = new ArrayList<>();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        returnedList.add("added");
+\end_layout
+
+\begin_layout Plain Layout
+
+        returnedList.addAll(this.addedDownloads);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        returnedList.add("deletedList");
+\end_layout
+
+\begin_layout Plain Layout
+
+        returnedList.addAll(deletedDownloads);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        return returnedList;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+updates the changes
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+    /**
+\end_layout
+
+\begin_layout Plain Layout
+
+     * store  added / deleted Downloads
+\end_layout
+
+\begin_layout Plain Layout
+
+     * then update the current list of HostedDownloads
+\end_layout
+
+\begin_layout Plain Layout
+
+     */
+\end_layout
+
+\begin_layout Plain Layout
+
+    private void updateChanges() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        this.addedDownloads = addedDownloads();
+\end_layout
+
+\begin_layout Plain Layout
+
+        this.deletedDownloads = deletedDownloads();
+\end_layout
+
+\begin_layout Plain Layout
+
+        updateLastHostedDownloads();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+hosted Downloads
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+    /**
+\end_layout
+
+\begin_layout Plain Layout
+
+     * list Configured Download and .torrent Directories to identify matches
+\end_layout
+
+\begin_layout Plain Layout
+
+     *
+\end_layout
+
+\begin_layout Plain Layout
+
+     * @return list of hosted Downloads compared with what contains the
+ .torrent file folder configured
+\end_layout
+
+\begin_layout Plain Layout
+
+     */
+\end_layout
+
+\begin_layout Plain Layout
+
+    public ArrayList<String> hostedDownloads() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        // list torrentDir
+\end_layout
+
+\begin_layout Plain Layout
+
+        torrentsList = filePathsToFileNamesArray(listDir(this.torrentsDir,
+ ".torrent"),".torrent");
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        //  list recursively downloadDir depth :2
+\end_layout
+
+\begin_layout Plain Layout
+
+        downloadsList = filePathsToFileNamesArray(listDir(this.downloadsDir,
+ ""),"");
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        //  match hosted torrents
+\end_layout
+
+\begin_layout Plain Layout
+
+        ArrayList<String> hostedTorrents = (ArrayList<String>) torrentsList.clone
+();
+\end_layout
+
+\begin_layout Plain Layout
+
+        hostedTorrents.retainAll(downloadsList);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        return hostedTorrents;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+added Downloads
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+	/**
+\end_layout
+
+\begin_layout Plain Layout
+
+     *
+\end_layout
+
+\begin_layout Plain Layout
+
+     * @return added downloads filenames from the last check
+\end_layout
+
+\begin_layout Plain Layout
+
+     */
+\end_layout
+
+\begin_layout Plain Layout
+
+    public ArrayList<String> addedDownloads() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        // for 1 st launch
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (this.lastHostedDownloads.isEmpty()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            return hostedDownloads();
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        //we get the lastHostedDownloads - deletedDownloads
+\end_layout
+
+\begin_layout Plain Layout
+
+        ArrayList<String> keptDownloads = (ArrayList<String>) this.lastHostedDown
+loads.clone();
+\end_layout
+
+\begin_layout Plain Layout
+
+        keptDownloads.removeAll(deletedDownloads());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        //we do downloadsList - keptDownloads
+\end_layout
+
+\begin_layout Plain Layout
+
+        ArrayList<String> addedDownloadsList = hostedDownloads();
+\end_layout
+
+\begin_layout Plain Layout
+
+        addedDownloadsList.removeAll(keptDownloads);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+       return addedDownloadsList;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Deleted downloads
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+/**
+\end_layout
+
+\begin_layout Plain Layout
+
+     *
+\end_layout
+
+\begin_layout Plain Layout
+
+     * @return deleted downloads filenames from the last check
+\end_layout
+
+\begin_layout Plain Layout
+
+     */
+\end_layout
+
+\begin_layout Plain Layout
+
+    public ArrayList<String> deletedDownloads() {
+\end_layout
+
+\begin_layout Plain Layout
+
+        ArrayList<String> deletedDownloads = new ArrayList<>();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // for 1 st launch
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (this.lastHostedDownloads.isEmpty()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            return deletedDownloads;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        deletedDownloads = getLastHostedDownloads();
+\end_layout
+
+\begin_layout Plain Layout
+
+        deletedDownloads.removeAll(hostedDownloads());
+\end_layout
+
+\begin_layout Plain Layout
+
+        return deletedDownloads;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+get Missing Torrents Files
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+    /**
+\end_layout
+
+\begin_layout Plain Layout
+
+     * Simply returns a list of .torrents files matching matching a list
+ of filename containing the missing torrents on the server
+\end_layout
+
+\begin_layout Plain Layout
+
+     * @param list of files names sent by the server containing the filenames
+ it does't have the corresponding .torrent file
+\end_layout
+
+\begin_layout Plain Layout
+
+     * @return a file list containing the .torrent files not present on the
+ server
+\end_layout
+
+\begin_layout Plain Layout
+
+     */
+\end_layout
+
+\begin_layout Plain Layout
+
+    public ArrayList<File> getMissingTorrentsFiles(ArrayList<String> list){
+\end_layout
+
+\begin_layout Plain Layout
+
+        File[] paths = listDir(torrentsDir,".torrent");
+\end_layout
+
+\begin_layout Plain Layout
+
+       ArrayList<File> missingTorrents = new ArrayList<>();
+\end_layout
+
+\begin_layout Plain Layout
+
+        for(File f : paths){
+\end_layout
+
+\begin_layout Plain Layout
+
+           if(list.contains(f.getName()))
+\end_layout
+
+\begin_layout Plain Layout
+
+               missingTorrents.add(f);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+        return missingTorrents;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+list directory
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+    /**
+\end_layout
+
+\begin_layout Plain Layout
+
+     * List files in a directory according to an extenion file ( ".torrent"
+  or nothing for downloads)
+\end_layout
+
+\begin_layout Plain Layout
+
+     *
+\end_layout
+
+\begin_layout Plain Layout
+
+     * @param dir
+\end_layout
+
+\begin_layout Plain Layout
+
+     * @param extension
+\end_layout
+
+\begin_layout Plain Layout
+
+     * @return liste of filenames ( without .torrent if necessary)
+\end_layout
+
+\begin_layout Plain Layout
+
+     */
+\end_layout
+
+\begin_layout Plain Layout
+
+    public File[] listDir(File dir, final String extension) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        File[] paths;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // create new filename filter
+\end_layout
+
+\begin_layout Plain Layout
+
+        FilenameFilter fileNameFilter = (dir1, name) -> {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            // for downloadsDir
+\end_layout
+
+\begin_layout Plain Layout
+
+            if (extension.equals("")) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                return true;
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            //for torrentsDir
+\end_layout
+
+\begin_layout Plain Layout
+
+            if (name.lastIndexOf('.') > 0) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                // get last index for '.' char
+\end_layout
+
+\begin_layout Plain Layout
+
+                int lastIndex = name.lastIndexOf('.');
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+                // get extension
+\end_layout
+
+\begin_layout Plain Layout
+
+                String str = name.substring(lastIndex);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+                // match path name extension
+\end_layout
+
+\begin_layout Plain Layout
+
+                if (str.equals(extension)) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    return true;
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            return false;
+\end_layout
+
+\begin_layout Plain Layout
+
+        };
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // returns pathnames for files and directory
+\end_layout
+
+\begin_layout Plain Layout
+
+        paths = dir.listFiles(fileNameFilter);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // Paths arrays to SimpleName String List
+\end_layout
+
+\begin_layout Plain Layout
+
+        return paths;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Changes full paths array into torrent titles ArrayList
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+    /**
+\end_layout
+
+\begin_layout Plain Layout
+
+     * this method just turn an a String[] Array containing the full path
+ of each torrents into am ArrayList<String>
+\end_layout
+
+\begin_layout Plain Layout
+
+     * containing only the titles of the torrent
+\end_layout
+
+\begin_layout Plain Layout
+
+     * @param paths
+\end_layout
+
+\begin_layout Plain Layout
+
+     * @param extension
+\end_layout
+
+\begin_layout Plain Layout
+
+     * @return
+\end_layout
+
+\begin_layout Plain Layout
+
+     */
+\end_layout
+
+\begin_layout Plain Layout
+
+    private ArrayList<String> filePathsToFileNamesArray(File[] paths, String
+ extension) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        ArrayList<String> fileNameList = new ArrayList<String>();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (extension.equals("")) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            for (File path : paths) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                fileNameList.add((path.getName()));
+\end_layout
+
+\begin_layout Plain Layout
+
+                if (path.isDirectory())
+\end_layout
+
+\begin_layout Plain Layout
+
+                    fileNameList.addAll(filePathsToFileNamesArray(listDir(path,
+ ""),""));
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+            for (File path : paths)
+\end_layout
+
+\begin_layout Plain Layout
+
+                fileNameList.add((path.getName().split(extension))[0]);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+        return fileNameList;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+BitTorrentClient
+\end_layout
+
+\begin_layout Subsubsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+This class aim to download a list of torrents , and share them.
+\end_layout
+
+\begin_layout Subsubsection
+Process
+\end_layout
+
+\begin_layout Standard
+The BittorentClient Object takes as parameters: 
+\end_layout
+
+\begin_layout Itemize
+a list of torrent files
+\end_layout
+
+\begin_layout Itemize
+the path of the download folder
+\end_layout
+
+\begin_layout Itemize
+the sharing time for each torrent
+\end_layout
+
+\begin_layout Standard
+For the each file from the list passed in parameter, the class will initiate
+ the download of the corresponding torrent in the download folder specified.
+ each torrent will be shared with the indicated tracker from the torrent
+ file.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Code parts
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/UML Diagrams/BittorrentClient.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+BitTorrentClient UML Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Code Details
+\end_layout
+
+\begin_layout Paragraph
+Constructor
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+    public BittorrentClient(ArrayList<File> list, File downloadDir, int
+ sharingTime) throws IOException, NoSuchAlgorithmException {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        for( File f : list){
+\end_layout
+
+\begin_layout Plain Layout
+
+            initiateClient(f,downloadDir, sharingTime);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Initiate the download and share for a torrent File
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ public void initiateClient(File torrentFile, File downloadDir,int sharingTime)
+ throws IOException, NoSuchAlgorithmException {
+\end_layout
+
+\begin_layout Plain Layout
+
+        // First, instantiate the Client object.
+\end_layout
+
+\begin_layout Plain Layout
+
+        Client client = new Client(
+\end_layout
+
+\begin_layout Plain Layout
+
+                // This is the interface the client will listen on (you
+ might need something
+\end_layout
+
+\begin_layout Plain Layout
+
+                InetAddress.getLocalHost(),
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+                // Load the torrent from the torrent file and use the given
+\end_layout
+
+\begin_layout Plain Layout
+
+                // output directory.
+ Partials downloads are automatically recovered.
+\end_layout
+
+\begin_layout Plain Layout
+
+                SharedTorrent.fromFile(torrentFile,downloadDir));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // You can optionally set download/upload rate limits
+\end_layout
+
+\begin_layout Plain Layout
+
+        // in kB/second.
+ Setting a limit to 0.0 disables rate
+\end_layout
+
+\begin_layout Plain Layout
+
+        // limits.
+\end_layout
+
+\begin_layout Plain Layout
+
+        client.setMaxDownloadRate(50.0);
+\end_layout
+
+\begin_layout Plain Layout
+
+        client.setMaxUploadRate(50.0);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // At this point, can you either call download() to download the
+ torrent and
+\end_layout
+
+\begin_layout Plain Layout
+
+        // stop immediately after...
+\end_layout
+
+\begin_layout Plain Layout
+
+        client.download();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // Or call client.share(...) with a seed time in seconds:
+\end_layout
+
+\begin_layout Plain Layout
+
+         client.share(sharingTime);
+\end_layout
+
+\begin_layout Plain Layout
+
+        // Which would seed the torrent for an hour after the download is
+ complete.
+\end_layout
+
+\begin_layout Plain Layout
+
+        // Downloading and seeding is done in background threads.
+\end_layout
+
+\begin_layout Plain Layout
+
+        // To wait for this process to finish, call:
+\end_layout
+
+\begin_layout Plain Layout
+
+//        client.waitForCompletion();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        // At any time you can call client.stop() to interrupt the download.
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Server Side
+\end_layout
+
+\begin_layout Subsection
+KaServer
+\end_layout
+
+\begin_layout Subsubsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+The purpose of the server is to store the torrent file of each torrent on
+ the network having the application and make statistics about the torrent
+ popularity.
+\end_layout
+
+\begin_layout Standard
+It is based on Paxos algorithm ( 
+\begin_inset Flex Emph
+status open
+
+\begin_layout Plain Layout
+cf annexes
+\end_layout
+
+\end_inset
+
+ ) .
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Process
+\end_layout
+
+\begin_layout Standard
+In order to work with the Paxos algorithm, at least three instances of this
+ classes should be launched with the number of the instance in parameter.
+ 
+\end_layout
+
+\begin_layout Standard
+The server starts recovery from the other instances of the class, the begin
+ to listen to the server connections.
+\end_layout
+
+\begin_layout Subsubsection
+UML Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/UML Diagrams/KaServer.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+KaServer UML Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Code Details
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public static void main(String[] args) throws IOException, InterruptedException,
+\end_layout
+
+\begin_layout Plain Layout
+
+            ExecutionException {
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (args.length != 1) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            usage();
+\end_layout
+
+\begin_layout Plain Layout
+
+            System.exit(1);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+        int localId = Integer.parseInt(args[0]);
+\end_layout
+
+\begin_layout Plain Layout
+
+        Configuration process = new Configuration();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Replica replica = new Replica(process, localId, new KaService());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        replica.start();
+\end_layout
+
+\begin_layout Plain Layout
+
+        System.in.read();
+\end_layout
+
+\begin_layout Plain Layout
+
+        System.exit(-1);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+KaService
+\end_layout
+
+\begin_layout Subsubsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+The Service process the answer receive by the server from a client.
+\end_layout
+
+\begin_layout Subsubsection
+Process
+\end_layout
+
+\begin_layout Standard
+The Service deserialize the Client's command containing data.
+ It process the data received then reply the process result.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+UML Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/UML Diagrams/KaService.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+KaService UML Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Code Details
+\end_layout
+
+\begin_layout Paragraph
+Deserialize the client command
+\end_layout
+
+\begin_layout Standard
+In the execute method, called by the Server ( KaServer class ) :
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// Deserialise the client command
+\end_layout
+
+\begin_layout Plain Layout
+
+        KaCommand command = null;
+\end_layout
+
+\begin_layout Plain Layout
+
+        try {
+\end_layout
+
+\begin_layout Plain Layout
+
+            command = new KaCommand(value);
+\end_layout
+
+\begin_layout Plain Layout
+
+        } catch (IOException e) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            logger.log(Level.WARNING, "Incorrect request", e);
+\end_layout
+
+\begin_layout Plain Layout
+
+            return null;
+\end_layout
+
+\begin_layout Plain Layout
+
+        } catch (ClassNotFoundException e) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            e.printStackTrace();
+\end_layout
+
+\begin_layout Plain Layout
+
+            logger.log(Level.WARNING, "ClassNotFoundException in request Object
+ ", e);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+title list processing
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+		ByteArrayOutputStream byteArrayOutput = new ByteArrayOutputStream();
+\end_layout
+
+\begin_layout Plain Layout
+
+        ArrayList<?> objectSent;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		// Processing data
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (command.getType().equals("String")) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            getLists((ArrayList<String>) command.getList());
+\end_layout
+
+\begin_layout Plain Layout
+
+            objectSent = this.missingTorrents;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            //we serialise back the object
+\end_layout
+
+\begin_layout Plain Layout
+
+            try {
+\end_layout
+
+\begin_layout Plain Layout
+
+                ObjectOutputStream oos = new ObjectOutputStream(byteArrayOutput)
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+                oos.writeObject(objectSent);
+\end_layout
+
+\begin_layout Plain Layout
+
+            } catch (IOException e) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                e.printStackTrace();
+\end_layout
+
+\begin_layout Plain Layout
+
+                return null;
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        } 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+file list processing
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// [...] 
+\end_layout
+
+\begin_layout Plain Layout
+
+else   // command type is File
+\end_layout
+
+\begin_layout Plain Layout
+
+        {
+\end_layout
+
+\begin_layout Plain Layout
+
+            //register all missing torrents into the torrent file list
+\end_layout
+
+\begin_layout Plain Layout
+
+            this.allTorrentsFiles.addAll((ArrayList<File>) command.getList());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            //make average rank
+\end_layout
+
+\begin_layout Plain Layout
+
+            double av = averageRank();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            //for each torrent that is not good rank
+\end_layout
+
+\begin_layout Plain Layout
+
+            ArrayList<String> underRankTorrents = getUnderRankTorrents(av);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            ArrayList<File> fileSent = new ArrayList<>();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            for (File f : this.allTorrentsFiles) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                if (underRankTorrents.contains(f.getName()))
+\end_layout
+
+\begin_layout Plain Layout
+
+                    fileSent.add(f);
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+reserialize and the reply
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ 		   //reserialization of the rely
+\end_layout
+
+\begin_layout Plain Layout
+
+            try {
+\end_layout
+
+\begin_layout Plain Layout
+
+                ObjectOutputStream oos = new ObjectOutputStream(byteArrayOutput)
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+                oos.writeObject(fileSent);
+\end_layout
+
+\begin_layout Plain Layout
+
+            } catch (IOException e) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                e.printStackTrace();
+\end_layout
+
+\begin_layout Plain Layout
+
+                return null;
+\end_layout
+
+\begin_layout Plain Layout
+
+            }//send the torrents files relates
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+KaCommand
+\end_layout
+
+\begin_layout Subsubsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+On the Server side, the command sent by the client is deserialized in order
+ to process the data received.
+ This class is used on the server and the client side.
+\end_layout
+
+\begin_layout Subsubsection
+Process
+\end_layout
+
+\begin_layout Standard
+The KaCommand class is initialized by the KaService.
+ On the server side, the main method used is the constructor.
+ It takes one byte array parameters in order to deserialize it and retrieve
+ the list and the type of list it is.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+UML Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/UML Diagrams/KaCommand.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+KaCommand UML Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Code Details
+\end_layout
+
+\begin_layout Paragraph
+constructor and deserialization
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public KaCommand(byte[] bytes) throws IOException, ClassNotFoundException
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+        // read from byte array
+\end_layout
+
+\begin_layout Plain Layout
+
+        ByteArrayInputStream bais = new ByteArrayInputStream(bytes);
+\end_layout
+
+\begin_layout Plain Layout
+
+        ObjectInputStream ios = new ObjectInputStream(bais);
+\end_layout
+
+\begin_layout Plain Layout
+
+        type = ios.readUTF();
+\end_layout
+
+\begin_layout Plain Layout
+
+        list = (ArrayList<?>) ios.readObject();
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tests
+\end_layout
+
+\begin_layout Subsection
+KaTorrentManagerTest
+\end_layout
+
+\begin_layout Subsubsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+This test class has been done to make sure there is no regression in the
+ code and to facilitaite the development.
+ The conception of the KaTorrentManager has been hazardous on its beginings
+ as the concept of torrent file and downloaded ( torrent ) file are near
+ and confusingly similar in the common language in spite of their purpose
+ differ greatly.
+ Moreover the concept of this class changed few time in order to make efficient
+ statistics.
+\end_layout
+
+\begin_layout Standard
+This test has been created to unsure that the methods are fulfilling their
+ duty the code.
+\end_layout
+
+\begin_layout Subsubsection
+UML Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/UML Diagrams/KaTorrentManagerTest.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+KaTorrentManagerTest UML Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Code Details
+\end_layout
+
+\begin_layout Paragraph
+Setup
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+	@Before
+\end_layout
+
+\begin_layout Plain Layout
+
+    public void setUp() throws Exception {
+\end_layout
+
+\begin_layout Plain Layout
+
+        tm = new KaTorrentManager(new File("/home/m/documents/put/s3/MTh/Paxos/J
+Paxos/src/lsr/testResources/torrents"),
+\end_layout
+
+\begin_layout Plain Layout
+
+                new File("/home/m/documents/put/s3/MTh/Paxos/JPaxos/src/lsr/test
+Resources/downloads"));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        tm.setLastHostedDownloads(tm.hostedDownloads());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        verifyedList = new ArrayList<String>(Arrays.asList("Pirate Informatique
+ N30 - Aout-Octobre 2016.pdf",
+\end_layout
+
+\begin_layout Plain Layout
+
+                "Votre santé par les jus frais de légumes et de fruits -
+ Norman Walker.pdf",
+\end_layout
+
+\begin_layout Plain Layout
+
+                "(pdf+epub) Comment décoder les gestes de vos interlocuteurs
+  David Cohen",
+\end_layout
+
+\begin_layout Plain Layout
+
+                "Le Temps est assassin - Michel Bussi (2016) [ePub].epub"));
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+setHostedDownloads Test
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+    @Test
+\end_layout
+
+\begin_layout Plain Layout
+
+    public void setHostedDownloadsTest() throws Exception {
+\end_layout
+
+\begin_layout Plain Layout
+
+        assertEquals(verifyedList, this.tm.getLastHostedDownloads());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+getDeletedDownloads Test
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+    @Test
+\end_layout
+
+\begin_layout Plain Layout
+
+    public void getDeletedDownloadsTest() throws Exception {
+\end_layout
+
+\begin_layout Plain Layout
+
+        //emptytest
+\end_layout
+
+\begin_layout Plain Layout
+
+        tm.setLastHostedDownloads(new ArrayList<String>());
+\end_layout
+
+\begin_layout Plain Layout
+
+        assertEquals(new ArrayList<>(),tm.deletedDownloads());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        //normal test
+\end_layout
+
+\begin_layout Plain Layout
+
+        tm.setLastHostedDownloads(tm.hostedDownloads());
+\end_layout
+
+\begin_layout Plain Layout
+
+        ArrayList<String> tmpList = tm.hostedDownloads();
+\end_layout
+
+\begin_layout Plain Layout
+
+        tmpList.add(0,"new DL");
+\end_layout
+
+\begin_layout Plain Layout
+
+        tm.setLastHostedDownloads(tmpList);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        assertEquals(tmpList.get(0), tm.deletedDownloads().get(0));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+getAddedDownloads Test
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+    @Test
+\end_layout
+
+\begin_layout Plain Layout
+
+    public void getAddedDownloadsTest() throws Exception {
+\end_layout
+
+\begin_layout Plain Layout
+
+         //emptytest
+\end_layout
+
+\begin_layout Plain Layout
+
+        tm.setLastHostedDownloads(tm.hostedDownloads());
+\end_layout
+
+\begin_layout Plain Layout
+
+        ArrayList<String> tmpList = tm.hostedDownloads();
+\end_layout
+
+\begin_layout Plain Layout
+
+        tm.setLastHostedDownloads(new ArrayList<String>());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        assertEquals(tmpList,tm.addedDownloads());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        //normal test
+\end_layout
+
+\begin_layout Plain Layout
+
+        tm.updateLastHostedDownloads();
+\end_layout
+
+\begin_layout Plain Layout
+
+        String verify = tmpList.remove(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+        tm.setLastHostedDownloads(tmpList);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        assertEquals(verify, tm.addedDownloads().get(0));
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

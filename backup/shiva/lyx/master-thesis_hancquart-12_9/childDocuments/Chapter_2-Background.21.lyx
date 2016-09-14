@@ -1,0 +1,5156 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass dcsbook
+\begin_preamble
+%
+%  $Id: thesis-template.lyx,v 1.7 2011/12/22 12:10:18 sobaniec Exp $
+%
+\end_preamble
+\options thesis
+\use_default_options false
+\begin_modules
+dcs
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement tbph
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "urlcolor=linkcolor,linkcolor=linkcolor,citecolor=linkcolor"
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Indeks
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2.5cm
+\rightmargin 2cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\listings_params "basicstyle={\ttfamily},commentstyle={\color{green}\ttfamily},keywordstyle={\color{blue}\ttfamily},language={java},morecomment={[l][\color{magenta}]{\#}},numbers=left,numberstyle={\tiny},stringstyle={\color{red}\ttfamily}"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Background 
+\end_layout
+
+\begin_layout Standard
+The Chapter 2 provides the background context, in order to clarify the key
+ elements to understand this project.
+ This chapter contains three major parts, Thesis motivation, Economical
+ context and Technical context.
+ Getting through the first part of the chapter 2, it will be understood
+ what are those factors that made the motivation of this thesis and then
+ in next part, it will be shown how is internet economical environment and
+ in the final part the technical context will be discussed.
+\end_layout
+
+\begin_layout Section
+Thesis motivations
+\end_layout
+
+\begin_layout Standard
+The motivation of this project consist of three main factors: Existing Demand,Ad
+vertisement and Data Decentralization.
+ Each of them play important rules to illustrate the main will for done
+ this thesis and why it is chosen.
+ The following show the details regarding each factors.
+\end_layout
+
+\begin_layout Subsection
+Existing Demand
+\end_layout
+
+\begin_layout Standard
+Where there is no need, there is no users.
+ If there is no users , there is no market.
+ 
+\end_layout
+
+\begin_layout Standard
+Here is a survey research analysis trying to identify user behavior.
+ The survey research was a part of the project realized in the frame of
+ Quality Management and Experimental Software Engineering classes at Poznan
+ University of Technology.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Objectives
+\end_layout
+
+\begin_layout Standard
+The objectives is to get information about habits of people watching videos
+ in order to help the production of a video platform software.
+ The focus of the survey is targets user's habits to know how to fit their
+ expectations.
+\end_layout
+
+\begin_layout Subsubsection
+Design of the Survey
+\end_layout
+
+\begin_layout Standard
+The study was designed as successive independent sample.
+ It was decided to administer the survey to the participants in the following
+ ways:
+\end_layout
+
+\begin_layout Itemize
+Same way of questioning to participants (different people from random samples
+ of a population).
+ 
+\end_layout
+
+\begin_layout Itemize
+The answer should not differ with the time for a same person.
+ 
+\end_layout
+
+\begin_layout Itemize
+Release with a Google form ( e.g.
+ appendix ).
+ 
+\end_layout
+
+\begin_layout Itemize
+35 participants.
+\end_layout
+
+\begin_layout Subsubsection
+Survey questions
+\end_layout
+
+\begin_layout Standard
+As it been told before, these questions were designed to illustrate the
+ behavior (need,habit) of users in order to help the definition of development
+ backlogs.
+ The questions and related results are as up coming paragraphs.
+\end_layout
+
+\begin_layout Paragraph
+What device(s) are you using the most?
+\end_layout
+
+\begin_layout Standard
+Regarding the devices used, the TV, cable and satellite are not used ( e.g.
+ Appendix ).
+ The computer is the most used device.
+ A desktop application look like a good choice to develop the application.
+\end_layout
+
+\begin_layout Standard
+The mobile is represented as well and its market is growing fast ( source
+ ).
+ It would be interesting to develop a web application or some technology
+ easing the move to a browser application or a mobile application for future
+ developments like Javascript or Java (native on Android).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Volumes/SHIVA/lyx/master-thesis_hancquart-12_9/Q1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+When are you usually watching videos?
+\end_layout
+
+\begin_layout Standard
+According to the results, a big part of the videos will be watched around
+ during the same time.
+ More than 85% are watching videos on the same period of the day (Evening,
+ Night).
+ Considering this, it is worth to focus on a technology able to take advantage
+ of a it to decrease the data transfer.
+ Thinking of a decentralized application, the memory of each user could
+ be used to perform request of other users on the hard-drive ( unicast )
+ or to focus on the currently most watched videos ( broadcast / multicast
+ ).
+ Broadcast, multicast and unicast connections options should be explored
+ and compared.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/Survey_graphs/Q2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+What kind of videos are you usually watching?
+\end_layout
+
+\begin_layout Standard
+The question showed that people are mostly focused on 3 kind of video :
+ Music, Comedy and Documentary.
+ It would be interesting to target on of those categories on the provided
+ videos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/Survey_graphs/Q3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+On the internet, what platform are you using ?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Example table 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:ex-tab"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family sans
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series bold
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Often
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series bold
+\size small
+Always
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series bold
+\size small
+Never
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series bold
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Sometimes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\size small
+\emph on
+channels
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+17,14%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+8,57%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+37,14%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+37,14%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\size small
+\emph on
+streaming
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+11,42%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+5,71%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+68,57%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+14,28%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\size small
+\emph on
+torrent
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+25,71%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+17,14%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+28,57%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+25,71%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\emph on
+free video
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+54,29%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+40,00%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,00%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+5,71%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+People obviously prefer the free and popular video platform like Youtube
+ but the most popular platform just after it is the torrent platform.
+ So the video platform can appear as an alternative available solution.
+ Moreover, we can adapt front­end to not disturb users habits and couple
+ a desktop application and a web front­end.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/Survey_graphs/Q4.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+How long can you wait for a video to be loaded before giving up?
+\end_layout
+
+\begin_layout Standard
+In general, people are able to bear a short delay if they use torrent (
+ usually promise of good quality) or if the video is expected by the user.
+ 
+\end_layout
+
+\begin_layout Standard
+It would be a good idea to favor the quality videos and expected ones, with
+ a “like” system or with some ranking for a for example.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/Survey_graphs/Q5.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Are you annoyed by advertisements?
+\end_layout
+
+\begin_layout Standard
+Most of the people do not like advertisement but almost 30% do not care
+ about it.
+ The graphic expressly show a reject of advertisement from most of the people.
+ However it is usually the main source of revenues to finance the video
+ storage.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/Survey_graphs/Q6.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q6
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+How much time do you spend on watching videos per day?
+\end_layout
+
+\begin_layout Standard
+We have mean of 2 hours of watching per people a day.
+ Moreover, 40% of the asked people are watching between 30 minutes and one
+ hour of video content daily.
+ Single videos hosted may not exceed 2 hours.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/Survey_graphs/Q7.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+In comparison to last year, would you say that you watch videos more or
+ less often? 
+\end_layout
+
+\begin_layout Standard
+It appears that watching time stay constant from last year to this one.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/Survey_graphs/Q8.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subsubsection
+market examples
+\end_layout
+
+\begin_layout Itemize
+Centralized: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Deezer / Spotify 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Youtube / torrents
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Conclusion
+\end_layout
+
+\begin_layout Standard
+To put it in a nutshell, this survey was really interesting and useful.
+ Combining results of the questions asked it is possible to orient the video
+ platform development and get guide lines.
+\end_layout
+
+\begin_layout Standard
+At the technical level, the choice of a desktop application is relevant
+ compared to a website or a mobile application because the computer is by
+ far the device used.
+ Furthermore, it appear that the users are watching 2 hours per day on the
+ same period of the day.
+ A multicast strategy or duplication of the video content should be questioned.
+\end_layout
+
+\begin_layout Standard
+At the marketing level, the users mostly accept a delay for an expectedly
+ interesting video.
+ It is important to keep it in mind as on the beginning, the hosting costs
+ might impede to have a big storage capacity.
+ However, it is possible to compensate this by specializing the video offer
+ on one of the 3 most preferred kind of videos : 
+\end_layout
+
+\begin_layout Itemize
+Music, 
+\end_layout
+
+\begin_layout Itemize
+Comedy 
+\end_layout
+
+\begin_layout Itemize
+Documentary 
+\end_layout
+
+\begin_layout Standard
+It could be interesting to as well to implement a ranking system in the
+ application to provide interesting videos for the user.
+ 
+\end_layout
+
+\begin_layout Standard
+The use of ads to finance the platform should be limited at least at the
+ beginning.
+ It annoy the user and could decrease the watching time or completely make
+ the system unattractive at all.
+ 
+\end_layout
+
+\begin_layout Subsection
+Advertisement
+\end_layout
+
+\begin_layout Subsubsection
+history
+\end_layout
+
+\begin_layout Standard
+From Latin, ad vertere : "to turn toward", the advertisement is a marketing
+ communication to promote or sell something, usually a business's product
+ or service.
+ The purpose of advertisement can also to make sure that employees or shareholde
+rs believe in the company.
+ To be short, the advertisement is a way to convince a specific public to
+ have a specific behavior 
+\begin_inset Flex Emph
+status open
+
+\begin_layout Plain Layout
+( source wiki ? https://fr.wikipedia.org/wiki/Publicit%C3%A9#cite_note-1)
+ 
+\end_layout
+
+\end_inset
+
+: buy a product, elect someone, incitement to reduce speed while driving,
+ etc.
+ 
+\end_layout
+
+\begin_layout Standard
+The sponsors are usually companies that are looking to improve their brand
+ image or their sells.
+ It could also be governments in order to make citizen aware of something
+ ( like ecology or safe driving) or political personalities to raise their
+ popularity.
+ 
+\end_layout
+
+\begin_layout Paragraph
+from television to the Internet
+\end_layout
+
+\begin_layout Standard
+If the Internet seems to become the most used media, the advertisement still
+ remains present in a lot of other media.
+ 
+\end_layout
+
+\begin_layout Standard
+Old media such as newspapers, magazines, Television, Radio, outdoor advertising
+ or direct mail, are still widely used.
+ But more and more people are using internet and the advertisement is getting
+ into the new media as well as others before.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+advertisement distribution on the media
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:ex-tab-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family sans
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series bold
+\size small
+\emph on
+Media
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series bold
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2015 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series bold
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2016
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\size small
+\emph on
+TV 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+37,7% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+34,8%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\size small
+\emph on
+Online
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+29,1% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+36,6%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\size small
+\emph on
+Newspapers
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+19,3% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+15,4%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\size small
+\emph on
+Advertisement display 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+6,8% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+6,6%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\size small
+\emph on
+Radio 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+6,5% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+5,9%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\size small
+\emph on
+Cinema
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,6% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,7%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+New media such as blogs, websites, or web-videos have recently been conquered
+ by the sponsors.
+ But bigger implication has to come in the future as the number of internet
+ users is still increasing
+\begin_inset Flex Emph
+status open
+
+\begin_layout Plain Layout
+ ( e.g.
+ Figure ) 
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/m/Desktop/Screenshot at 2016-08-23 22:05:17.png
+	width 70page%
+	height 70page%
+	clip
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+increasing of Internet users over the year
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Advertisement on Internet
+\end_layout
+
+\begin_layout Standard
+In the past, the most efficient way to deliver a message was to emit it
+ to the biggest possible public.
+ From now on, advertisers will have an increasing ability to reach specific
+ audiences.
+ The usage of tracking, customer profiling and the growing popularity of
+ niche content gives a a number of more specific and smaller market target.
+ However this advertisement is more segmented but much better defined ands
+ so it's much more efficient.
+ With an agreement with a specialist blog writer in a a specific domain,
+ advertisers are able to communicate through famous specialists delivering
+ interesting and specialized advices including marketed products to passionates.
+ With this scenario, the message communicated by the brand, usually delivered
+ in a top-down topology on television ( communication from the top of the
+ head of the country communicator , like TV, to the mass) , is now certified
+ as a good advice by a specialist of the area.
+ The impact of the message would much more better on internet than with
+ television.
+\end_layout
+
+\begin_layout Standard
+Among others, Comcast Spotlight is one such advertiser employing this method
+ in their video on demand menus.
+ These advertisements are targeted to a specific group and can be viewed
+ by anyone wishing to find out more about a particular business or practice,
+ from their home.
+ This causes the viewer to become proactive and actually choose what advertiseme
+nts they want to view.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Google AdSense is an example of niche marketing.
+ Google calculates the primary purpose of a website and adjusts ads accordingly;
+ it uses key words on the page (or even in emails) to find the general ideas
+ of topics disused and places ads that will most likely be clicked on by
+ viewers of the email account or website visitors.
+ Also preferences of the Internet user are taking into account with the
+ use of little files (so called 
+\begin_inset Quotes eld
+\end_inset
+
+cookies
+\begin_inset Quotes erd
+\end_inset
+
+) that collect data on the user browsing habits.
+\end_layout
+
+\begin_layout Subsubsection
+Advertisement Influence
+\end_layout
+
+\begin_layout Standard
+The advertisement generates money for the content providers.
+ Speaking about video, the advertisement mainly support the hosting service.Somet
+imes, like on Youtube, the money generated partly goes to the creators to
+ motivate them creating content.
+ On such platforms, the advertisement is necessary to sustain the service
+ provided.
+ However, according to some researches , it appears that the advertisement
+ could detrimental influence on people that are watching it.
+\end_layout
+
+\begin_layout Standard
+The most important element of advertising is not information but suggestion
+ – more or less making use of associations, emotions and drives in the subconsci
+ous, such as sex drive, herd instinct, desires such as happiness, appearance,
+ self-esteem, social status and fears such as illness, weaknesses, loneliness,
+ etc..
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-4"
+
+\end_inset
+
+ Cause-related marketing in which advertisers link their product to some
+ worthy social cause has boomed over the past decade.
+\end_layout
+
+\begin_layout Standard
+Advertising uses the model role of celebrities or popular figures and makes
+ deliberate use of humor as well as of associations with color, tunes, certain
+ names and terms.
+ These are factors of how one perceives himself and one's self-worth.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-5"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The efficiency of advertising is improved through advertising research.
+ Universities, of course supported by business and in co-operation with
+ other disciplines (s.
+ above), mainly Psychiatry, Anthropology, Neurology and behavioral sciences,
+ are constantly in search for ever more refined, sophisticated, subtle and
+ crafty methods to make advertising more effective.
+ "NeuroMarketing is a controversial new field of marketing which uses medical
+ technologies such as functional Magnetic Resonance Imaging (fMRI)—not to
+ heal, but to sell products.
+ Advertising and marketing firms have long used the insights and research
+ methods of psychology in order to sell products, of course.
+ But today these practices are reaching epidemic levels, and with a complicity
+ on the part of the psychological profession that exceeds that of the past.
+ The result is an enormous advertising and marketing onslaught that comprises,
+ arguably, the largest single psychological project ever undertaken.
+ Yet, this great undertaking remains largely ignored by the American Psychologic
+al Association."
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-13"
+
+\end_inset
+
+ Robert McChesney calls it "the greatest concerted attempt at psychological
+ manipulation in all of human history."
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-14"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The following are examples to show the effects of advertisements on children
+ and teenagers and how these lead them to problems .
+\end_layout
+
+\begin_layout Paragraph
+obesity
+\end_layout
+
+\begin_layout Standard
+The television advertising is accused of contributing to the increase of
+ the obesity epidemic in developed countries.
+ A report submitted in 2003 to the Food Standards Agency in the UK that
+ advertising for food has an effect on children by affecting the food preference
+ and purchase applications for malsains products 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-15"
+
+\end_inset
+
+.
+ A group of French scientists nutrition issues officials claimed in 2008,
+ in an article entitled "fatten the children to save the television" ( «
+ Engraisser les enfants pour sauver la télévision ») , and referring to
+ "recent reports": "There is even a link between high exposure the TV ads
+ and obesity in children aged 2 to 11 years and adolescents aged 12 to 18
+ years.
+ Exposure to television advertising on high energy density foods (including
+ sweet and fat) is associated with a higher prevalence of obesity.
+ ".
+\end_layout
+
+\begin_layout Standard
+In 2010 the World Health Organization drove the point home: "television
+ advertising influences the food preferences of children and their purchase
+ requests and consumption patterns" [62].
+ At the same time, in France, What to choose noted that 80% of advertising
+ to children was for food, and that 80% of them were too fat or too sucrés63.
+ This study was critical to the food industry's commitments in 2008 under
+ the aegis of the ANIA, to reduce advertising to enfants [64].
+\end_layout
+
+\begin_layout Paragraph
+tobacco
+\end_layout
+
+\begin_layout Standard
+Smoking in films affects teenagers: a teenager sees movies with smoking,
+ the more likely to smoke.
+ The reverse is also true, namely that few teenagers smoking among those
+ who are not subject to tabagiques [65 ]films.
+ The World Health Organization recalls Article 13 of the Framework Convention
+ on Tobacco and calls for measures to limit the presence of tobacco in films[66].
+\end_layout
+
+\begin_layout Standard
+Americans Chomsky and Herman, in their criticism of the functioning of the
+ media in democracy theorized a propaganda model "regulation by advertising"
+ is one of five filters.
+ For reasons of financial and economic survival, the private media are primarily
+ concerned with good selling potential audience to advertisers that the
+ "subsidizing"; gold they are, according to these authors, "more usually
+ worn to avoid overly complicated programs or affecting disturbing controversies
+ that might reduce the" brain time available "public" 67.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+i dont get anything from this part
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+—
+\end_layout
+
+\begin_layout Plain Layout
+La publicité télévisée est accusée de contribuer à l'augmentation de l'épidémie
+ d'obésité qui touche les pays développés.
+ Un rapport remis en 2003 à l'agence des normes alimentaires au Royaume-Uni
+ selon lequel la publicité pour la nourriture a un effet sur les enfants
+ en influant sur la préférence de nourriture et sur les demandes d'achats
+ pour des produits malsains60.
+ Un groupe de scientifiques français responsables de questions de nutrition
+ affirmait en 2008, dans une tribune intitulée « Engraisser les enfants
+ pour sauver la télévision »61, et en se référant à des « rapports récents
+ » : « Il existe même un lien entre une forte exposition aux publicités
+ télévisées et l'obésité des enfants âgés de 2 à 11 ans ainsi que des adolescent
+s de 12 à 18 ans.
+ L'exposition à la publicité télévisée portant sur des aliments de haute
+ densité énergétique (notamment sucrés et gras) est associée à une prévalence
+ plus élevée de l'obésité.
+ ».
+ En 2010 l'organisation mondiale de la santé enfonçait le clou : « la publicité
+ télévisée influe sur les préférences alimentaires des enfants et sur leurs
+ demandes d’achat et leurs modes de consommation »62.
+ À la même époque, en France, Que choisir remarquait que 80% des publicités
+ destinées aux enfants l'était pour des aliments, et que 80% d'entre eux
+ étaient trop gras ou trop sucrés63.
+ Cette étude était une critique aux engagements de l'industrie agro-alimentaire
+ en 2008, sous l'égide de l'ANIA, pour la réduction de la publicité destinée
+ aux enfants64.
+\end_layout
+
+\begin_layout Plain Layout
+Le tabagisme dans les films a un effet sur les adolescents : plus un adolescent
+ voit de films avec du tabagisme, plus il risque de fumer.
+ L'inverse est également vrai, à savoir que rares sont les adolescents fumeurs
+ parmi ceux qui ne sont pas soumis à des films tabagiques65.
+ L'Organisation mondiale de la santé rappelle l'article 13 de la convention
+ cadre anti-tabac et appelle à des mesures pour limiter la présence de tabac
+ dans les films66.
+\end_layout
+
+\begin_layout Plain Layout
+Les Américains Chomsky et Herman, dans leur critique du fonctionnement des
+ médias en démocratie, ont théorisé un modèle de propagande dont la « régulation
+ par la publicité » constitue l'un des cinq filtres.
+ Pour des raisons de financement et de survie économique, les médias privés
+ sont avant tout soucieux de bien vendre leur public potentiel aux annonceurs
+ qui les « subventionnent » ; or ceux-ci sont, selon ces auteurs, « plus
+ généralement portés à éviter les programmes trop compliqués ou touchant
+ à des controverses dérangeantes, susceptibles de réduire le « temps de
+ cerveau disponible » du public »67.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+neuromarketing
+\end_layout
+
+\begin_layout Standard
+The filed of marketing research which studies consumers behaviors and their
+ response to marketing stimuli, is called Neuromarketing.
+\end_layout
+
+\begin_layout Standard
+There are three difference types of technologies that are used by researches
+ about brains activities, which part of brain are involved and how human
+ make decisions.The following are showing specifics technologies and their
+ prepuces regarding that.
+\end_layout
+
+\begin_layout Itemize
+(MRI) Functional magnetic resonance imaging 
+\end_layout
+
+\begin_layout Standard
+MRI is used to measure changes in activity in parts of the brain.
+\end_layout
+
+\begin_layout Itemize
+(EEG) Electroencephalography.
+\end_layout
+
+\begin_layout Itemize
+(SST) Steady state topography 
+\end_layout
+
+\begin_layout Standard
+EEG and SST are used to measure activity in specific regional spectra of
+ the brain response, or sensors to measure changes in one's physiological
+ state, also known as biometrics, including heart rate and respiratory rate,
+ galvanic skin response to learn why consumers make the decisions they do,
+ and which brain areas are responsible.
+\end_layout
+
+\begin_layout Standard
+The large scale companies ambitions to predict consumer behaviors and their
+ response with having investment in their own laboratories ,science personnel
+ or partnerships with academia.
+ Present in over ten countries, the Neuromarketing Business Association[2]
+ today centralizes academic publications and certifications and serves as
+ a networking platform for professionals in the field.
+\end_layout
+
+\begin_layout Standard
+Companies such as Google, CBS, Frito-Lay, and A & E Television amongst others
+ have used neuromarketing research services to measure consumer thoughts
+ on their advertisements or products.[3]
+\end_layout
+
+\begin_layout Standard
+In the late 1990s, both Neurosense (UK) and Gerry Zaltmann (USA) had established
+ neuromarketing companies.
+ Unilever's Consumer Research Exploratory Fund (CREF) too had been publishing
+ white papers on the potential applications of Neuromarketing.[4]
+\end_layout
+
+\begin_layout Paragraph
+Privacy concerns
+\end_layout
+
+\begin_layout Standard
+Before advertising is done, market research institutions need to know and
+ describe the target group to exactly plan and implement the advertising
+ campaign and to achieve the best possible results.
+ A whole array of sciences directly deal with advertising and marketing
+ or are used to improve its effects.
+ Focus groups, psychologists and cultural anthropologists are working for
+ marketing research.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-12"
+
+\end_inset
+
+ Vast amounts of data on persons and their shopping habits are collected,
+ accumulated, aggregated and analyzed with the aid of credit cards, bonus
+ cards, raffles and internet surveying.
+ With increasing accuracy this supplies a picture of behavior, wishes and
+ weaknesses of certain sections of a population with which advertisement
+ can be employed more selectively and effectively.
+\end_layout
+
+\begin_layout Standard
+The collection of user information by publishers and advertisers has raised
+ consumer concerns about their privacy.[27][61] Sixty percent of Internet
+ users would use Do Not Track technology to block all collection of information
+ if given an opportunity.[94][95] Over half of all Google and Facebook users
+ are concerned about their privacy when using Google and Facebook, according
+ to Gallup.[96]
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+these are data and should mention by source so i did not change any thing
+ regarding this
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tracking user online activities make advertisers able to understand consumers
+ quite well.
+ They often use technologies namely :web bugs and respawning cookies, to
+ maximizing their abilities to track consumers.
+ This is caused, many consumers have precaution about online behavior targeting.A
+ccording to a 2011 survey conducted by Harris Interactive, over half of
+ Internet users had a negative impression of online behavioral advertising,
+ and forty percent feared that their personally-identifiable information
+ had been shared with advertisers without their consent.[99][100] Consumers
+ can be especially troubled by advertisers targeting them based on sensitive
+ information, such as financial or health status.[97]
+\end_layout
+
+\begin_layout Subsubsection
+Nowadays, on Internet
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+https://en.wikipedia.org/wiki/Advertising#Rise_in_new_media
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Online advertisement take advance of internet and World Wide Web in order
+ to delivering marketing messages to attract customers.Online ads are deilvered
+ by and ad servers.
+ Contextual ads that appear on search engine results pages,banner ads, in
+ pay per click text ads, rich media ads, Social network advertising, online
+ classified advertising, advertising networks and e-mail marketing, including
+ e-mail spam or newer form of it is Native Ads( they go in a website's news
+ feed and are supposed to improve user experience by being less intrusive)
+ are all examples of online advertisements Ads which customers are faced
+ in daily matters.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Rise in new media 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/graphs/Naa_newspaper_ad_revenue.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+US Newspaper Advertising Revenue Newspaper Association of America published
+ data 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ex-fig1-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With the Internet came many new advertising opportunities.
+ Popup, Flash, banner, Popunder, advergaming, and email advertisements (all
+ of which are often unwanted or spam in the case of email) are now commonplace.
+ Particularly since the rise of "entertaining" advertising, some people
+ may like an advertisement enough to wish to watch it later or show a friend.
+ In general, the advertising community has not yet made this easy, although
+ some have used the Internet to widely distribute their ads to anyone willing
+ to see or hear them.
+ In the last three-quarters of 2009 mobile and internet advertising grew
+ by 18% and 9% respectively.
+ Older media advertising saw declines: -10.1% (TV), -11.7% (radio), -14.8%
+ (magazines) and -18.7% (newspapers).
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+this part you should refer it to pervious part that you used it for frist
+ time which is result in table 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Niche marketing
+\end_layout
+
+\begin_layout Standard
+Among others, Comcast Spotlight is one such advertiser employing this method
+ in their video on demand menus.
+ These advertisements are targeted to a specific group and can be viewed
+ by anyone wishing to find out more about a particular business or practice,
+ from their home.
+ This causes the viewer to become proactive and actually choose what advertiseme
+nts they want to view.[58]
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+i think this part is irrelevant to niche marketing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In creasing of importance the Niche market(target ads), has high trend regarding
+ future of advertisement.Also with theory of Long Tail, advertisers will
+ have an increasing ability to get specific consumers.In the past, the most
+ efficient way to deliver a message was to blanket the largest mass market
+ audience possible.
+ But thanks to usage tracking ,customer profiles and the growing popularity
+ of niche content ( Is given by everything from blogs to social networking
+ sites) make advertisers have access to audiences that are smaller but much
+ more better defined , leading to ads that are more related to viewers and
+ more effective for companies marketing.Google AdSense is an example of niche
+ marketing.
+ Google calculates the primary purpose of a website and adjusts ads accordingly;
+ it uses key words on the page (or even in emails) to find the general ideas
+ of topics disused and places ads that will most likely be clicked on by
+ viewers of the email account or website visitors.
+\end_layout
+
+\begin_layout Paragraph
+Video Commerce
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+https://en.wikipedia.org/wiki/Video_commerce
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+i didi not get this part until SEO
+\end_layout
+
+\end_inset
+
+The end goal is to convert a shopper into a customer1, but conversion is
+ not the only metric as View Through Rate (VTR) is a common measurement2.
+ Some merchants realize additional benefit such as Search Engine Optimization
+ (SEO)3.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+this part is unnecessary you already expalin it 
+\end_layout
+
+\end_inset
+
+A typical video commerce application would involve a video which contains
+ a number of clickable objects so that the viewer can click on any of those
+ objects for further information or to purchase them.
+\end_layout
+
+\begin_layout Standard
+The term vCommerce (video commerce) was first used by ShopNBC (a.k.a.
+ ValueVision - VVTV) in the summer of 2007 as part of the launch of ShopNBC.TV.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+i think this part is no needed is too much deitails
+\end_layout
+
+\end_inset
+
+The strategy combined the use of leveraging web video content for higher
+ conversion on eCommerce websites.
+ The term was quickly adopted in the industry including the start of the
+ Video Commerce Consortium (http://video-commerce.org).
+ ShopNBC was also the first home shopping network to utilize live (and archived)
+ webcasts (web-only live video streams which sold products just like TV
+ shopping).
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+Video commerce is using the video content to benefit,sell and support commercial
+ goods or services on internet.
+ No matter what, the video downloaded or streamed, it often contains clickable
+ link which can open up a web or transaction procedure.
+ Moreover, the clickable objects may not always be within the video itself,
+ but part of the Flash or HTML5 player used to play back the video.
+ The term vCommerce was first time used by ShopNBC (a.k.a.
+ ValueVision - VVTV) in the summer of 2007 as part of the launch of ShopNBC.TV.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+you need reference for this info 
+\end_layout
+
+\end_inset
+
+ As its shown, video commerce has great potential to take place over any
+ Internet-enabled communications device (a Personal Computer, a laptop,
+ a PDA, a mobile phone, or a smart phone).
+\end_layout
+
+\begin_layout Paragraph
+entertainment and advertisement rapprochement
+\end_layout
+
+\begin_layout Standard
+For advertising critics another serious problem is that, "the long standing
+ notion of separation between advertising and editorial/creative sides of
+ media is rapidly crumbling" and advertising is increasingly hard to tell
+ apart from news, information or entertainment.
+ The boundaries between advertising and programming are becoming blurred.
+ According to the media firms all this commercial involvement has no influence
+ over actual media content, but as McChesney puts it, "this claim fails
+ to pass even the most basic giggle test, it is so preposterous."
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-6"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Advertising draws "heavily on psychological theories about how to create
+ subjects, enabling advertising and marketing to take on a 'more clearly
+ psychological tinge'.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-7"
+
+\end_inset
+
+ Increasingly, the emphasis in advertising has switched from providing 'factual'
+ information to the symbolic connotations of commodities, since the crucial
+ cultural premise of advertising is that the material object being sold
+ is never in itself enough.
+ Even those commodities providing for the most mundane necessities of daily
+ life must be imbued with symbolic qualities and culturally endowed meanings
+ via the 'magic system' of advertising.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-10"
+
+\end_inset
+
+ In this way and by altering the context in which advertisements appear,
+ things 'can be made to mean 'just about anything' and the 'same' things
+ can be endowed with different intended meanings for different individuals
+ and groups of people, thereby offering mass produced visions of individualism."
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-8,key-9"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Money spent
+\end_layout
+
+\begin_layout Standard
+In 2015, the world spent an estimate of US$592.43 billion on advertising.[4]
+ Internationally, the largest ("big four") advertising conglomerates are
+ Interpublic, Omnicom, Publicis, and WPP.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-11"
+
+\end_inset
+
+ ( https://en.wikipedia.org/wiki/Advertising):
+\end_layout
+
+\begin_layout Standard
+money for 1 ad .
+ for 1 video, etc...
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Alternatives
+\end_layout
+
+\begin_layout Paragraph
+Ad-blockers
+\end_layout
+
+\begin_layout Standard
+It became hard to browse the internet without being bombed with advertising
+ pop ups, frames , etc.
+ In order to prevent ourself from these annoyance , a set of add-ons and
+ plugins emerged on each browsers to stop them : the ad-blockers ( or content
+ filtering ).
+\end_layout
+
+\begin_layout Standard
+wiki: To users, the benefits of ad blocking include quicker loading and
+ cleaner looking web pages free from advertisements, lower resource waste
+ (bandwidth, CPU, memory, etc.), and privacy benefits gained through the
+ deprivation of the tracking and profiling systems of ad delivery platforms.
+ Blocking ads can also save significant amounts of energy.[1][2]
+\end_layout
+
+\begin_layout Standard
+It is possible for ad-blocking to benefit the natural environment via an
+ indirect route.
+ This arises because the advertising-and-marketing industry places a strong
+ attention on building emotional connections with inanimate objects for
+ sale,[3] [4] and on creating the urge to buy immediately.[5] [6] With the
+ average person seeing more than 5000 advertisements every day, and with
+ many of these being from online sources,[7] and with each ad promising
+ viewers that their lives will be improved if they buy what is being promoted,
+ [8] [9] [10] it is reasonable to expect that some people will end up buying
+ items which they may not actually need.[11] If these items then end up being
+ disposed of without actually being used, then the environmental impacts
+ of waste disposal will inevitably arise.
+ Because advertisements are very carefully crafted to target weaknesses
+ in human psychology,[12] [3] it therefore follows that a reduction in advertise
+ments viewed would result in less waste to dispose of.
+\end_layout
+
+\begin_layout Standard
+Unwanted advertising can also harm the advertisers themselves if the users
+ become irritated by the ads.
+ In this case users might make a conscious effort to avoid services of firms
+ with annoying ads.[13]
+\end_layout
+
+\begin_layout Standard
+For users not interested in making purchases, the blocking of ads can also
+ save time.
+ A user who is strongly focused on reading solely the content that he/she
+ is seeking likely has no desire to be diverted by advertisements that seek
+ to sell unneeded or unwanted goods and services.[14] 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+from here delete
+\end_layout
+
+\end_inset
+
+Ad-blocking can also have some benefit like save money for the user.
+ If a user's personal time is worth one dollar per minute, and if unsolicited
+ advertising adds an extra minute to the time that the user requires for
+ reading the webpage (i.e.
+ the user must manually identify the ads as ads, and then click to close
+ them, or use other techniques to either deal with them, all of which tax
+ the user's intellectual focus in some way),[16] then the user has effectively
+ lost one dollar of time in order to deal with ads that might generate a
+ few fractional pennies of display-ad revenue for the website owner.
+ The problem of lost time can rapidly spiral out of control if malware accompani
+es the ads.[17][18] This is discussed in more detail below.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+delet this part it dosent help your philosophy 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+from here
+\end_layout
+
+\end_inset
+
+Another important aspect is improving security; online advertising subjects
+ users to a higher risk of infecting their devices than surfing pornography
+ sites.[19] In a high-profile case, malware was distributed through advertisement
+s provided to YouTube by a malicious customer of Google's Doubleclick.[20][21]
+ In August 2015, a 0-day exploit in the Firefox browser was discovered in
+ an advertisement on a website.[22] When Forbes required users to disable
+ ad blocking before viewing their website, those users were immediately
+ served with pop-under malware.[23]
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+should not change
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Users who pay for total transferred bandwidth including most mobile users
+ worldwide, have a direct financial benefit from filtering an ad before
+ it is loaded.
+ Streaming audio and video, even if they are not presented to the user interface
+, can rapidly consume gigabytes of transfer especially on a faster 4G connection.
+ Users without a data plan often pay by the megabyte, the cost of tolerating
+ ads can be quite high.
+ Even fixed connections are often subject to usage limits, especially the
+ faster connections (100Mbit/s and up) which can quickly saturate a network
+ if filled by streaming media.
+\end_layout
+
+\begin_layout Standard
+It is a known problem with most web browsers, including Firefox, that restoring
+ sessions often plays multiple embedded ads at once.[24] Using an advertisement
+ blocker stops such behavior.
+\end_layout
+
+\begin_layout Subparagraph
+Popularity 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+data.
+ no need to changes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The number of monthly active ad-blocking users, as estimated by PageFair.
+\end_layout
+
+\begin_layout Standard
+Use of mobile and desktop ad blocking software designed to remove traditional
+ advertising grew by 41% worldwide and by 48% in the U.S.
+ between Q2 2014 and Q2 2015.[25]
+\end_layout
+
+\begin_layout Standard
+As of Q2 2015, 45 million Americans were using ad blockers.[25] In a survey
+ research study released Q2 2016, MetaFacts reported 72 million Americans,
+ 12.8 million adults in the UK, and 13.2 million adults in France were using
+ ad blockers on their PCs, Smartphones, or Tablets.
+\end_layout
+
+\begin_layout Standard
+In March 2016, the Internet Advertising Bureau reported that UK ad-blocking
+ was already at 22% among over-18s.[26][27]
+\end_layout
+
+\begin_layout Standard
+[graphic ]
+\end_layout
+
+\begin_layout Paragraph
+profiling
+\end_layout
+
+\begin_layout Standard
+The profiling on internet became very popular to do advertisement .
+ The tracking of activity on internet has began quite profitable for the
+ announcers.
+ As a result, some public organization and groups are criticizing this.
+\end_layout
+
+\begin_layout Subparagraph
+Duckduckgo
+\end_layout
+
+\begin_layout Standard
+To answer the growing need of privacy on Internet, some tools are getting
+ become more popular.
+ DuckDuckGo is an Internet search engine that emphasizes protecting searchers'
+ privacy and avoiding the filter bubble of personalized search results.[1]
+ DuckDuckGo distinguishes itself from other search engines by not profiling
+ its users and by deliberately showing all users the same search results
+ for a given search term.[4] DuckDuckGo emphasizes getting information from
+ the best sources rather than the most sources, generating its search results
+ from key crowdsourced sites such as Wikipedia and from partnerships with
+ other search engines like Yandex, Yahoo!, Bing, and Yummly.[5][6]
+\end_layout
+
+\begin_layout Standard
+Duck duckgo kind of service demand : 
+\end_layout
+
+\begin_layout Standard
+It took 1445 days to get 1M searches, 483 days to get 2M searches, and then
+ just 8 days to pass 3M searches.
+ now, it got over 10 M.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/graphs/duckduckgo.png
+	lyxscale 40
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Example figure 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ex-fig1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+An other way to finance creators
+\end_layout
+
+\begin_layout Subparagraph
+patronage
+\end_layout
+
+\begin_layout Standard
+Recently, the patronage which is an old trend came back.
+ Indeed, it is a way to pay people that produce content on the video hosting
+ websites.
+ 
+\end_layout
+
+\begin_layout Standard
+In 2013, a few websites emerged with the idea to retribute content makers
+ like musicians or comic short movies with tips and live from that.
+ tipeee .com in France and Patreon in US.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+put refrence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Their growth is impressive, Tipeee already gathers more than 524 000 € of
+ tips, while Patreon collected 50 Millions $ for its creators members.
+ It is clearly called to continue as People want to support the free creators
+ and give in order to get nice videos.
+ Everybody understand that without money, creators cannot continue to provide
+ freely good content.
+ so there is 2 solutions : accept the ads or tip the creator.
+\end_layout
+
+\begin_layout Standard
+Some content producers like Usul2000, even decided to totally disable advertisem
+ent on their channel and earn money only from direct donations.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+same here
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Playlist launching
+\end_layout
+
+\begin_layout Standard
+In order to avoid the advertisement during watching video , some users use
+ ad-blockers ( so that the creator doesn't receive advertisement subsidiary
+ payment).
+ However they play a playlist ( with ads supporting YouTube and the creator
+ ) while not watching it.
+ 
+\end_layout
+
+\begin_layout Standard
+Some content creators even emphasis to this practice.
+\end_layout
+
+\begin_layout Subsection
+Data Decentralization
+\end_layout
+
+\begin_layout Standard
+From a few years, the Internet topology is slowly changing.
+ Started as ARPANET, a 
+\begin_inset Quotes eld
+\end_inset
+
+many-to-many
+\begin_inset Quotes erd
+\end_inset
+
+ communication topology, it seems now nearest to a 
+\begin_inset Quotes eld
+\end_inset
+
+many-to-few
+\begin_inset Quotes erd
+\end_inset
+
+ topology.
+ Indeed, most of the request dragged to a few hosting platforms like YouTube,
+ Facebook, Vimeo , Dailymotion, etc.
+ They and produce a clogging of the network.
+ Although this one would be more efficient if the hosting of videos would
+ be spread over the network.
+ 
+\end_layout
+
+\begin_layout Standard
+A concern risen by the survey is about the speed of watching.
+ the big advantage of big centralized servers in the fast and stable delivery
+ of videos.
+ Although this speed necessitate some agreements with ISPs and cable owners
+ in order get traffic caches optimization on ISPs data centers and a good
+ bandwidth allocated on cables.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Internet : A mesh network
+\end_layout
+
+\begin_layout Paragraph
+History 
+\end_layout
+
+\begin_layout Standard
+By nature, the Internet is a mesh network .
+ Each points has an address to connect, exchange and publish information.
+ This was the case in the beginning of Internet when the actors were professiona
+l ones.
+ However , today the situation isn't the same anymore.
+ Youtube, a video hosting website, and Facebook, a social network website
+ hosting videos, are respectively the 2nd and the 3rd most visited websites
+ in the world.
+ It means that the mesh network is turning into a convergent network
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-16"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+It isn't a problem in itself.
+ The actors of the Internet are acting according to the economy model we
+ are living in.
+ It could be a problem in terms of data traffic, data control , privacy
+ control.
+\end_layout
+
+\begin_layout Paragraph
+Network recentralization
+\end_layout
+
+\begin_layout Standard
+Unlike the historical Mainframe where all the data where stored and computed
+ in a central place, the Internet nature is to be a mesh network : decentralized.
+\end_layout
+
+\begin_layout Standard
+As it is not a problem in itself, concentrate the world wide web in a few
+ nodes is costly: hundreds of millions of connexions per second to one node
+ doesn't come without a price.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+ancient vision of the internet
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+https://en.wikipedia.org/wiki/Peer-to-peer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tim Berners-Lee's vision for the World Wide Web was close to a P2P network
+ which it was assumed each user of the web would be an active editor and
+ contributor, creating and linking content to form an interlinked "web"
+ of links.
+ The early Internet was more open than nowdays, where two machines connected
+ to the Internet could send packets to each other without firewalls and
+ other security measures.[4] This contrasts to the broadcasting-like structure
+ of the web as it has developed over the years.[6] As a precursor to the
+ Internet, ARPANET was a successful client-server network where "every participa
+ting node could request and serve content." However, ARPANET was not self-organiz
+ed, and it disable to "provide any means for context or content-based routing
+ beyond simple address-based routing."[7]
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+bottle-neck network struggling
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+http://www.csmonitor.com/Technology/2015/1223/YouTube-says-T-Mobile-is-downgrading
+-videos.-Does-that-violate-net-neutrality-video 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The amount of data downloaded and uploaded is http://www.slate.fr/story/67161/goog
+le-free-video-interconnexion-rame
+\end_layout
+
+\begin_layout Paragraph
+A huge Infrastructure
+\end_layout
+
+\begin_layout Standard
+As the big mainframe serving all the videos, YouTube records five hundred
+ hours of video per minutes at the time I am writing the thesis and could
+ reach 700h of video uploaded per minute in 2017 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-17"
+
+\end_inset
+
+.
+ This amount of data uploaded on Youtube servers and replicated several
+ times in order to unsure a good quality of service, necessitate an extraordinar
+y huge infrastructure investment.
+ However YouTube part of Google company, there is some founds dedicated
+ to the cause.
+ The quality of service and the large offer unsure to Youtube a nearly monopoly
+ on the Video Streaming market.
+ With a such position and the continuous growing traffic on the site, advertiser
+s are investing more and more money on The only way that YouTube can handle
+ such a traffic and storage cost and the necessary bandwidth on the long
+ are advertisement revenues.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subparagraph
+Data Control
+\end_layout
+
+\begin_layout Itemize
+central point
+\end_layout
+
+\begin_layout Itemize
+Data owner?
+\end_layout
+
+\begin_layout Itemize
+youtube algo copyright
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Internet Neutrality
+\end_layout
+
+\begin_layout Paragraph
+client–server model
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+https://en.wikipedia.org/wiki/Client%E2%80%93server_model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+All the most visited websites are based on client-server model.
+ It is a distributed application structure that partitions tasks or workloads
+ between the providers of a resource or service, called servers, and service
+ requesters, called clients.[1] Often clients and servers communicate over
+ a computer network on separate hardware, but both client and server may
+ locate in the same system.
+ A server host runs one or more server programs which share their resources
+ with clients.
+ A client does not share any of its resources, but requests a server's content
+ or service function.
+ Clients therefore estabilish communication sessions with servers which
+ expect incoming requests.
+ Examples of computer applications that use the client–server model are
+ Email, network printing, and the World Wide Web.
+\end_layout
+
+\begin_layout Paragraph
+multicast vs unicast
+\end_layout
+
+\begin_layout Standard
+youtube and netflix are in unicast but they use caches limit the data repeating.
+\end_layout
+
+\begin_layout Standard
+multicast is very good for for TV like streaming but doesn't fit requirements
+ of VOD 
+\end_layout
+
+\begin_layout Standard
+https://www.reddit.com/r/networking/comments/2cp356/how_do_streaming_services_like
+_netflix_and/
+\end_layout
+
+\begin_layout Section
+Economical Context
+\end_layout
+
+\begin_layout Standard
+In order to elucidate a decentralized video application, pay attention on
+ 3 points is needed.
+ The up coming subbranches are contained details regarding each point.
+\end_layout
+
+\begin_layout Subsection
+Actors
+\end_layout
+
+\begin_layout Standard
+On the web, there is different ways to get video content: 
+\end_layout
+
+\begin_layout Itemize
+video hosting websites.
+\end_layout
+
+\begin_layout Itemize
+peer-to-peer, streaming websites.
+\end_layout
+
+\begin_layout Itemize
+direct download.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Video hosting websites
+\end_layout
+
+\begin_layout Standard
+The video hosting services allows individual end users to upload and share
+ personal, business, or royalty-free videos and to watch them legally.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-9"
+
+\end_inset
+
+.
+ We spend more and more time on Internet and video websites.
+ Traffic on video hosting services are rising from a few years and it is
+ slowly replacing the TV.
+ 
+\end_layout
+
+\begin_layout Standard
+There is a few reasons that makes these websites so popular.
+ First, since internet has a flat topology, the communication is not top-down
+ but more peer to peer.
+ It gave a will of expressiveness.
+ ( source to find ).
+ Second of all, most people do not own web servers, and this has created
+ demand for user-generated video content hosting.
+ The hosting websites definitely answer this demand, providing a user-friendly
+ interface and a common place to upload and watch videos.
+ Further more, the video hosting websites are suiting the user expression
+ will are they are adapted to low quality video like phone video, etc.
+ It might change with the growing professionalism and quality video format
+ of creators.
+ 
+\end_layout
+
+\begin_layout Standard
+( https://en.wikipedia.org/wiki/Video_hosting_service )
+\end_layout
+
+\begin_layout Paragraph
+Usage 
+\end_layout
+
+\begin_layout Standard
+Users generally will upload via the hosting service's website, mobile or
+ desktop applications or APIs.
+ The type of video content uploaded can be anything from short video clips
+ and digital audio files all the way to full-length TV shows and movies.
+ The video host stores the video on its server offers individual different
+ types of embed codes or links to allow others to view this video.
+ The website, mainly used as the video hosting website, is usually called
+ the video sharing website.
+ Some video hosting services offer copyrighted TV shows, movies and music
+ for which they have not obtained the necessary copyright approvals.
+\end_layout
+
+\begin_layout Paragraph
+History
+\end_layout
+
+\begin_layout Standard
+Nowadays, there is a lot of video hosting websites : Youtube, Vimeo , Dailymotio
+n, are one of the most famous example.
+ The first website of the kind was founded in was founded in 1997 by Chase
+ Norlin
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shareyourworld.com"
+
+\end_inset
+
+.
+ Similar to the actual video hosting websites, shareyourworld.com allowed
+ users to upload clips or full videos in different file formats.
+ The site shutdown in 2001 due to budget and bandwidth problems.
+\end_layout
+
+\begin_layout Paragraph
+Centralisation
+\end_layout
+
+\begin_layout Standard
+One caracteristic of the video hosting platforms is to be centralized.
+ It is a website on wihch every user connects and request a video from this
+ one.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+Network issues
+\end_layout
+
+\begin_layout Standard
+Thousands of billions of peopole are connecting to the same node of the
+ network.
+ It makes a huge load of requests and content supply.
+ The servers has to uses strategies like load ballancing to handle this
+ and serve the videos.
+ 
+\end_layout
+
+\begin_layout Standard
+Internet is a mesh network and distributting most of the traffic on a few
+ node is difficult to support for the servers and the network equipment.
+ ISPs( ) are fighting agains such big video hosting services like youtube
+ to make them pay a tax for using their network.
+ As we said earlier, it was even one of the reason of the first website
+ of this kind to bankrupt ( cf History ).
+\end_layout
+
+\begin_layout Subparagraph
+Mediatic issues
+\end_layout
+
+\begin_layout Standard
+As the video hosting services are delivered by a very few number of websites
+ ( https://en.wikipedia.org/wiki/List_of_video_hosting_services ) , even if
+ the internet tends to have a flat topology , the media seems to not be
+ so far from the TV than its topology suggest.
+ Video hosting website are not a top- down communication system but it is
+ not as flat as it is said to be ( source ).
+ Everyone can express itself but the most viewed videos are made more suggested
+ than the other ones.
+ it tends to centralize the audience on a few channels and can lead to a
+ lack diverssity of point of view.
+\end_layout
+
+\begin_layout Subparagraph
+Censorship issues
+\end_layout
+
+\begin_layout Standard
+With the mirage about diversity of opinions on those platforms, there is
+ no more freedom of speaking in every country.
+ Being cetralized make it possbiel to be controlled or pressured by governments.
+ For Youtube alone, a list of 23 countries for which censorship is applied
+ is available on wikipedia.
+ It includes Afghanistan, Armenia, Bangladesh, Brazil, China, Eritrea, Germany,
+ Indonesia, Iran, Libya, Malaysia, Morocco, North Korea, Pakistan, Russia,
+ Syria, Sudan, South Sudan, Tajikistan, Thailand, Turkey, Turkmenistan.
+ 
+\end_layout
+
+\begin_layout Standard
+Recently, a case about Youtube appeared on the news pointing out that the
+ channel 
+\begin_inset Quotes eld
+\end_inset
+
+Philip deFranco
+\begin_inset Quotes erd
+\end_inset
+
+ ( and other creators ) has been demonetized by a Youtube decision because
+ their video would deem not to be 
+\begin_inset Quotes eld
+\end_inset
+
+advertiser friendly".
+\end_layout
+
+\begin_layout Standard
+http://betanews.com/2016/09/03/youtube-demonetizes-videos/
+\end_layout
+
+\begin_layout Standard
+https://en.wikipedia.org/wiki/Censorship_of_YouTube#.C2.A0Russia
+\end_layout
+
+\begin_layout Standard
+https://en.wikipedia.org/wiki/Censorship_by_Google#Ungoogleable
+\end_layout
+
+\begin_layout Paragraph
+Copyright issues
+\end_layout
+
+\begin_layout Standard
+In spite of video hosting services can has control on video availability,
+ it doesn't prevent the break of copyright by several technics confusing
+ the robots checking the videos.
+ Even for users it could be confusing and they may not konw if they are
+ watching a copyrighted video or not.( sources ) 
+\end_layout
+
+\begin_layout Paragraph
+Futur usage
+\end_layout
+
+\begin_layout Standard
+the samrtphones usage growing, the watching of videos is compelled to increase
+ sensibly and is an important market to reach on the future.
+ Global mobile phone subscriptions exceeded 2 billion in 2013 and are expected
+ to reach 8 billion subscriptions by 2019, according to the Ericsson Mobility
+ Report ( November 2013 ).
+\end_layout
+
+\begin_layout Standard
+http://www.cwcsi.com/smartphones-drives-video-usage-increasing-mobile-data-traffic
+/
+\end_layout
+
+\begin_layout Subsubsection
+Peer-to-peer
+\end_layout
+
+\begin_layout Standard
+https://en.wikipedia.org/wiki/Peer-to-peer
+\end_layout
+
+\begin_layout Standard
+The Peer-to-peer (P2P) is a point to point application architecture where
+ the data ( or the tasks) are distributed among the peers of the network.
+ Each nodes are equally responsible and of the service provided and get
+ a fraction of the task or the data to take care of.
+ They are said to form a peer-to-peer network of nodes.
+\end_layout
+
+\begin_layout Standard
+The Peers are using and serving the resources of the network.
+ They make a part of their resources network, such as disk storage or network
+ bandwidth, available for the other peers.
+ In contrast to the traditional client-server model in which the consumption
+ and supply of resources is divided.
+ 
+\end_layout
+
+\begin_layout Paragraph
+History
+\end_layout
+
+\begin_layout Standard
+While P2P systems had previously been used in many application domains,[3]
+ this architecture became famous with the file sharing system : Napster.
+ The music service, originally released in 1999.
+ The original company ran into legal difficulties over copyright infringement,
+ ceased operations and was finally bought by Roxio then Rhapsody.
+ The original service is now a music store, but the peer-to-peer concept
+ gave birth to a lot of following companies and projects like : Gnutella,
+ Freenet, Kazaa, Bearshare, LimeWire, Scour, Grokster, Madster, and eDonkey2000.
+ some of them didn't stand until now mainly because of copyright issues.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Potential
+\end_layout
+
+\begin_layout Standard
+The concept of Napster has inspired new structures and philosophies in many
+ areas of human interaction.
+ In such social contexts, peer-to-peer as a meme refers to the egalitarian
+ social networking that has emerged throughout society, enabled by Internet
+ technologies in general.
+\end_layout
+
+\begin_layout Standard
+Emerging collaborative P2P systems gives more power and possibilities to
+ the system a network peers involved in a service than the ability of a
+ single service to achieve something individually.
+ [2]
+\end_layout
+
+\begin_layout Paragraph
+Drawbaks
+\end_layout
+
+\begin_layout Standard
+startup time efficiency / coordination / data discrimination
+\end_layout
+
+\begin_layout Subsubsection
+Streaming websites
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+https://en.wikipedia.org/wiki/Streaming_media
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Streaming media is multimedia that is constantly received by and presented
+ to an end-user while being delivered by a provider.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+not needed
+\end_layout
+
+\end_inset
+
+The verb "to stream" refers to the process of delivering media in this manner;
+ the term refers to the delivery method of the medium, rather than the medium
+ itself, and is an alternative to file downloading.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+until here
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A client media player can begin to play the data (such as a movie) before
+ the entire file has been transmitted.
+ Distinguishing delivery method from the media distributed applies specifically
+ to telecommunications networks, as most of the delivery systems are either
+ inherently streaming (e.g.
+ radio, television) or inherently non-streaming (e.g.
+ books, video cassettes, audio CDs).
+ For example, in the 1930s, elevator music was among the earliest popularly
+ available streaming media; nowadays Internet television is a common form
+ of streamed media.
+ The term "streaming media" can apply to media other than video and audio
+ such as live closed captioning, ticker tape, and real-time text, which
+ are all considered "streaming text".
+ The term "streaming" was first used in the early 1990s as a better description
+ for video on demand on IP networks; at the time such video was usually
+ referred to as "store and forward video",[1] which was misleading nomenclature.
+\end_layout
+
+\begin_layout Standard
+As of 2016, streaming is generally taken to refer to cases where a user
+ watches digital video content and/or listens to digital audio content on
+ a computer screen and speakers (ranging from a desktop computer to a smartphone
+) over the Internet.
+ With streaming content, the user does not have to download the entire digital
+ video or digital audio file before she starts to watch/listen to it.
+ There are challenges with streaming content on the Internet.
+ If the user does not have enough bandwidth in her Internet connection,
+ she may experience stops in the content and some users may not be able
+ to stream certain content due to not having compatible computer or software
+ systems.
+ As of 2016, popular streaming website include YouTube, which contains video
+ and audio files on a huge range of topics and Netflix, which streams movies
+ and TV shows.
+\end_layout
+
+\begin_layout Standard
+Live streaming refers to Internet content delivered in real-time, as events
+ happen, much as live television broadcasts its contents over the airwaves
+ via a television signal.
+ Live internet streaming requires a form of source media (e.g.
+ a video camera, an audio interface, screen capture software), an encoder
+ to digitize the content, a media publisher, and a content delivery network
+ to distribute and deliver the content.
+ Live streaming does not need to be recorded at the origination point, although
+ it frequently is.
+\end_layout
+
+\begin_layout Paragraph
+History
+\end_layout
+
+\begin_layout Standard
+In the early 1920s, George O.
+ Squier was granted patents for a system for the transmission and distribution
+ of signals over electrical lines[2] which was the technical basis for what
+ later became Muzak, a technology streaming continuous music to commercial
+ customers without the use of radio.
+ Attempts to display media on computers date back to the earliest days of
+ computing in the mid-20th century.
+ However, little progress was made for several decades, primarily due to
+ the high cost and limited capabilities of computer hardware.
+ From the late 1980s through the 1990s, consumer-grade personal computers
+ became powerful enough to display various media.
+ The primary technical issues related to streaming were: having enough CPU
+ power and bus bandwidth to support the required data rates and creating
+ low-latency interrupt paths in the operating system to prevent buffer underrun
+ and thus enable skip-free streaming of the content.
+ However, computer networks were still limited in the mid-1990s, and audio
+ and video media were usually delivered over non-streaming channels, such
+ as by downloading a digital file from a remote server and then saving it
+ to a local drive on the end user's computer or storing it as a digital
+ file and playing it back from CD-ROMs.
+\end_layout
+
+\begin_layout Subsubsection
+Direct Download Link
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+https://en.wikipedia.org/wiki/Direct_download_link
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Le téléchargement direct (de l'anglais : direct download, abrégé en DDL),
+ est une pratique de mise à disposition de fichiers téléchargeables directement
+ sur l'infrastructure d'un site web, suivant le modèle client-serveur.
+ Le terme « téléchargement direct » est utilisé afin de le démarquer du
+ téléchargement en pair à pair, qui utilise les ressources de plusieurs
+ utilisateurs.
+\end_layout
+
+\begin_layout Plain Layout
+L'expression « direct download » est popularisée à partir de la décennie
+ 2000, du fait du développement de l'usage des sites d'hébergement de fichiers
+ en un clic.
+\end_layout
+
+\begin_layout Plain Layout
+–
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Direct download link (DDL), alternatively simply direct download, is a term
+ used within the Internet-based file sharing community.
+ It is used to describe a hyperlink that points to a location within the
+ Internet where the user can download a file.
+ When used in conversation, DDL distinguishes itself from other forms of
+ peer-to-peer (P2P) downloading architectures in that it uses a client–server
+ architecture, where 100-percent of the file is stored on a single file
+ server or in parallel across multiple file servers in a server farm.
+\end_layout
+
+\begin_layout Standard
+Originally, P2P was used to distribute large sized files without requiring
+ much bandwidth on the part of any one node.
+ However, because of sharing issues, such as the lack of seeding of torrents,
+ throttling of a node's file sharing ports by an Internet service provider,
+ or lawsuits because of uploading copyrighted material, direct downloads
+ has become a popular and legal alternative among Leechers.
+ There is also an increase in businesses offering gigabytes of free bandwidth
+ and storage space.
+\end_layout
+
+\begin_layout Standard
+Despite the term commonly being used among warez and other file sharing
+ enthusiasts, direct downloading is heavily used by companies as a means
+ of distributing products, such as application software, drivers for peripherals
+, documentation in PDF format, and much more.
+\end_layout
+
+\begin_layout Subsubsection
+Video On Demand
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+https://en.wikipedia.org/wiki/Video_on_demand
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Video on demand (display) (VOD) are systems which allow users to select
+ and watch/listen to video or audio content when they choose to, rather
+ than having to watch at a specific broadcast time.
+ IPTV technology is often used to bring video on demand to televisions and
+ personal computers.[1]
+\end_layout
+
+\begin_layout Standard
+Television VOD systems can either stream content through a set-top box,
+ a computer or other device, allowing viewing in real time, or download
+ it to a device such as a computer, digital video recorder (also called
+ a personal video recorder) or portable media player for viewing at any
+ time.
+ The majority of cable- and telco-based television providers offer both
+ VOD streaming, including pay-per-view and free content, whereby a user
+ buys or selects a movie or television program and it begins to play on
+ the television set almost instantaneously, or downloading to a DVR rented
+ from the provider, or downloaded onto a PC, for viewing in the future.
+ Internet television, using the Internet, is an increasingly popular form
+ of video on demand.
+ VOD can also be accessed via desktop client applications such as iTunes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Some airlines offer VOD as in-flight entertainment to passengers through
+ individually controlled video screens embedded in seatbacks or armrests
+ or offered via portable media players.
+ Some video on demand services such as Netflix use a subscription model
+ that requires users to pay a monthly fee to access a bundled set of content.
+ Other services use an advertising-based model, where access is free for
+ users, and the platforms rely on selling advertisements as a main revenue
+ stream.
+\end_layout
+
+\begin_layout Plain Layout
+Contents
+\end_layout
+
+\begin_layout Plain Layout
+1 Early development 2 Functionality 3 History 4 Role of piracy and peer
+ to peer 5 Types of VOD 5.1 Transactional video on demand 5.2 Catch up TV
+ 5.3 Subscription models 5.4 Near video on demand 5.5 Push video on demand
+ 6 See also 7 Notes 8 References 9 Further reading
+\end_layout
+
+\begin_layout Plain Layout
+Early development
+\end_layout
+
+\begin_layout Plain Layout
+Developing VOD required extensive negotiations to identify a financial model
+ that would serve both content creators and cable providers while providing
+ desirable content for viewers.
+ Key factors identified for determining the economic viability of the VOD
+ model included VOD movie buy rates, Hollywood and cable operator revenue
+ splits.[2]
+\end_layout
+
+\begin_layout Plain Layout
+Cable providers offered VOD as part of digital subscription packages, which
+ by 2005, primarily allowed cable subscribers to only access an on-demand
+ version of content that was already provided in linear distribution.
+ Included in these packages were "extras" and "bonus footage" rather than
+ full episodes of television shows.
+ Functionality
+\end_layout
+
+\begin_layout Plain Layout
+Download and streaming video on demand systems provide the user with all
+ of the features of Portable media players and DVD players.
+ Some VOD systems that store and stream programs from hard disk drives use
+ a memory buffer to allow the user to fast forward and rewind videos.
+\end_layout
+
+\begin_layout Plain Layout
+It is possible to put video servers on local area networks, in which case
+ they can provide very rapid response to users.
+ Streaming video servers can also serve a wider community via a WAN, in
+ which case the responsiveness may be reduced.
+ Download VOD services are practical to homes equipped with cable modems
+ or DSL connections.
+ Servers for traditional cable and telco VOD services are usually placed
+ at the cable head-end serving a particular market as well as cable hubs
+ in larger markets.
+ In the telco world, they are placed in either the central office, or a
+ newly created location called a Video Head-End Office (VHO).
+ History
+\end_layout
+
+\begin_layout Plain Layout
+From September 1994, a VOD service formed a major part of the Cambridge
+ Digital Interactive Television Trial[3] in England.
+ This provided video and data to 250 homes and a number of schools connected
+ to the Cambridge Cable network (later part of NTL, now Virgin Media).
+ The MPEG-1 encoded video was streamed over an ATM network from an ICL media
+ server to set top boxes designed by Acorn Online Media.
+ The trial commenced at a speed of 2 Mbit/s to the home, subsequently increased
+ to 25 Mbit/s.[4] The content was provided by the BBC and Anglia Television.
+ Although a technical success, difficulty in sourcing content was a major
+ issue, and the project closed in 1996.
+\end_layout
+
+\begin_layout Plain Layout
+In 1998, Kingston Communications became the first UK company to launch a
+ fully commercial VOD service and the first to integrate broadcast TV and
+ Internet access through a single set-top box using IP delivery over ADSL.
+ By 2001, Kingston Interactive TV had attracted 15,000 subscribers.
+ After a number of trials, HomeChoice followed in 1999, but were restricted
+ to London.
+ After attracting 40,000 customers, they were bought by Tiscali in 2006
+ who were in turn bought by Talk Talk in 2009.
+ Cable TV providers Telewest and NTL (now Virgin Media) launched their VOD
+ services in the United Kingdom in 2005, competing with the leading traditional
+ pay TV distributor BSkyB.
+ BSkyB responded by launching Sky by broadband, later renamed Sky Anytime
+ on PC.
+ The service went live on 2 January 2006.
+ Sky Anytime on PC uses a legal peer-to-peer approach, based on Kontiki
+ technology, to provide very high capacity multi-point downloads of the
+ video content.
+ Instead of the video content all being downloaded from Sky's servers, the
+ content comes from multiple users of the system who have already downloaded
+ the same content.
+ Other UK TV broadcasters have implemented their own versions of the same
+ technology, such as the BBC's iPlayer, which launched on 25 December 2007,
+ and Channel 4's 4oD (4 On Demand) which launched in late 2006.
+ Another example of online video publishers using legal peer-to-peer technology
+ is based on Giraffic technology which was launched in early 2011 with large
+ Online Video-on-Demand publishers such as US based VEOH and UK based Craze's
+ OnlineMoviesBox movie rental service.
+ The BBC, ITV and Channel 4 planned to launch a joint platform provisionally
+ called Kangaroo in 2008.[5] This was abandoned in 2009 following complaints
+ investigated by the Competition Commission.
+ That same year, the assets of the defunct Kangaroo project were bought
+ by Arqiva,[6] who used the technology behind Kangaroo to launch the SeeSaw
+ service in February 2010.[7] A year later, however, SeeSaw was shut down
+ from lack of funding.[8]
+\end_layout
+
+\begin_layout Plain Layout
+VOD services are now available in all parts of the United States, which
+ has the highest global take-up rate of VOD.[9] In 2010, 80% of American
+ Internet users had watched video online,[10] and 42% of mobile users who
+ downloaded video preferred apps to a normal browser.[11] Streaming VOD systems
+ are available on desktop and mobile platforms from cable providers (in
+ tandem with cable modem technology) who use the large downstream bandwidth
+ present on cable systems to deliver movies and television shows to end
+ users, who can typically pause, fast-forward, and rewind VOD movies due
+ to the low latency and random-access nature of cable technology.
+ The large distribution of a single signal makes streaming VOD impractical
+ for most satellite television systems.
+ Both EchoStar/Dish Network and DirecTV offer video on demand programming
+ to PVR-owning subscribers of their satellite TV service.
+ Once the programs have been downloaded onto a user's PVR, he or she can
+ watch, play, pause, and seek at their convenience.
+ VOD is also quite common in more expensive hotels.
+ VOD systems that store and provide a user interface for content downloaded
+ directly from the Internet are widely available.
+\end_layout
+
+\begin_layout Plain Layout
+According to the European Audiovisual Observatory, 142 paying VOD services
+ were operational in Europe at the end of 2006.
+ The number increased to 650 by 2009.[12]
+\end_layout
+
+\begin_layout Plain Layout
+At the January 2010 Consumer Electronic Show in Las Vegas, Sezmi CEO Buno
+ Pati and president Phil Wiser showed a set-top box with a one-terabyte
+ hard drive which could be used for video on demand services previously
+ offered through cable TV or broadband.
+ A movie, for example, could be sent out once using a broadcast signal,
+ rather than numerous times over cable or fiber-optic lines, and this would
+ not involve the expense of adding many miles of lines.
+ Sezmi planned to lease broadcast spectrum to offer a subscription service
+ which National Association of Broadcasters president Gordon H.
+ Smith said would provide a superior picture to that of cable or satellite,
+ at a lower cost.[13] Role of piracy and peer to peer Unbalanced scales.svg
+ The neutrality of this section is disputed.
+ Relevant discussion may be found on the talk page.
+ Please do not remove this message until conditions to do so are met.
+ (August 2016) (Learn how and when to remove this template message)
+\end_layout
+
+\begin_layout Plain Layout
+Although video on demand generally refers to delivery mechanisms operating
+ in accordance with applicable laws, the motivation for the development
+ of video on demand services can be traced back to peer-to-peer networking
+ and the development of file sharing software.
+ These innovations proved that it was technically possible to offer the
+ consumer potentially every film ever made, in a way which does not burden
+ the original provider with the linear costs associated with centralised
+ streaming media.
+\end_layout
+
+\begin_layout Plain Layout
+Many legal services such as Spotify[14] use peer to peer distribution to
+ better scale their platforms with the likes of Netflix considering doing
+ so[15] to cope with net neutrality problems from downstream providers.
+\end_layout
+
+\begin_layout Plain Layout
+Torrenting is a popular alternative to legal streaming[16] with 6%[17] of
+ global internet traffic involved in file sharing applications.
+ Types of VOD Transactional video on demand
+\end_layout
+
+\begin_layout Plain Layout
+Transactional video on demand (TVOD) is a distribution method by which customers
+ pay for each individual piece of video on demand content.[18]
+\end_layout
+
+\begin_layout Plain Layout
+TVOD has two sub-categories: electronic sell-through (EST), by which customers
+ can permanently access a piece of content once purchased via Internet;
+ and download to rent (DTR), by which customers can access the content for
+ a limited time upon renting.[19][20] Examples of TVOD services include iTunes
+ and Google Play.
+ Catch up TV
+\end_layout
+
+\begin_layout Plain Layout
+A growing number of TV stations offer Catch up TV as a way to watch TV shows
+ though their VOD service for a period of days after the original television
+ broadcast.
+ Subscription models
+\end_layout
+
+\begin_layout Plain Layout
+Subscription VOD (SVOD) services use a subscription business model, where
+ subscribers are charged a monthly fee to access unlimited programs.
+ These services include Netflix, Hulu Plus, Amazon Video, iflix and HBO
+ Go.[21] Near video on demand Ambox globe content.svg The examples and perspective
+ in this section may not represent a worldwide view of the subject.
+ Please improve this article or discuss the issue on the talk page.
+ (February 2015)
+\end_layout
+
+\begin_layout Plain Layout
+Near video on demand (NVOD) is a pay-per-view consumer video technique used
+ by multi-channel broadcasters using high-bandwidth distribution mechanisms
+ such as satellite and cable television.
+ Multiple copies of a program are broadcast at short time intervals (typically
+ 10–20 minutes) providing convenience for viewers, who can watch the program
+ without needing to tune in at a scheduled point in time.
+ This form is bandwidth intensive and is generally provided only by large
+ operators with a great deal of redundant capacity and has been reduced
+ in popularity as video on demand is implemented; only the satellite services
+ Dish Network and DirecTV continue to seriously provide NVOD experiences
+ out of necessity as many of their customers have no access to their broadband
+ VOD services.
+ Before the rise of video on demand, pay-per-view provider In Demand facilitated
+ this need by providing up to 40 channels in 2002, with several films receiving
+ up to four channels on the staggered schedule to provide the NVOD experience.
+ As of 2014, only four channels (2 in high definition, two in standard definitio
+n) are provided to facilitate live and event coverage, along with existing
+ league out-of-market sports coverage channels (varied by provider) by the
+ service.
+ In Australia, pay TV broadcaster Foxtel offers NVOD for new release movies.[22]
+ Push video on demand
+\end_layout
+
+\begin_layout Plain Layout
+Push video on demand is a technique used by a number of broadcasters on
+ systems that lack connectivity to provide true video on demand or by broadcaste
+rs who want to optimize their video streaming infrastructure by pre-loading
+ the most popular contents to the consumer device.
+ A push VOD system uses a personal video recorder (PVR) to store a selection
+ of content, often transmitted in spare capacity overnight or all day long
+ at low bandwidth.
+ Users can watch the downloaded content at the time they desire, immediately
+ and without any buffering issue.
+ Push VOD depends on the viewer recording content, so choices can be limited.[23]
+\end_layout
+
+\begin_layout Plain Layout
+As content occupies space on the PVR hard drive, downloaded content is usually
+ deleted after a week to make way for newer programs.
+ The limited space on a PVR hard drive means that the selection of programs
+ is usually restricted to most popular content.
+ A new generation of Push VOD solution recently appeared on the market which,
+ by using efficient error correction mechanisms, can free significant amount
+ of bandwidth and that can deliver more than video e.g.
+ magazines, interactive applications.
+\end_layout
+
+\begin_layout Paragraph
+netflix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+IPTV
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+wiki
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Internet Protocol television (IPTV) is a system through which television
+ services are delivered using the Internet protocol suite over a packet-switched
+ network such as a LAN or the Internet, instead of being delivered through
+ traditional terrestrial, satellite signal, and cable television formats.
+ Unlike downloaded media, IPTV offers the ability to stream the media in
+ smaller batches, directly from the source.
+ As a result, a client media player can begin playing the data (such as
+ a movie) before the entire file has been transmitted.
+ This is known as streaming media.
+\end_layout
+
+\begin_layout Standard
+IPTV services may be classified into three main groups:
+\end_layout
+
+\begin_layout Standard
+Live television, with or without interactivity related to the current TV
+ show; Time-shifted television: catch-up TV (replays a TV show that was
+ broadcast hours or days ago), start-over TV (replays the current TV show
+ from its beginning); Video on demand (VOD): browse a catalogue of videos,
+ not related to TV programming.
+\end_layout
+
+\begin_layout Standard
+IPTV is distinguished from Internet television by its ongoing standardization
+ process (e.g., European Telecommunications Standards Institute) and preferential
+ deployment scenarios in subscriber-based telecommunications networks with
+ high-speed access channels into end-user premises via set-top boxes or
+ other customer-premises equipment.
+\end_layout
+
+\begin_layout Subsection
+Market : 
+\end_layout
+
+\begin_layout Subsubsection
+YouTube
+\end_layout
+
+\begin_layout Standard
+YouTube is an American video-sharing website headquartered in San Bruno,
+ California, United States.
+ The service was created by three former PayPal employees in February 2005.
+ In November 2006, it was bought by Google for US$1.65 billion.[4] YouTube
+ now operates as one of Google's subsidiaries.[5] The site allows users to
+ upload, view, rate, share, and comment on videos, and it makes use of WebM,
+ H.264/MPEG-4 AVC, and Adobe Flash Video technology to display a wide variety
+ of user-generated and corporate media videos.
+ Available content includes video clips, TV show clips, music videos, audio
+ recordings, movie trailers, and other content such as video blogging, short
+ original videos, and educational videos.
+\end_layout
+
+\begin_layout Standard
+Most of the content on YouTube has been uploaded by individuals, but media
+ corporations including CBS, the BBC, Vevo, Hulu, and other organizations
+ offer some of their material via YouTube, as part of the YouTube partnership
+ program.[6] Unregistered users can watch videos, and registered users are
+ permitted to upload an unlimited number of videos and add comments to videos.
+ Videos deemed potentially offensive are available only to registered users
+ affirming themselves to be at least 18 years old.
+ As of July 2016, the website was ranked as the second most popular site
+ by Alexa Internet, a web traffic analysis company.[3]
+\end_layout
+
+\begin_layout Standard
+YouTube earns advertising revenue from Google AdSense, a program which targets
+ ads according to site content and audience.
+ The vast majority of its videos are free to view, but there are exceptions,
+ including subscription-based premium channels, film rentals, as well as
+ YouTube Red, a subscription service offering ad-free access to the website
+ and access to exclusive content made in partnership with existing users.
+\end_layout
+
+\begin_layout Subsubsection
+Netflix
+\end_layout
+
+\begin_layout Standard
+Netflix Inc.
+ (marketed and stylized as NETFLIX) is an American multinational entertainment
+ company founded on August 29, 1997 in Scotts Valley, California[6] by Reed
+ Hastings and Marc Randolph.
+ It specializes in and provides streaming media and video on demand online
+ and DVD by mail.
+ In 2013, Netflix added film and television production, as well as online
+ distribution.
+ The company is currently headquartered in Los Gatos.
+\end_layout
+
+\begin_layout Standard
+In 1998, about a year after Netflix's founding, the company grew by starting
+ in the DVD by mail business.[6] In 2007, Netflix expanded its business with
+ the introduction of streaming media, while retaining the DVD and Blu-ray
+ rental service, with streaming made available to Canada in 2010.[7] As of
+ 2016, Netflix is available in over 190 countries.[8] In 2013, Netflix introduced
+ itself into the film and television industry, with its first series being
+ House of Cards debuting in the same year.
+ It greatly expanded into film in 2015, and now offers its "Netflix Original"
+ content through its online library of films and television.[9]
+\end_layout
+
+\begin_layout Standard
+As of July 2016, Netflix reported over 83 million subscribers worldwide,
+ including more than 47 million in the United States.[5]
+\end_layout
+
+\begin_layout Subsubsection
+Spotify
+\end_layout
+
+\begin_layout Standard
+Spotify is a Swedish music, podcast, and video streaming service that provides
+ digital rights management–protected[6] content from record labels and media
+ companies.[7] It is available in most of the Americas, Europe, and some
+ countries in Asia and Oceania.[8] Music can be browsed or searched by artist,
+ album, genre, playlist, and record label.
+ Spotify was launched in September 2008 by Swedish startup Spotify AB.
+ As of June 2016, Spotify had more than 100 million active users[9] and
+ about half a billion registered users.
+ As of August 2016, Spotify had 39 million paying subscribers worldwide,[10]
+ up from 30 million paying subscribers in March 2016.[11] Spotify Technology
+ S.A.
+ operates as the parent company, registered in Luxembourg,[12] while Spotify
+ AB handles research and development in Stockholm.[13]
+\end_layout
+
+\begin_layout Standard
+As of August 2016, Spotify provides access to over 30 million songs, with
+ more music being added approximately every day including albums, EPs, and
+ singles.[14] Users can search for artists, albums, titles, labels and genres,
+ and access songs from both major and independent labels.
+ Some artists decided to opt out of Spotify.[7][15] Additionally, some artists
+ withdrew from specific regions because of licensing restrictions.
+ The desktop app allows music to be imported from iTunes,[16] while the
+ main three apps (iOS, Android, and Desktop) allows downloading songs to
+ listen to offline.[17] Users can download songs up to three devices with
+ a song limit of 3,333 with a total track limit of 9,999 if the device song
+ limit is reached on each device.[18][19] Users can create and share playlists,[2
+0] or edit them together with other users by making that playlist a collaborativ
+e playlist.
+\end_layout
+
+\begin_layout Standard
+Websites, blogs, and 3rd-party applications and tools support Spotify.[21]
+ Community resources include Facebook, Twitter bots and user forums, and
+ tools to display lyrics and services to list and notify users about new
+ releases.[22] In 2010, Spotify's blog, The Pansentient League, held the
+ first Spotify Community Site Awards, with categories such as Best Playlist
+ Sharing Site, Best News & Music Finder Site, and Best Playlist Generator.[23]
+ Spotify allows users to integrate their account with existing Facebook
+ and Twitter accounts.
+ Thereafter they are able to access their friends'/follower's favorite music
+ and playlists.[24]
+\end_layout
+
+\begin_layout Standard
+Spotify, together with the music streaming industry in general, faces some
+ criticism from artists claiming they are not being fairly compensated for
+ their work as downloaded music sales decline and music streaming increases.
+ Unlike physical or download sales, which pay a fixed price per song or
+ album, Spotify pays artists based on their "market share" (the number of
+ streams for their songs as a proportion of total songs streamed on the
+ service).
+ They distribute approximately 70% to rights-holders, who will then pay
+ artists based on their individual agreements.
+ The variable, and some say inadequate, nature of this compensation,[25]
+ has led to criticism.
+ Spotify reports paying on average US$0.006 to US$0.008 per stream.
+ In response, Spotify claims that they are benefiting the music business
+ by migrating "them away from piracy and less monetised platforms and allowing
+ them to generate far greater royalties than before" by encouraging users
+ to use their paid service.[26][27]
+\end_layout
+
+\begin_layout Subsubsection
+PopcornTime
+\end_layout
+
+\begin_layout Standard
+Popcorn Time is a multi-platform, free software BitTorrent client that includes
+ an integrated media player.
+ The applications provide a free alternative to subscription-based video
+ streaming services (such as Netflix).
+ Popcorn Time uses sequential downloading to stream video listed by several
+ torrent websites (although other trackers can be added and used manually).
+\end_layout
+
+\begin_layout Standard
+Following its inception, Popcorn Time quickly received positive media attention,
+ with some comparing the app to Netflix for being easy to use.[5] After this
+ increase in popularity, the program was abruptly taken down by its original
+ developers on March 14, 2014, due to pressure from the MPAA.[6] Since then,
+ the program has been forked several times with several other development
+ teams such as the Butter Project to maintain the program and produce new
+ features.
+ The original Popcorn Time team endorsed the popcorntime.io fork, and picked
+ it as the successor to the official Popcorn Time as of August 2015.[7] In
+ October 2015, the MPAA obtained a court injunction from Canada to stop
+ the Canadian programmers of popcorntime.io,[8] and later obtained the domain
+ name,[9] although the project reappeared on a new website popcorntime.sh.[10][11]
+[12]
+\end_layout
+
+\begin_layout Section
+Technical Context
+\end_layout
+
+\begin_layout Subsection
+JPaxos
+\end_layout
+
+\begin_layout Standard
+JPaxos is a Java library and runtime system for efficient state machine
+ replication.
+ With JPaxos it is very easy to make a user-provided service tolerant to
+ machine crashes.
+ Our system supports the crash- recovery model of failure and tolerates
+ message loss and communication delays.
+ State machine replication is a general method for implementing a fault-tolerant
+ service by replicat- ing it on separate machines and coordinating client
+ interactions with these replicas (or copies).
+ The physical isolation of machines in a distributed system ensures that
+ failures of server replicas are independent, as required.
+ As long as there are enough of non-faulty replicas, the service is guaranteed
+ to be provided.
+ JPaxos makes the following assumptions about the replicated service: •
+ deterministic behaviour, i.e.
+ multiple copies of the service begun in the start state, receiving the
+ same inputs in the same order will arrive at the same state having generated
+ the same outputs • non-Byzantine failures, i.e.
+ a service machine can only crash • crash-recovery supported, i.e.
+ after crash, the service can be restarted with the same IP address.
+\end_layout
+
+\begin_layout Subsection
+BitTorrent
+\end_layout
+
+\begin_layout Standard
+The BitTorrent protocol can be used to reduce the server and network impact
+ of distributing large files.
+ Rather than downloading a file from a single source server, the BitTorrent
+ protocol allows users to join a "swarm" of hosts to upload to/download
+ from each other simultaneously.
+ The protocol is an alternative to the older single source, multiple mirror
+ sources technique for distributing data, and can work effectively over
+ networks with lower bandwidth.
+ Using the BitTorrent protocol, several basic computers, such as home computers,
+ can replace large servers while efficiently distributing files to many
+ recipients.
+ This lower bandwidth usage also helps prevent large spikes in internet
+ traffic in a given area, keeping internet speeds higher for all users in
+ general, regardless of whether or not they use the BitTorrent protocol.
+ A user who wants to upload a file first creates a small torrent descriptor
+ file that they distribute by conventional means (web, email, etc.).
+ They then make the file itself available through a BitTorrent node acting
+ as a seed.
+ Those with the torrent descriptor file can give it to their own BitTorrent
+ nodes, which—acting as peers or leechers—download it by connecting to the
+ seed and/or other peers (see diagram on the right).
+\end_layout
+
+\begin_layout Standard
+The file being distributed is divided into segments called pieces.
+ As each peer receives a new piece of the file it becomes a source (of that
+ piece) for other peers, relieving the original seed from having to send
+ that piece to every computer or user wishing a copy.
+ With BitTorrent, the task of distributing the file is shared by those who
+ want it; it is entirely possible for the seed to send only a single copy
+ of the file itself and eventually distribute to an unlimited number of
+ peers.
+ Each piece is protected by a cryptographic hash contained in the torrent
+ descriptor.[6] This ensures that any modification of the piece can be reliably
+ detected, and thus prevents both accidental and malicious modifications
+ of any of the pieces received at other nodes.
+ If a node starts with an authentic copy of the torrent descriptor, it can
+ verify the authenticity of the entire file it receives.
+\end_layout
+
+\begin_layout Standard
+Pieces are typically downloaded non-sequentially and are rearranged into
+ the correct order by the BitTorrent Client, which monitors which pieces
+ it needs, and which pieces it has and can upload to other peers.
+ Pieces are of the same size throughout a single download (for example a
+ 10 MB file may be transmitted as ten 1 MB pieces or as forty 256 KB pieces).
+ Due to the nature of this approach, the download of any file can be halted
+ at any time and be resumed at a later date, without the loss of previously
+ downloaded information, which in turn makes BitTorrent particularly useful
+ in the transfer of larger files.
+ This also enables the client to seek out readily available pieces and download
+ them immediately, rather than halting the download and waiting for the
+ next (and possibly unavailable) piece in line, which typically reduces
+ the overall time of the download.
+ Once a peer has downloaded a file completely, it becomes an additional
+ seed.
+ This eventual transition from peers to seeders determines the overall "health"
+ of the file (as determined by the number of times a file is available in
+ its complete form).
+\end_layout
+
+\begin_layout Standard
+The distributed nature of BitTorrent can lead to a flood-like spreading
+ of a file throughout many peer computer nodes.
+ As more peers join the swarm, the likelihood of a completely successful
+ download by any particular node increases.
+ Relative to traditional Internet distribution schemes, this permits a significa
+nt reduction in the original distributor's hardware and bandwidth resource
+ costs.
+ Distributed downloading protocols in general provide redundancy against
+ system problems, reduce dependence on the original distributor[9] and provide
+ sources for the file which are generally transient and therefore harder
+ to trace by those who would block distribution compared to the situation
+ provided by limiting availability of the file to a fixed host machine (or
+ even several).
+\end_layout
+
+\begin_layout Standard
+One such example of BitTorrent being used to reduce the distribution cost
+ of file transmission is in the BOINC Client-Server system.
+ If a BOINC distributed computing application needs to be updated (or merely
+ sent to a user) it can do so with little impact on the BOINC Server.[10]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Peer-to-peer file sharing is the distribution and sharing of digital media
+ using peer-to-peer (P2P) networking technology.
+ P2P file sharing allows users to access media files such as books, music,
+ movies, and games using a P2P software program that searches for other
+ connected computers on a P2P network to locate the desired content.[1] The
+ nodes (peers) of such networks are end-user computers and distribution
+ servers (not required).
+\end_layout
+
+\begin_layout Plain Layout
+Peer-to-peer file sharing technology has evolved through several design
+ stages from the early networks like Napster, which popularized the technology,
+ to the later models like the BitTorrent protocol.
+ Microsoft uses it for Update distribution (Windows 10) and online playing
+ games (e.g.
+ the mmorpg Skyforge[2]) use it as their content distribution network for
+ downloading large amounts of data without incurring the dramatic costs
+ for bandwidth inherent when providing just a single source.
+\end_layout
+
+\begin_layout Plain Layout
+Several factors contributed to the widespread adoption and facilitation
+ of peer-to-peer file sharing.
+ These included increasing Internet bandwidth, the widespread digitization
+ of physical media, and the increasing capabilities of residential personal
+ computers.
+ Users were able to transfer either one or more files from one computer
+ to another across the Internet through various file transfer systems and
+ other file-sharing networks.[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/torrent/Torrentcomp_small1.png
+	lyxscale 40
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Step 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/torrent/Torrentcomp_small2.png
+	lyxscale 40
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Step 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/torrent/Torrentcomp_small3.png
+	lyxscale 40
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Step 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/torrent/Torrentcomp_small4.png
+	lyxscale 40
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Step 4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/torrent/Torrentcomp_small5.png
+	lyxscale 40
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Step 5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/torrent/Torrentcomp_small6.png
+	lyxscale 40
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Step 6
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/torrent/Torrentcomp_small7.png
+	lyxscale 40
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Step 7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/torrent/Torrentcomp_small8.png
+	lyxscale 40
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Step 8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/torrent/Torrentcomp_small9.png
+	lyxscale 40
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Step 9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bittorrent pieces distribution 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ex-fig2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Animation of protocol use: The colored dots beneath each computer in the
+ animation represent different parts of the file being shared.
+ By the time a copy to a destination computer of each of those parts completes,
+ a copy to another destination computer of that part (or other parts) is
+ already taking place between users.
+ The tracker (server) provides only a single copy of the file, and all the
+ users clone its parts from one another.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Streaming
+\end_layout
+
+\begin_layout Subsubsection
+Bandwidth and storage 
+\end_layout
+
+\begin_layout Standard
+Unicast connections require multiple connections from the same streaming
+ server even when it streams the same content
+\end_layout
+
+\begin_layout Standard
+A broadband speed of 2 Mbit/s or more is recommended for streaming standard
+ definition video without experiencing buffering or skips, especially live
+ video,[10] for example to a Roku, Apple TV, Google TV or a Sony TV Blu-ray
+ Disc Player.
+ 5 Mbit/s is recommended for High Definition content and 9 Mbit/s for Ultra-High
+ Definition content.[11] Streaming media storage size is calculated from
+ the streaming bandwidth and length of the media using the following formula
+ (for a single user and file) requires a storage size in megabytes which
+ is equal to length (in seconds) × bit rate (in bit/s) / (8 × 1024 × 1024).
+ For example, one hour of digital video encoded at 300 kbit/s (this was
+ a typical broadband video in 2005 and it was usually encoded in a 320 ×
+ 240 pixels window size) will be: (3,600 s × 300,000 bit/s) / (8×1024×1024)
+ requires around 128 MB of storage.
+\end_layout
+
+\begin_layout Standard
+If the file is stored on a server for on-demand streaming and this stream
+ is viewed by 1,000 people at the same time using a Unicast protocol, the
+ requirement is 300 kbit/s × 1,000 = 300,000 kbit/s = 300 Mbit/s of bandwidth.
+ This is equivalent to around 135 GB per hour.
+ Using a multicast protocol the server sends out only a single stream that
+ is common to all users.
+ Therefore, such a stream would only use 300 kbit/s of serving bandwidth.
+ See below for more information on these protocols.
+ The calculation for live streaming is similar.
+ Assuming that the seed at the encoder is 500 kbit/s and if the show lasts
+ for 3 hours with 3,000 viewers, then the calculation is number of MBs transferr
+ed = encoder speed (in bit/s) × number of seconds × number of viewers /
+ (8*1024*1024).
+ The results of this calculation are as follows: number of MBs transferred
+ = 500 x 1024 (bit/s) × 3 × 3,600 ( = 3 hours) × 3,000 (number of viewers)
+ / (8*1024*1024) = 1,977,539 MB
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Client–server model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+protocol ( http /https /http2 ) ?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Related Project
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subsubsection
+Projects related
+\end_layout
+
+\begin_layout Paragraph
+Popcorn Time following projects
+\end_layout
+
+\begin_layout Paragraph
+popcorntimes
+\end_layout
+
+\begin_layout Plain Layout
+Popcorn Time is a multi-platform, free software BitTorrent client that includes
+ an integrated media player.
+ The applications provide a free alternative to subscription-based video
+ streaming services (such as Netflix).
+ Popcorn Time uses sequential downloading to stream video listed by several
+ torrent websites (although other trackers can be added and used manually).
+\end_layout
+
+\begin_layout Plain Layout
+Following its inception, Popcorn Time quickly received positive media attention,
+ with some comparing the app to Netflix for being easy to use.[5] After this
+ increase in popularity, the program was abruptly taken down by its original
+ developers on March 14, 2014, due to pressure from the MPAA.[6] Since then,
+ the program has been forked several times with several other development
+ teams such as the Butter Project to maintain the program and produce new
+ features.
+ The original Popcorn Time team endorsed the popcorntime.io fork, and picked
+ it as the successor to the official Popcorn Time as of August 2015.[7] In
+ October 2015, the MPAA obtained a court injunction from Canada to stop
+ the Canadian programmers of popcorntime.io,[8] and later obtained the domain
+ name,[9] although the project reappeared on a new website popcorntime.sh.[10][11]
+[12]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Butter project
+\end_layout
+
+\begin_layout Standard
+Butter Project or simply Butter is a suite of open source desktop and mobile
+ applications that allow video-streaming over the BitTorrent protocol.[1]
+ The project was first made public on the 23rd of October 2015.[2] The aim
+ is to create a completely legal base which other applications can use to
+ provide streaming functionality.[2]
+\end_layout
+
+\begin_layout Standard
+Butter Project was created as a split from Popcorn Time when the latter
+ met legal difficulties — with Butter Project aiming to retain development
+ of only expressly legal and permissible portions of the code-base, relating
+ to video-streaming.
+ The developers have asserted Butter Project will not use any of the popcorntime.
+io infrastructure.[3] Butter Project is not aimed at allowing copyright infringem
+ent, but aims to build the groundworks for streaming video over BitTorrent.[4]
+ By having a legal portion which remains on GitHub the creators hope they
+ can get more developers involved.[4]
+\end_layout
+
+\begin_layout Standard
+By default Butter can play content from VODO which carries free videos,
+ but will also be configurable to allow for custom sources of video.[5]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subsection
+security
+\end_layout
+
+\begin_layout Plain Layout
+Security and trust
+\end_layout
+
+\begin_layout Plain Layout
+Peer-to-peer systems pose unique challenges from a computer security perspective.
+\end_layout
+
+\begin_layout Plain Layout
+Like any other form of software, P2P applications can contain vulnerabilities.
+ What makes this particularly dangerous for P2P software, however, is that
+ peer-to-peer applications act as servers as well as clients, meaning that
+ they can be more vulnerable to remote exploits.[31] Routing attacks
+\end_layout
+
+\begin_layout Plain Layout
+Also, since each node plays a role in routing traffic through the network,
+ malicious users can perform a variety of "routing attacks", or denial of
+ service attacks.
+ Examples of common routing attacks include "incorrect lookup routing" whereby
+ malicious nodes deliberately forward requests incorrectly or return false
+ results, "incorrect routing updates" where malicious nodes corrupt the
+ routing tables of neighboring nodes by sending them false information,
+ and "incorrect routing network partition" where when new nodes are joining
+ they bootstrap via a malicious node, which places the new node in a partition
+ of the network that is populated by other malicious nodes.[32] Corrupted
+ data and malware See also: Data validation and Malware
+\end_layout
+
+\begin_layout Plain Layout
+The prevalence of malware varies between different peer-to-peer protocols.
+ Studies analyzing the spread of malware on P2P networks found, for example,
+ that 63% of the answered download requests on the Limewire network contained
+ some form of malware, whereas only 3% of the content on OpenFT contained
+ malware.
+ In both cases, the top three most common types of malware accounted for
+ the large majority of cases (99% in Limewire, and 65% in OpenFT).
+ Another study analyzing traffic on the Kazaa network found that 15% of
+ the 500,000 file sample taken were infected by one or more of the 365 different
+ computer viruses that were tested for.[33]
+\end_layout
+
+\begin_layout Plain Layout
+Corrupted data can also be distributed on P2P networks by modifying files
+ that are already being shared on the network.
+ For example, on the FastTrack network, the RIAA managed to introduce faked
+ chunks into downloads and downloaded files (mostly MP3 files).
+ Files infected with the RIAA virus were unusable afterwards and contained
+ malicious code.
+ The RIAA is also known to have uploaded fake music and movies to P2P networks
+ in order to deter illegal file sharing.[34] Consequently, the P2P networks
+ of today have seen an enormous increase of their security and file verification
+ mechanisms.
+ Modern hashing, chunk verification and different encryption methods have
+ made most networks resistant to almost any type of attack, even when major
+ parts of the respective network have been replaced by faked or nonfunctional
+ hosts.[35]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+IPFS
+\end_layout
+
+\begin_layout Standard
+InterPlanetary File System (IPFS) is a content-addressable, peer-to-peer
+ hypermedia distribution protocol.
+ Nodes in the IPFS network form a distributed file system.
+ IPFS is an open source project developed by Protocol Labs with help from
+ the open source community.[1] It was initially designed by Juan Benet.[2]
+ The goal of IPFS is to facilitate a permanent and decentralized method
+ of storing and sharing files.[3]
+\end_layout
+
+\begin_layout Subsubsection
+Butter Project
+\end_layout
+
+\begin_layout Standard
+Butter Project or simply Butter is a suite of open source desktop and mobile
+ applications that allow video-streaming over the BitTorrent protocol.[1]
+ The project was first made public on the 23rd of October 2015.[2] The aim
+ is to create a completely legal base which other applications can use to
+ provide streaming functionality.[2]
+\end_layout
+
+\begin_layout Standard
+Butter Project was created as a split from Popcorn Time when the latter
+ met legal difficulties — with Butter Project aiming to retain development
+ of only expressly legal and permissible portions of the code-base, relating
+ to video-streaming.
+ The developers have asserted Butter Project will not use any of the popcorntime.
+io infrastructure.[3] Butter Project is not aimed at allowing copyright infringem
+ent, but aims to build the groundworks for streaming video over BitTorrent.[4]
+ By having a legal portion which remains on GitHub the creators hope they
+ can get more developers involved.[4]
+\end_layout
+
+\begin_layout Standard
+By default Butter can play content from VODO which carries free videos,
+ but will also be configurable to allow for custom sources of video.[5]
+\end_layout
+
+\begin_layout Paragraph
+NodeJS
+\end_layout
+
+\begin_layout Standard
+Node.js is an open-source, cross-platform JavaScript runtime environment
+ for developing a diverse variety of tools and applications.
+ Although Node.js is not a JavaScript framework,[3] many of its basic modules
+ are written in JavaScript, and developers can write new modules in JavaScript.
+ The runtime environment interprets JavaScript using Google's V8 JavaScript
+ engine.
+\end_layout
+
+\begin_layout Standard
+Node.js has an event-driven architecture capable of asynchronous I/O.
+ These design choices aim to optimize throughput and scalability in Web
+ applications with many input/output operations, as well as for real-time
+ Web applications (e.g., real-time communication programs and browser games).[4]
+\end_layout
+
+\begin_layout Standard
+The Node.js distributed development project, governed by the Node.js Foundation,[5
+] is facilitated by the Linux Foundation's Collaborative Projects program.[6]
+\end_layout
+
+\begin_layout Standard
+Corporate users of Node.js software include GoDaddy,[7] Groupon,[8] IBM,[9]
+ LinkedIn,[10][11] Microsoft,[12][13] Netflix,[14] PayPal,[15][16] Rakuten,
+ SAP,[17] Voxer,[18] Walmart,[19] Yahoo!,[20] and Cisco Systems.
+\end_layout
+
+\begin_layout Subparagraph
+npm 
+\end_layout
+
+\begin_layout Standard
+npm is the default package manager for the JavaScript runtime environment
+ Node.js.
+\end_layout
+
+\begin_layout Paragraph
+Grunt
+\end_layout
+
+\begin_layout Standard
+Grunt is a JavaScript Task Runner - an automation tool for performing repetitive
+ tasks like minification, compilation, unit testing, linting, etc.
+\end_layout
+
+\begin_layout Standard
+It depends on Node.js and npm.
+\end_layout
+
+\begin_layout Standard
+The Grunt ecosystem currently has over five thousand plugins available.
+\end_layout
+
+\begin_layout Standard
+Users include Adobe Systems, jQuery, Twitter, Mozilla, Bootstrap, Cloudant,
+ Opera, WordPress, Walmart, Victoria's Secret, and Microsoft.[1]
+\end_layout
+
+\begin_layout Paragraph
+Gulp
+\end_layout
+
+\begin_layout Standard
+Gulp is a platform agnostic automated streaming build system bundled as
+ Grunt in a npm module.
+ It can be use in several languages like with PHP, .NET, Node.js, Java, and
+ other platforms.
+ In Butter project, it complete Grunt by compiling the front-end modules
+ in a faster way.
+\end_layout
+
+\begin_layout Subsubsection
+Markov chains 
+\end_layout
+
+\begin_layout Standard
+A Markov chain (discrete-time Markov chain or DTMC[1]), named after Andrey
+ Markov, is a random process that undergoes transitions from one state to
+ another on a state space.
+ It must possess a property that is usually characterized as "memorylessness":
+ the probability distribution of the next state depends only on the current
+ state and not on the sequence of events that preceded it.
+ This specific kind of "memorylessness" is called the Markov property.
+ Markov chains have many applications as statistical models of real-world
+ processes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../images/graphs/Markovkate_01.svg
+	lyxscale 40
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Markov chains example
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ex-fig1-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Zipfs law
+\end_layout
+
+\begin_layout Standard
+Zipf's law is an empirical law formulated using mathematical statistics
+ that refers to the fact that many types of data studied in the physical
+ and social sciences can be approximated with a Zipfian distribution, one
+ of a family of related discrete power law probability distributions.
+ The law is named after the American linguist George Kingsley Zipf (1902–1950),
+ who popularized it and sought to explain it (Zipf 1935, 1949), though he
+ did not claim to have originated it.[1] The French stenographer Jean-Baptiste
+ Estoup (1868–1950) appears to have noticed the regularity before Zipf.[2]
+ It was also noted in 1913 by German physicist Felix Auerbach[3] (1856–1933).
+\end_layout
+
+\begin_layout Subsubsection
+Pareto Principle
+\end_layout
+
+\begin_layout Standard
+The Pareto principle (also known as the 80–20 rule, the law of the vital
+ few, and the principle of factor sparsity)[1] states that, for many events,
+ roughly 80% of the effects come from 20% of the causes.[2] Management consultant
+ Joseph M.
+ Juran suggested the principle and named it after Italian economist Vilfredo
+ Pareto, who, while at the University of Lausanne in 1896, published his
+ first paper "Cours d'économie politique." Essentially, Pareto showed that
+ approximately 80% of the land in Italy was owned by 20% of the population;
+ Pareto developed the principle by observing that 20% of the peapods in
+ his garden contained 80% of the peas.[3]
+\end_layout
+
+\begin_layout Standard
+It is a common rule of thumb in business; e.g., "80% of your sales come from
+ 20% of your clients." Mathematically, the 80–20 rule is roughly followed
+ by a power law distribution (also known as a Pareto distribution) for a
+ particular set of parameters, and many natural phenomena have been shown
+ empirically to exhibit such a distribution.[4]
+\end_layout
+
+\begin_layout Standard
+The Pareto principle is only tangentially related to Pareto efficiency.
+ Pareto developed both concepts in the context of the distribution of income
+ and wealth among the population.
+\end_layout
+
+\begin_layout Standard
+For example, on Spotify system, 79% of the request target 21% of the hosted
+ content.
+ Focusing on 20% of the most popular videos would satisfy 80% of the users.
+\end_layout
+
+\end_body
+\end_document

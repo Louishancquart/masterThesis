@@ -1,0 +1,663 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass dcsbook
+\begin_preamble
+%
+%  $Id: thesis-template.lyx,v 1.7 2011/12/22 12:10:18 sobaniec Exp $
+%
+\end_preamble
+\options thesis
+\use_default_options false
+\begin_modules
+dcs
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement tbph
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "urlcolor=linkcolor,linkcolor=linkcolor,citecolor=linkcolor"
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Indeks
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2.5cm
+\rightmargin 2cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\listings_params "basicstyle={\ttfamily},commentstyle={\color{green}\ttfamily},keywordstyle={\color{blue}\ttfamily},language={java},morecomment={[l][\color{magenta}]{\#}},numbers=left,numberstyle={\tiny},stringstyle={\color{red}\ttfamily}"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Concept and Design of the System
+\end_layout
+
+\begin_layout Standard
+This part is about elaborating the application concept and design from the
+ requirements deduced from the background of the thesis.
+ Among the discussed matters, the market and the tool presented, it has
+ been done a selection and a conception of the project leads in this thesis.
+ 
+\end_layout
+
+\begin_layout Section
+Requirements
+\end_layout
+
+\begin_layout Standard
+Taking into consideration the survey, the main market actors and the tools
+ available, it has been pointed out some requirements that it would be desirable
+ to fulfill.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subsection
+Conception Process methodology ( Quality )
+\end_layout
+
+\begin_layout Subsubsection
+scrum
+\end_layout
+
+\begin_layout Subsubsection
+Organisation
+\end_layout
+
+\begin_layout Subsubsection
+trello
+\end_layout
+
+\begin_layout Subsubsection
+pomodoro
+\end_layout
+
+\begin_layout Subsubsection
+Business Plan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The market demand
+\end_layout
+
+\begin_layout Standard
+At first, let's focus on the the market related requirement.
+ It includes survey pointing out, market missing offer and network relative
+ choices.
+\end_layout
+
+\begin_layout Subsubsection
+No advertisement
+\end_layout
+
+\begin_layout Standard
+The first of the expectations of the software is to not have advertisement.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Market growing need
+\end_layout
+
+\begin_layout Standard
+As it is discussed in the first part, ads have unwanted effects on watchers
+ and we would like to prevent them from these effects as there is a a growing
+ demand of not advertised content ( e.g.
+ first part ) .
+ 
+\end_layout
+
+\begin_layout Paragraph
+A free service
+\end_layout
+
+\begin_layout Subparagraph
+emerge on the market
+\end_layout
+
+\begin_layout Standard
+We would like to provide a service free for the user.
+ On the market of video hosting , most of the actors are free of costs.
+ Our solution would not be attractive if we would ask users to pay.
+ Some actors like Netflix are not free but they provide copyrighted series
+ in an easy way that is not our target.
+\end_layout
+
+\begin_layout Standard
+In order to emerge on the market , we would need to be free as Youtube.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+Not supporting the hosting
+\end_layout
+
+\begin_layout Standard
+the problem is that providing a free service doesn't get along with the
+ previous point.
+ Indeed , Youtube finance the hosting cost of its service with the advertisement.
+ We tried to conciliate both of the aspect in our project.
+ That's means supporting not supporting the hosting cost of the video.
+\end_layout
+
+\begin_layout Subsubsection
+quality service
+\end_layout
+
+\begin_layout Standard
+As it has been reported on the survey, one important aspect of a video hosting
+ website is the speed delivery and quality of the video.
+ In that sens we will try to optimize as its best the speed of delivering
+ and the quality of the supplied videos.
+\end_layout
+
+\begin_layout Subsubsection
+Simple 
+\end_layout
+
+\begin_layout Standard
+The product should be easy to use.
+ The user interface is most important thing in a such application.
+ Most of the de
+\end_layout
+
+\begin_layout Subsubsection
+A respectful service
+\end_layout
+
+\begin_layout Standard
+Obviously the application should be secure.
+ It implies not possibility to track people or to be able to get personal
+ data through it.
+\end_layout
+
+\begin_layout Paragraph
+Privacy respect 
+\end_layout
+
+\begin_layout Standard
+Unlike most of video hosting websites, the system should be able to make
+ some statistics about video popularity without including personal data.
+\end_layout
+
+\begin_layout Paragraph
+Security
+\end_layout
+
+\begin_layout Standard
+Other users of the network should not be able to know which video, other
+ users used.
+ Furthermore, the content downloaded should be safe for the users.
+\end_layout
+
+\begin_layout Subsubsection
+an Internet compatible service
+\end_layout
+
+\begin_layout Standard
+One of the objectives of this project is to respect the mesh network philosophy.
+ We would like to make prevailing a flat consumption of the internet.
+ It means that it should propose a decentralization of the Internet as it
+ has been made for at the origin.
+\end_layout
+
+\begin_layout Subsubsection
+a reliable service
+\end_layout
+
+\begin_layout Paragraph
+target fragile networks
+\end_layout
+
+\begin_layout Standard
+The aim of this project is also to give access to video hosting enjoyment
+ to the poorly connected areas.
+ In a lot of places in the world like India or Africa, the internet connection
+ is not a certitude.
+ 
+\end_layout
+
+\begin_layout Paragraph
+failure resistant
+\end_layout
+
+\begin_layout Standard
+We would like our software to be as much failure resistant as possible.
+ 
+\end_layout
+
+\begin_layout Paragraph
+scalability
+\end_layout
+
+\begin_layout Standard
+The software should also be prepared to absorb a big growth of users without
+ crashing of slow the serving.
+ It would a big advantage compared to a lot of online streaming website
+ that deliver content very slowly on the critical hours.
+\end_layout
+
+\begin_layout Section
+Concept
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subsection
+Marketing answer
+\end_layout
+
+\begin_layout Subsubsection
+An emerging market
+\end_layout
+
+\begin_layout Subsubsection
+An other way to see views
+\end_layout
+
+\begin_layout Subsubsection
+Economic plan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The technical answer
+\end_layout
+
+\begin_layout Subsubsection
+User supported hosting
+\end_layout
+
+\begin_layout Standard
+In order to be able to emerge on the market , it is necessary to opt for
+ a free service for the users.
+ A paid service would have too much difficulty to get known.
+ However we should take into consideration the cost of hosting files.
+ As we want a free service, we cannot invest in servers.
+ We can't rely on money entries generated by advertisement either.
+ The hosting of the service has to be powered mostly by the users.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Network management 
+\end_layout
+
+\begin_layout Standard
+A way to ensure the speed of high definition videos and the best repartition
+ of the videos among the network.
+ We may use optimization algorithms.
+\end_layout
+
+\begin_layout Subsubsection
+Video player
+\end_layout
+
+\begin_layout Standard
+To display the content of the video, we need a video downloaded and a video
+ player that would be able to play the video as it is not finished to load
+ yet.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Quality content 
+\end_layout
+
+\begin_layout Standard
+As the market is already full of video players in streaming.
+ They provide low quality video in order to has a good traffic.
+ The application would reach a market niche if it could serve High Quality
+ content.
+\end_layout
+
+\begin_layout Section
+The Design
+\end_layout
+
+\begin_layout Standard
+In order to design the application , technological choices has been done
+ in order to ...
+\end_layout
+
+\begin_layout Subsection
+tools review
+\end_layout
+
+\begin_layout Standard
+To build the application , I will connect several tools.
+\end_layout
+
+\begin_layout Subsubsection
+Decentralized hosting, ad-free, high quality videos, reliable
+\end_layout
+
+\begin_layout Standard
+The main tool is used to build the application is the peer-to-peer protocol.
+ It answer a lot problems I tried to solve.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Advantages
+\end_layout
+
+\begin_layout Standard
+It allow users to host the files they are viewing.
+ 
+\end_layout
+
+\begin_layout Standard
+There is a variety of softwares implementing it in any languages, usually
+ free and open-source.
+ most of the bittorrent client doesn't has any advertisement.
+\end_layout
+
+\begin_layout Standard
+It is reliable : it is used by more than 10 years.
+ We already know the problems it has, the drawbacks and the advantages.
+\end_layout
+
+\begin_layout Standard
+The way to provide torrent files has been discribed by its createor ( bittorrent.
+com) and it consits in serving a website to host a the torrent files with
+ a page of description for each file.
+ Then you need to open the file with a client supporting the torrent protocol,
+ wait for the download and finnally be able to play it.
+\end_layout
+
+\begin_layout Subparagraph
+scalability
+\end_layout
+
+\begin_layout Standard
+Using torrent technology make the system really more scalable.
+ 
+\end_layout
+
+\begin_layout Itemize
+Invert growth paradigm: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+More People → More Fun 
+\end_layout
+
+\begin_layout Itemize
+No Internet? No problem..
+ ( Africa , parts of the web where efficiency matters)
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Drawbacks
+\end_layout
+
+\begin_layout Standard
+This way was convenient in the past but nowdays , with the actual bandwidth,
+ we are used to get the content faster.
+ A lot of serving file website arrived.
+ Even if it is senseless due to the traffic it generate to a few nodes of
+ the network.
+\end_layout
+
+\begin_layout Standard
+Today, according to the survey and wathcing the market, people want to check
+ videos and directly watch it.
+ So, it needs an overlayer to improve the torrent protocol to get faster.
+\end_layout
+
+\begin_layout Paragraph
+tool used
+\end_layout
+
+\begin_layout Standard
+For the needs of this project, I decided to use Tturns Bittorrent library
+ ( source ) .
+ It is a minimalist bittorrent client and software library that just do
+ its job and not more.
+\end_layout
+
+\begin_layout Subsubsection
+filling the gap of the torrent 
+\end_layout
+
+\begin_layout Standard
+As only a torrent client would not be sufficient, it is neceessary to improve
+ the torrent by adding other tools to 
+\end_layout
+
+\begin_layout Paragraph
+Network management
+\end_layout
+
+\begin_layout Standard
+In order to improve the download time due to the torrent procol.
+ My idea was to increase the number of copies of a file if it doesn't have
+ enough and ( maybe to decrease the number of copies.
+ I chose to manage the distribution of the torrent files over the network.
+ I would like to make more available the begining of each video file in
+ order to improve availlability of this and by the same manneer , the speed
+ of download.
+\end_layout
+
+\begin_layout Standard
+JPAXOS def?
+\end_layout
+
+\begin_layout Paragraph
+Instant Video player
+\end_layout
+
+\begin_layout Standard
+Also , I needed a video player that would be able to play videos without
+ the need of the video to be full.
+ I found butter project that is a similar project but not focused on the
+ network management.
+ I based my development on this tool as a module in oreder to make a modular
+ tool available to everything Torrent client.
+\end_layout
+
+\begin_layout Standard
+Butter Project
+\end_layout
+
+\begin_layout Standard
+Butter Project or simply Butter is a suite of open source desktop and mobile
+ applications that allow video-streaming over the BitTorrent protocol.[1]
+ The project was first made public on the 23rd of October 2015.[2] The aim
+ is to create a completely legal base which other applications can use to
+ provide streaming functionality.[2]
+\end_layout
+
+\begin_layout Standard
+Butter Project was created as a split from Popcorn Time when the latter
+ met legal difficulties — with Butter Project aiming to retain development
+ of only expressly legal and permissible portions of the code-base, relating
+ to video-streaming.
+ The developers have asserted Butter Project will not use any of the popcorntime.
+io infrastructure.[3] Butter Project is not aimed at allowing copyright infringem
+ent, but aims to build the groundworks for streaming video over BitTorrent.[4]
+ By having a legal portion which remains on GitHub the creators hope they
+ can get more developers involved.[4]
+\end_layout
+
+\begin_layout Standard
+By default Butter can play content from VODO which carries free videos,
+ but will also be configurable to allow for custom sources of video.[5]
+\end_layout
+
+\begin_layout Paragraph
+video sources
+\end_layout
+
+\begin_layout Itemize
+OpenBittorent OpenTrackers.org Vodo.net Archive.org CCC Media
+\end_layout
+
+\begin_layout Itemize
+my personnal network
+\end_layout
+
+\begin_layout Subsection
+Architecture
+\end_layout
+
+\begin_layout Standard
+In this part I expose how the system has been imagined and how it works.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../images/AppDesign/DesignSchemaLatex1.jpg
+	lyxscale 70
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+application schema
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Normal usage
+\end_layout
+
+\begin_layout Standard
+Usually, to get a file via torrents, the user should open a torrent file
+ with his client application.
+ Then the torrent get downloaded in a download folder.
+\end_layout
+
+\begin_layout Subsubsection
+Application principle 
+\end_layout
+
+\begin_layout Paragraph
+The client
+\end_layout
+
+\begin_layout Standard
+The application need to be configured with the folder containing the torrents
+ downloaded and the folder containing the downloaded files.
+ The Client starts listing all the torrent files and compare them with the
+ related downloaded files it finds.
+ So that , it can figure out what are the hosted files and send the related
+ torrents files to one of the JPaxos servers instances.
+ 
+\end_layout
+
+\begin_layout Standard
+It will 
+\end_layout
+
+\begin_layout Paragraph
+JPaxos server
+\end_layout
+
+\end_body
+\end_document

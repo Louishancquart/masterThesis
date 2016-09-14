@@ -1,0 +1,396 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass dcsbook
+\begin_preamble
+%
+%  $Id: thesis-template.lyx,v 1.7 2011/12/22 12:10:18 sobaniec Exp $
+%
+\end_preamble
+\options thesis
+\use_default_options false
+\begin_modules
+dcs
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement tbph
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "urlcolor=linkcolor,linkcolor=linkcolor,citecolor=linkcolor"
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Indeks
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2.5cm
+\rightmargin 2cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\listings_params "basicstyle={\ttfamily},commentstyle={\color{green}\ttfamily},keywordstyle={\color{blue}\ttfamily},language={java},morecomment={[l][\color{magenta}]{\#}},numbers=left,numberstyle={\tiny},stringstyle={\color{red}\ttfamily}"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+\start_of_appendix
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\start_of_appendix
+Users Guide
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+backmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "sop"
+
+\end_inset
+
+A.
+\begin_inset space ~
+\end_inset
+
+Tanenbaum.
+ 
+\emph on
+Operating Systems Design and Implementation
+\emph default
+.
+ Prentice Hall, 2006.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "shareyourworld.com"
+
+\end_inset
+
+ http://www.beet.tv/2007/07/first-video-sha.html
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-9"
+
+\end_inset
+
+ Aichner, T.
+ and Jacob, F.
+ (March 2015).
+ "Measuring the Degree of Corporate Social Media Use".
+ International Journal of Market Research.
+ 57 (2): 257–275.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+ "Trends & Numbers".
+ Newspaper Association of America.
+ March 14, 2012.
+ Retrieved September 18, 2012.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+ "Interactive – VOD" "Comcast Spotlight website".
+ Retrieved October 5, 2006.
+ Archived March 26, 2009, at the Wayback Machine.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+ McChesney, Robert W.
+ "The Political Economy of Media: Enduring Issues, Emerging Dilemmas".
+ Monthly Review Press, New York, (May 1, 2008), p.
+ 265, ISBN 978-1-58367-161-0
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+
+\end_inset
+
+ Lasch, Christopher: Das Zeitalter des Narzissmus.
+ (The Culture of Narcissism), 1.
+ Edition.
+ Hoffmann und Campe, Hamburg 1995.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-6"
+
+\end_inset
+
+ McChesney, Robert W.
+ "The Political Economy of Media: Enduring Issues, Emerging Dilemmas".
+ Monthly Review Press, New York, (May 1, 2008), pp.
+ 270, 272, ISBN 978-1-58367-161-0
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-7"
+
+\end_inset
+
+ Miller and Rose, 1997, cited in Thrift, 1999, p.
+ 67
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-10"
+
+\end_inset
+
+ Williams, 1980
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-8"
+
+\end_inset
+
+ "JEG – Sign In Page".
+ Joeg.oxfordjournals.org.
+ Retrieved 2009-04-20.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-9"
+
+\end_inset
+
+ McFall, 2002, p.162
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-11"
+
+\end_inset
+
+ "CARAT PREDICTS POSITIVE OUTLOOK IN 2016 WITH GLOBAL GROWTH OF +4.7%".
+ Carat.
+ 2015-09-22.
+ Retrieved 2015-09-30.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-12"
+
+\end_inset
+
+ McChesney, Robert W.
+ "The Political Economy of Media: Enduring Issues, Emerging Dilemmas".
+ Monthly Review Press, New York, (May 1, 2008), p.277, ISBN 978-1-58367-161-0
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-13"
+
+\end_inset
+
+ "Psychology — Commercial Alert".
+ Commercialalert.org.
+ 1999-10-31.
+ Retrieved 2009-04-20.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-14"
+
+\end_inset
+
+ McChesney, Robert W.
+ "The Political Economy of Media: Enduring Issues, Emerging Dilemmas"., (May
+ 1, 2008), p.
+ 277, ISBN 978-1-58367-161-0
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-15"
+
+\end_inset
+
+ Review of Research on the Effects of Food Promotion to Children .
+ http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.134.1856&rep=rep1&type=pdf
+ ( 22 nd September 2003 )
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-16"
+
+\end_inset
+
+ http://www.alexa.com/topsites - Alexa Internet, Inc
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-17"
+
+\end_inset
+
+ http://tubularinsights.com/hours-minute-uploaded-youtube/
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Odnośniki
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+ Krug, Steve (2014).
+ Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability.
+\end_layout
+
+\end_body
+\end_document
